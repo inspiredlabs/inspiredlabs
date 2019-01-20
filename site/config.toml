@@ -1,5 +1,5 @@
-baseURL = "hungry-wozniak-e915f8.netlify.com" #"./"
-relativeURLs = true #https://gohugo.io/content-management/urls/#relative-urls
+baseURL = "https://hungry-wozniak-e915f8.netlify.com" #"./"
+#relativeURLs = true #https://gohugo.io/content-management/urls/#relative-urls
 #title = "Minimo"
 #https://discourse.gohugo.io/t/howto-convert-your-front-matter-from-toml-to-yaml/332
 # for smart copyright line, leave this blank and check [params.copyright]

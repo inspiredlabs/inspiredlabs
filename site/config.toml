@@ -37,8 +37,8 @@ suffix = ""
 dateFormat = "2006, Jan 02"
 listDateFormat = "2006, Jan 02"
 archiveDateFormat = "Jan 02"
-hideEntryNavigation = ["page"] # boolean / array of sections
-hideEntryMeta = ["page"] # boolean / array of sections
+#hideEntryNavigation = ["page"] # boolean / array of sections
+#hideEntryMeta = ["page"] # boolean / array of sections
 showReadingTime = true
 showLastmod = true
 taxonomyCloudShuffle = true
@@ -61,8 +61,6 @@ email = "alan.scott.phillips@pm.me"
 twitter = "Author"
 youtube = "UCH4BJzkxRkXL-ATLR9YutiA"#Author
 
-[params.search]
-client = "fuse" # "fuse" / "lunr"
 
 [taxonomies]
 category = "categories"

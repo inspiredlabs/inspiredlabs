@@ -2,21 +2,11 @@
   "comments": {
     "js": "comments.ecdd5e33.js"
   },
-  "sidebar": {
-    "js": "sidebar.88cb8643.js"
-  },
-  "twemoji": {
-    "js": "twemoji.c34d1cdf.js"
-  },
   "details-polyfill": {
     "js": "details-polyfill.aab26f9f.js"
   },
 
   "fuse_search": {
     "js": "fuse_search.cc21252e.js"
-  },
-
-  "main": {
-    "css": "main.4a10984a.css"
   }
 }

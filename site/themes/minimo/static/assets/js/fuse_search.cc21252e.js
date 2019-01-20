@@ -65,11 +65,11 @@ var n;n=function(){return function(e){var t={};function r(n){if(t[n])return t[n]
             }, "")
         }, 
         
-        /*
+
         t.setSearchingIndicator = function(e) {
             e.innerHTML = "<li class='searching'>\n    <a href='#search-results'>" + e.dataset.searching + "&hellip;</a>\n  </li>"
         },
-        */
+
         
         /*
         t.getUrlSearchParam = function(e) {

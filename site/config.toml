@@ -46,11 +46,6 @@ taxonomyCloudShuffle = true
 accentColor = "firebrick"
 hideMainMenu = false
 
-[params.sidebar]
-enable = false
-
-[params.widgets]
-sidebar = ["search"]
 
 [params.opengraph.twitter]
 page = "" # Twitter page username

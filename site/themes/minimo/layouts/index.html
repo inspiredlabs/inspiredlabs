@@ -1,20 +1,12 @@
 {{ partial "header" . }}
 
-<div class='container'>
+<!--div class='container'>
   {{ partial "widgets/search" . }}
 
   <ul id='search-results' class='list search-results' data-results-empty='{{ i18n "searchResultEmpty" }}' data-searching='{{ i18n "searching" }}'>
   </ul>
-</div>
-
-{{- with .Site.Params.search.client -}}
-
-  {{- $scriptKey := ( print . "_search" ) -}}
-  {{- $scriptName := ( index $.Site.Data.assets $scriptKey ).js -}}
-  <script src='{{ print "assets/js/" $scriptName | relURL }}'></script>
-{{- end -}}
-
-{{ partial "footer" . }}
+</div-->
 
 
-{{ partial "footer" . }}
+	
+

@@ -1,37 +1,7 @@
 {{ partial "header" . }}
 
-{{ if .Content }}
-<div class='entry'>
-  {{ partial "entry/cover" . }}
-  {{ partial "entry/content" . }}
-</div>
-{{ end }}
-
-
 <div class='container'>
-
-  <!-- previously widget/search -->  
-   <nav>
-   	<ul class="list fl w-100 mb4 pa0 data-gumshoe source_sans_prolight ttu tracked">
-   	  <li class="fl w-100">
-   			<form class="ml3 bb bw1 b--light-gray w-70" action='{{ "search" | relLangURL }}' id='search-form' class='search-form'>
-   				<label>
-   				<!--span class='screen-reader-text'>{{ i18n "search" }}</span-->
-   			  <input id="search-term" class="search-term input-reset pl0 bn bg-transparent bg-animate flex items-center pa3 border-box f4 f3-ns f4-m f2-l" type='search' aria-describedby="search" name='q' placeholder='{{ i18n "search" }}'>
-   			  </label>
-   			  
-   			  {{- if eq .Layout "search" -}}
-   			  <button type='submit' class='search-submit' style="background: silver;">
-   			    <span class='screen-reader-text'>{{ i18n "search" }}</span>
-   			  	<span class=''>{{ i18n "search" }}</span>
-   			  </button>
-   			  {{- end -}}
-   			  
-   			</form>
-   	  </li>
-   	</ul>	
-   </nav>
-  <!-- previously widget/search -->
+  {{ partial "widgets/search" . }}
 
   <ul id='search-results' class='list search-results' data-results-empty='{{ i18n "searchResultEmpty" }}' data-searching='{{ i18n "searching" }}'>
   </ul>
@@ -43,6 +13,8 @@
   {{- $scriptName := ( index $.Site.Data.assets $scriptKey ).js -}}
   <script src='{{ print "assets/js/" $scriptName | relURL }}'></script>
 {{- end -}}
+
+{{ partial "footer" . }}
 
 
 {{ partial "footer" . }}

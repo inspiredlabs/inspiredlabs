@@ -11,17 +11,12 @@
   "details-polyfill": {
     "js": "details-polyfill.aab26f9f.js"
   },
-  "lunr_search": {
-    "js": "lunr_search.15b5835f.js"
-  },
+
   "fuse_search": {
     "js": "fuse_search.cc21252e.js"
   },
-  "algolia_search": {
-    "js": "algolia_search.499151b4.js"
-  },
+
   "main": {
-    "css": "main.4a10984a.css",
-    "js": "main.fae8ed32.js"
+    "css": "main.4a10984a.css"
   }
 }

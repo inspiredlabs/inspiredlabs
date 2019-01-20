@@ -2,8 +2,8 @@
 
 <div class='container'>
 
-	<iframe src="/search" height="640" width="480" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"
-	style="overflow:hidden;background:orange;" ></iframe>
+	<!--iframe src="/search" height="640" width="480" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"
+	style="overflow:hidden;background:orange;" ></iframe-->
 
 </div>
 
@@ -11,7 +11,7 @@
 <script src='/assets/js/fuse_search.cc21252e.js'></script>
 
 	
-	{{- with .Site.Params.search.client -}}
+	{{- with .Site.Params.search.client.fuse -}}
 	  
 	  <!--
 	  {{- if eq . "lunr" -}}

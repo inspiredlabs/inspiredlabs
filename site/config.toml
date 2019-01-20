@@ -69,8 +69,8 @@ category = "categories"
 series = "series"
 tag = "tags"
 
-[permalinks]
-page = "/:slug/"
+#[permalinks]
+#page = "/:slug/"
 
 [[menu.main]]
 name = "Repo"

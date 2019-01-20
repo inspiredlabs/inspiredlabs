@@ -2,8 +2,6 @@ baseURL = "https://hungry-wozniak-e915f8.netlify.com" #"./"
 #relativeURLs = true #https://gohugo.io/content-management/urls/#relative-urls
 #title = "Minimo"
 #https://discourse.gohugo.io/t/howto-convert-your-front-matter-from-toml-to-yaml/332
-# for smart copyright line, leave this blank and check [params.copyright]
-copyright = ""
 
 theme = "minimo"
 
@@ -22,7 +20,7 @@ defaultContentLanguage = "en"
 
 [params.info]
 description = "Minimalist theme for Hugo"
-title404 = "Nothing's here!"
+title404 = "Simplicity is the ultimate"
 
 [params.assets]
 favicon = "favicon.ico"
@@ -49,7 +47,7 @@ accentColor = "firebrick"
 hideMainMenu = false
 
 [params.sidebar]
-enable = true
+enable = false
 
 [params.widgets]
 sidebar = ["search"]
@@ -72,11 +70,6 @@ youtube = "UCH4BJzkxRkXL-ATLR9YutiA"#Author
 [params.search]
 client = "fuse" # "fuse" / "lunr"
 
-[params.search.algolia]
-appId = ""
-indexName = ""
-searchApiKey = ""
-
 [taxonomies]
 category = "categories"
 series = "series"
@@ -94,10 +87,10 @@ url = "https://github.com/MunifTanjim/minimo"
 [blackfriday]
 hrefTargetBlank = true
 
-[languages]
+#[languages]
 # edit this block for your own language
 
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
+#[languages.en]
+#lang = "en"
+#languageName = "English"
+#weight = 1

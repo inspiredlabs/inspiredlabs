@@ -58,7 +58,6 @@ var n;n=function(){return function(e){var t={};function r(n){if(t[n])return t[n]
             value: !0
         });
         
-        
         t.appendResults = function(e, t) {
             0 === e.length ? t.innerHTML = "<li class='results-empty'>\n      <a href='#search-term'>" + t.dataset.resultsEmpty + "</a>\n    </li>" : t.innerHTML = e.reduce(function(e, t) {
                 return e + "<li><a href='" + t.href + "'>" + t.title + "</a></li>"
@@ -70,15 +69,12 @@ var n;n=function(){return function(e){var t={};function r(n){if(t[n])return t[n]
             e.innerHTML = "<li class='searching'>\n    <a href='#search-results'>" + e.dataset.searching + "&hellip;</a>\n  </li>"
         },
 
-        
-        /*
         t.getUrlSearchParam = function(e) {
             if ("URLSearchParams" in window) return new URLSearchParams(window.location.search).get(e);
             e = e.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
             var t = new RegExp("[\\?&]" + e + "=([^&#]*)").exec(location.search);
             return null === t ? "" : decodeURIComponent(t[1].replace(/\+/g, " "))
         },
-        */
         
          t.getJSON = function(e, t) {
             var r = new XMLHttpRequest;

@@ -1,4 +1,4 @@
-baseURL = "https://inspiredlabs.co.uk/lunr" #"./"
+baseURL = "hungry-wozniak-e915f8.netlify.com" #"./"
 relativeURLs = true #https://gohugo.io/content-management/urls/#relative-urls
 #title = "Minimo"
 #https://discourse.gohugo.io/t/howto-convert-your-front-matter-from-toml-to-yaml/332

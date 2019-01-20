@@ -58,14 +58,12 @@ var n;n=function(){return function(e){var t={};function r(n){if(t[n])return t[n]
             value: !0
         });
         
-        /*
+        
         t.appendResults = function(e, t) {
             0 === e.length ? t.innerHTML = "<li class='results-empty'>\n      <a href='#search-term'>" + t.dataset.resultsEmpty + "</a>\n    </li>" : t.innerHTML = e.reduce(function(e, t) {
                 return e + "<li><a href='" + t.href + "'>" + t.title + "</a></li>"
             }, "")
         }, 
-        */
-        
         
         /*
         t.setSearchingIndicator = function(e) {

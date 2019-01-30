@@ -61,6 +61,8 @@ email = "alan.scott.phillips@pm.me"
 twitter = "Author"
 youtube = "UCH4BJzkxRkXL-ATLR9YutiA"#Author
 
+[params.search]
+client = "fuse" # "fuse" / "lunr"
 
 [taxonomies]
 category = "categories"

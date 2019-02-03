@@ -1,37 +1,35 @@
 {{ partial "header.html" . }}
-<body class="home-template">
+<body class="w-100 source_sans_proregular black-70 highlight bg-near-white lh-copy" id="top">
+<b class="w-100 white fixed z-999 mt0 pa1 top-0 dark-red" id="debugInfo">0</b>
+<div id="newList">
+<ul class="list">
+<!-- The big featured header on the homepage, with the site logo and description --
+<header id="site-head" {{ if .Site.Params.cover }}style="background-image: url({{ .Site.Params.cover }})"{{ end }}>
+    <div class="vertical">
+        <div id="site-head-content" class="inner">
 
-    <!-- The big featured header on the homepage, with the site logo and description -->
-    <header id="site-head" {{ if .Site.Params.cover }}style="background-image: url({{ .Site.Params.cover }})"{{ end }}>
-        <div class="vertical">
-            <div id="site-head-content" class="inner">
+            {{ if .Site.Params.logo }} <a id="blog-logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo }}" alt="Blog Logo" /></a>{{ end }}
+            <h1 class="f1">{{ .Site.Title}}</h1>
+            {{ if .Site.Params.description }}<h2 class="f2">{{ .Site.Params.description }}</h2> {{ else  }}
+            <h2 class="f2">Tachyons.io</h2>
+            {{ end }}
 
-                {{ if .Site.Params.logo }} <a id="blog-logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo }}" alt="Blog Logo" /></a>{{ end }}
-                <h1 class="blog-title">{{ .Site.Title}}</h1>
-                {{ if .Site.Params.description }}<h2 class="blog-description">{{ .Site.Params.description }}</h2> {{ else  }}
-                <h2 class="blog-description">Power puff girls</h2>
-                {{ end }}
-
-                <a class=''>Take a tour</a>
-                <a class=''>Cut to the chase</a><br>
-            </div>
+            <a class=''>Take a tour</a>
+            <a class=''>Cut to the chase</a><br>
         </div>
-
-    </header>
-
-    <main class="content" role="main">
-    <div class='fixed-nav'>
     </div>
-        {{ range .Data.Pages.ByWeight }}
-                {{ if eq .Type  "post" }}
-                    {{ .Render "post"}}
-                {{ end }}
-        {{ end }}
+</header>
+-->
+{{ range .Data.Pages.ByWeight }}
+	{{ if eq .Type  "post" }}
+		{{ .Render "post"}}
+	{{ end }}
+{{ end }}
+<!--
+{{ partial "footer.html" .}}
 
-</main>
-    {{ partial "footer.html" .}}
-
-    {{ partial "script.html" .}}
+{{ partial "script.html" .}}
+-->
 
 
 </body>

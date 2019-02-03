@@ -1,3 +1,15 @@
 baseurl = "/"
-languageCode = "en-us"
-title = "Homepage"
+languageCode = "en-gb" #Initial configuration reset
+title = "Locality"
+
+## As of v0.20, all content files include a default "categories" value that's the same as the section. This was a cheap future-proofing method and should/could be changed accordingly.
+[taxonomies]
+  key = "value"
+
+[Params]
+  [[Params.description]]
+    description = "A description of this website"
+
+  [[Params.links]]
+    title = "Email"
+    url = "mailto:alan.scott.phillips@pm.me"

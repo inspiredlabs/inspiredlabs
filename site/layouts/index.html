@@ -1,13 +1,38 @@
-{{ define "main" }}
+{{ partial "header.html" . }}
+<body class="home-template">
 
-<!--{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}-->
+    <!-- The big featured header on the homepage, with the site logo and description -->
+    <header id="site-head" {{ if .Site.Params.cover }}style="background-image: url({{ .Site.Params.cover }})"{{ end }}>
+        <div class="vertical">
+            <div id="site-head-content" class="inner">
 
-{{ partial "short-text" .Params.blurb}}
+                {{ if .Site.Params.logo }} <a id="blog-logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo }}" alt="Blog Logo" /></a>{{ end }}
+                <h1 class="blog-title">{{ .Site.Title}}</h1>
+                {{ if .Site.Params.description }}<h2 class="blog-description">{{ .Site.Params.description }}</h2> {{ else  }}
+                <h2 class="blog-description">Power puff girls</h2>
+                {{ end }}
 
-{{ partial "2-up" .Params }}
+                <a class=''>Take a tour</a>
+                <a class=''>Cut to the chase</a><br>
+            </div>
+        </div>
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+    </header>
 
-{{ partial "blog" . }}
+    <main class="content" role="main">
+    <div class='fixed-nav'>
+    </div>
+        {{ range .Data.Pages.ByWeight }}
+                {{ if eq .Type  "post" }}
+                    {{ .Render "post"}}
+                {{ end }}
+        {{ end }}
 
-{{ end }}
+</main>
+    {{ partial "footer.html" .}}
+
+    {{ partial "script.html" .}}
+
+
+</body>
+</html>

@@ -1,57 +1,27 @@
-<footer class="bg-black ph3 pv4 white">
+    <footer class="site-footer">
+        <div>
+        {{ if .Site.Params.twitter }}
+        <a href="http://twitter.com/{{ .Site.Params.twitter }}" title="Twitter"><span class="fa fa-tt fa-2x"></span></a>
+        {{ end }}
+        {{ if .Site.Params.bitbucket }}
+        <a href="https://bitbucket.org/{{ .Site.Params.bitbucket }}" title="Bitbucket"><span class="fa fa-bitbucket fa-2x"></span></a>
+        {{ end }}
+        {{ if .Site.Params.github }}
+        <a href="https://github.com/{{ .Site.Params.github }}" title="GitHub"><span class="fa fa-github fa-2x"></span></a>
+        {{ end }}
+        {{ if .Site.Params.flickr }}
+        <a href="http://www.flickr.com/photos/{{ .Site.Params.flickr }}/" title="Flickr"><span class="fa fa-flickr fa-2x"></span></a>
+        {{ end }}
 
-	<div class="mw7 center pt3">
-
-		<div class="measure-narrow center mb4">
-
-			<img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
-			<p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
-			<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
-
-			{{ partial "newsletter-form" . }}
-
-		</div>
-
-		<div class="flex-ns justify-between">
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Kaldi</h3>
-				<ul class="mb3">
-					<li><a href="/" class="link">Home</a></li>
-					<li><a href="/products" class="link">Our products</a></li>
-					<li><a href="/values" class="link">About</a></li>
-					<li><a href="/post" class="link">Blog</a></li>
-					<li><a href="/contact" class="link">Contact</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Find out more</h3>
-				<ul class="mb3">
-					<li><a href="/post/jamaica-blue/" class="link">Latest offers</a></li>
-					<li><a href="/contact" class="link">Schedule and appointment</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
-				</ul>
-			</div>
-
-		</div>
-	</div>
-
-</footer>
-
-{{ partial "svg" . }}
-
-<script src="/app.js"></script>
-
-</body>
-
-</html>
+        {{ if .Site.Params.linkedin }}
+       <a href="http://no.linkedin.com/in/{{ .Site.Params.linkedin }}/en" title="Linkedin"> <i class='fa fa-ll fa-2x'></i></a>
+        {{ end }}
+        {{ if .Site.Params.email }}
+        <a href="mailto:{{ .Site.Params.email }}" title="Email {{ .Site.Params.email }}"> <i class='fa fa-envelope-o fa-2x'></i></a>
+        {{ end }}
+        </div>
+        <div class="inner">
+             <section ><a href="http://ghostscroll.grmmph.com/">HugoScroll</a> theme by <a href="http://fredrikloch.me">Fredrik</a>.<br>
+              Proudly published with <a class="i-ghost" href="http://gohugo.io">Hugo</a></section>
+        </div>
+    </footer>

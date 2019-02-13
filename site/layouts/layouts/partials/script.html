@@ -1,0 +1,141 @@
+<!-- Scripts -->  
+<script>
+	(function() {
+	    var mqEvents = function(mediaChangeHandler) {
+	        var sheets = document.styleSheets;
+	        if (!mediaChangeHandler) {
+	            console.error('mqEvents needs a mediaChangeHandler to do its job.');
+	            return false;
+	        }
+	        for (var i = 0; i < sheets.length; i += 1) {
+	            var rules = sheets[i].cssRules;
+	            for (var j = 0; j < rules.length; j += 1) {
+	                if (rules[j].constructor === CSSMediaRule) {
+	                    var mql = window.matchMedia(rules[j].media.mediaText);
+	                    mql.addListener(mediaChangeHandler);
+	                    mediaChangeHandler(mql);
+	                }
+	            }
+	        }
+	    }
+	    window.mqEvents = mqEvents;
+	}()); 
+  handleMediaChange = function(mql) {
+      console.log();
+      if (window.matchMedia("(max-width:480px)").matches) {
+          document.getElementById("togglebox").checked = false;
+      } else if (window.matchMedia("(min-width:481px)").matches) {
+          document.getElementById("togglebox").checked = false; //checkbox=checked && .checked = true
+      }
+  };
+	mqEvents(handleMediaChange);
+</script>
+
+<script src="js/list.min.js"></script>
+<script>
+
+	function inputUpdate(value) {
+	  var searchString = document.getElementById('searchEntry').value;
+	  articleSearch.search(searchString);
+	}
+
+	var articleSearch = new List('newList', { 
+	  valueNames: ['metaTag']
+	});		
+
+	function searchEntryZero() {
+	    document.getElementById('searchEntry').value = '';
+	};
+	
+	function resetArticleSearch() {
+	    articleSearch.search(searchString = '');
+	};
+	
+
+	function resetItemsOutput() {
+		var timeLimit = 5000;//5s	
+
+		setTimeout(function() {
+		    document.getElementById('matchingItemsOutput').innerHTML = 'Simplicity is the ultimate';
+		}, timeLimit);
+
+	};
+	
+	articleSearch.on('searchComplete', function (e) {
+
+		if (e.matchingItems.length == 0) {
+			document.getElementById('matchingItemsOutput').innerHTML = 'No matching articles';
+			resetItemsOutput();
+
+		} else {
+			document.getElementById('matchingItemsOutput').innerHTML = e.matchingItems.length + ' matching articles';	
+			resetItemsOutput();
+		}
+		
+	});
+
+	document.getElementById('searchEntry').onkeydown=function(e) {
+    if (e.which==13 || e.key == 13 || e.key == 13 || e.keyCode == 13) {
+    	e.preventDefault();
+      return false;
+    }
+  };
+  document.getElementById('searchEntry').onkeydown=function(e) {
+    if (e.which==27 || e.key == 'Escape' || e.key == 'Esc' || e.keyCode == 27) {
+    	resetArticleSearch();
+    	searchEntryZero();
+      return false;
+    }
+  };
+  
+</script>
+<!--script src="js/flickity.js" type="text/javascript"></script-->
+<!--script>
+	window.onload = function () {
+			var images = document.getElementsByTagName('img');    
+	    var aHref = document.getElementsByTagName('a');
+	    for (var i = 0; a = aHref[i++];) {    
+	        a.ondragstart = function() { return false; };
+	    }
+	    for (var i = 0; img = images[i++];) {    
+	        img.ondragstart = function() { return false; };
+	    } 
+	};
+	
+</script-->
+
+<style>.b-lazy {opacity:0;transition: opacity 500ms;}.b-loaded {opacity:1;}</style>
+<script src="js/blazy.min.js"></script>
+<script>
+// the code
+var bLazy = new Blazy({
+  success: function(){
+    updateCounter();
+  }
+});
+
+// debugInfo
+var imageLoaded = 0;
+var eleCountLoadedImages = document.getElementById('debugInfo');
+
+function updateCounter() {
+  imageLoaded++;
+  eleCountLoadedImages.innerHTML = imageLoaded;
+}
+</script>
+
+<script>
+	//http://dinbror.dk/blog/blazy/#Callback
+     					
+	window.onload = function(){
+    var details = document.getElementsByClassName('details');
+    for (var i = 0; i < details.length; i++) {
+        details[i].addEventListener('click', function(){
+          //IntersectionObserver/MutationObserver
+          setTimeout(function() {
+            bLazy.revalidate();
+          }, 1);
+      });
+    }
+	};	
+</script>

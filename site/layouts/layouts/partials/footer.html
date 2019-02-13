@@ -1,0 +1,58 @@
+<footer class="mt5" id="contact">
+	<section class="cf w-100 pv3 f4 ph3 ph4-ns">
+		<div class="mw9 center ph3-ns">
+		  <div class="ph2-ns">
+		    <div class="fl w-100 w-70-ns pr4"><!-- w-two-thirds -->
+		      <div class="pv4 fr w-100 w-90-m w-80-l"><!-- outline bg-black-05 truncate no-wrap -->
+		      	<ul class="w-100 list tr mb4 pa0 source_sans_prolight f4 f3-ns f4-m f2-l pr0">
+		      		<li class="pt3 moon-gray">Simplicity is the ultimate</li>
+		      		<li class="pt3">
+		      			{{ if .Site.Params.email }}
+			      			<a class="no-underline bg-animate" href="mailto:{{ .Site.Params.email }}" title="Email {{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+			      			{{ else  }}
+			      			<a class="no-underline bg-animate" href="mailto:alan.scott.phillips@pm.me?subject=I%20have%20seen%20your%20website">alan.scott.phillips@pm.me</a>
+		      			{{ end }}
+		      		</li>
+		      		<li class="pt3">
+			      		{{ if .Site.Params.twitter }}
+				      		<a class="no-underline bg-animate" href="http://twitter.com/{{ .Site.Params.twitter }}" title="Twitter">@{{ .Site.Params.twitter }}</a>
+			      			{{ else  }}
+			      			<a class="no-underline bg-animate" href="https://twitter.com/inspiredlabs">@InspiredLabs</a>
+			      		{{ end }}
+		      		</li>
+		      		<li class="pt3">
+			      		{{ if .Site.Params.facetime }}
+			      			<a class="no-underline bg-animate" href="facetime-audio:{{ .Site.Params.facetime }}" title="Facetime">Facetime</a>
+			      			{{ else  }}
+			      			<a class="no-underline bg-animate" href="facetime-audio:447515686177">Facetime</a>
+			      		{{ end }}
+		      		</li>
+		      		<li class="pt3">     		
+		      			{{ if .Site.Params.linkedin }}
+		      				<a class="no-underline bg-animate" href="http://linkedin.com/in/{{ .Site.Params.linkedin }}/en" title="Linkedin">LinkedIn</a>
+		      				{{ else  }}
+		      				<a class="no-underline bg-animate" href="https://linkedin.com/in/urbanaut/" title="Linkedin">LinkedIn</a>
+		      			{{ end }}
+		      		</li>
+		      		<li class="pt3">     		
+		      			{{ if .Site.Params.github }}
+		      				<a class="no-underline bg-animate" href="https://github.com/{{ .Site.Params.github }}" title="GitHub">Github</a>
+		      				{{ else  }}
+		      				<a class="no-underline bg-animate" href="https://github.com/inspiredlabs" title="GitHub">Github</a>
+		      			{{ end }}
+		      		</li>
+		      		<li class="pt3">
+		      			{{ if .Site.Params.skype }}
+		      				<a class="no-underline bg-animate" href="skype:{{ .Site.Params.skype }}" title="Skype">Skype</a>
+		      				{{ else  }}
+		      				<a class="no-underline bg-animate" href="skype:theurbanaut?chat">Skype</a>
+		      			{{ end }}
+		      		</li>
+		      		<li class="pt3 moon-gray">&#169;&hairsp;2019</li>		      		
+		      	</ul>
+		       </div><!-- /fr outline -->
+	      </div><!-- /w-two-thirds -->
+	    </div><!-- /ph2-ns -->
+	  </div><!-- /mw9 center ph3-ns -->
+	</section><!-- /cf w-100 pv3 f4 ph3 ph4-ns --> 
+</footer><!-- /contact -->

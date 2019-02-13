@@ -1,24 +1,15 @@
 baseurl = "/"
 languageCode = "en-gb" #Initial configuration reset
-title = "Inspired Labs"
-theme = "hugoscroll"
+title = "Locality"
 
 ## As of v0.20, all content files include a default "categories" value that's the same as the section. This was a cheap future-proofing method and should/could be changed accordingly.
 [taxonomies]
   key = "value"
 
-
 [Params]
-  skype = "theurbanaut?chat"
-  github = "inspiredlabs"
-  facetime = "447515686177"
-  twitter = "InspiredLabs"
-  email = "alan.scott.phillips@pm.me"
-  description = ""
-  linkedin = "urbanaut"
-  #cover = "/images/background-cover.jpg"
-  #logo = "/img/logo-1.jpg"
-
-
   [[Params.description]]
-    description = "Website description"
+    description = "A description of this website"
+
+  [[Params.links]]
+    title = "Email"
+    url = "mailto:alan.scott.phillips@pm.me"

@@ -2,9 +2,15 @@
 title: InstantWebapp
 date: 2019-02-03T15:51:47.060Z
 description: Web design to fit the world of apps
-assignment: Frontend Developer, Entrepreneur – SME & Boutiques.
+image: 
 ---
-<!--From Summer&nbsp;2011-->
+
+<!--From Summer&nbsp;2011
+  InstantWebapp
+  Web design to fit the world of&nbsp;apps
+  Frontend Developer &amp;&nbsp;Entrepreneur
+  –&nbsp;SMEs,&nbsp;artists &amp;&nbsp;boutiques.-->
+
 ## Philosophy
 ### Designed to reduce investment risk
 Intended for entrepreneurs who want to control costs with risk-free content delivery to their customer's devices.

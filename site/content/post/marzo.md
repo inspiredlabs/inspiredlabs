@@ -2,10 +2,10 @@
 title: Marzò
 date: 2019-02-03T15:49:50.219Z
 description: Intelligent systems for traditional farming
-assignment: Design & Development. OpenCV, Python. SSG on NetlifyCMS, Mobile eCommerce.
+assignment: ML, OpenCV, Python. Mobile first eCommerce, static site on NetlifyCMS.
 ---
 
-<!--Winter&nbsp;2017 - Spring&nbsp;2019
+<!--Design & Development. Winter&nbsp;2017 - Spring&nbsp;2019
   Marzò-->
 
 ### Marzò are interested in technology that can improve their fledgling business.

@@ -2,7 +2,9 @@
 title: Museums & Heritage Awards Winner
 date: 2019-02-03T15:51:16.535Z
 description: 'Children’s Centre for Civilisation & Creativity. Heliopolis, Egypt'
-image: ''
+assignment: Designer, Animator & Mentor
+  – Mallinson's Architects & Engineers. Atacama Ltd. Oxford 
+
 ---
 <!-- date: Winter&nbsp;2010 - Winter&nbsp;2011 -->
 

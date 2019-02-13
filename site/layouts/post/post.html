@@ -22,7 +22,7 @@
 		      			<use xlink:href="#url"></use>
 		      		</svg>     	
 		      		<!--span class="pr3">{{ .Permalink }}</span-->
-			      	<time class="black b">{{- dateFormat " 2016-05-28" .Date -}}</time>
+			      	<time class="black b">{{- dateFormat " 2006-01-01" .Date -}}</time>
 		      	</a>
 	    			<hr class="ba bw1 mb0 b--black-10"/>
 		      	<details class="details"><!-- open -->
@@ -43,7 +43,7 @@
 		      				</h2>
 		      			</header>
 		      			<p class="f4-ns mt0-ns">
-		      					<span class="source_sans_prosemibold">{{ .Params.assignment }}</span>
+		      					<span class="source_sans_prosemibold">{{ .Params.assignment }}</span><!-- | safeHTML-->
 		      				</p>
       				</summary>
 					    {{ .Content }}

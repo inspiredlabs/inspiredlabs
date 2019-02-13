@@ -2,6 +2,7 @@
 title: Scott Phillips
 date: 2019-02-13T17:29:28.349Z
 description: Graphic Design & Frontend Development
+assignment: Working on projects that champion the user across a range of fields
 ---
 I'm Scott Phillips, Design Generalist from the United Kingdom. For the past few years, I have mainly designed for the mobile web. The rest of the time, I've worked on content for companies like [Siemens](https://vimeo.com/124142652) and [Bowers & Wilkins](https://vimeo.com/124144694).
 

@@ -8,7 +8,9 @@ assignment: Designer, Animator & Mentor
 ---
 <!-- date: Winter&nbsp;2010 - Winter&nbsp;2011 -->
 
-{{<figure src="https://inspiredlabs.co.uk/images/mallinson-00.jpg" title="Museums & Heritage Awards Winner">}}
+{{<flickity src="https://inspiredlabs.co.uk/images/mallinson-00.jpg" title="Museums & Heritage Awards Winner" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+
+
 
 ## A huge achievement, against all odds
 

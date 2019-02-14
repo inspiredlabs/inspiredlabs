@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 <body class="w-100 source_sans_proregular black-70 highlight bg-near-white lh-copy" id="top">
-<b class="w-100 white fixed z-999 mt0 pa1 top-0 dark-red" id="debugInfo">0</b>
+<b class="w-10 fixed z-999 mt0 pa1 top-0 dark-red" id="debugInfo">0</b>
+{{ partial "nav.html" . }}
 <div id="newList">
 	<ul class="list">
 	
@@ -42,14 +43,14 @@
 				      				    {{ end }}
 				      				</a-->
 				      				<h1 class="f2 lh-title fw9 mb3 pt0">
-				      					<span class="source_sans_probold">{{ .Title | safeHTML }}</span>
+				      					<span class="source_sans_probold">{{ .Title}}</span>
 				      				</h1>
 				      				<h2 class="f3 lh-title">
-				      				  <span class="source_sans_probold">{{ .Description | safeHTML }}</span>
+				      				  <span class="source_sans_probold">{{ .Description}}</span>
 				      				</h2>
 				      			</header>
 				      			<p class="f4-ns mt0-ns">
-			      					<span class="source_sans_prosemibold">{{ .Params.assignment | safeHTML }}</span>
+			      					<span class="source_sans_prosemibold">{{ .Params.assignment}}</span>
 			      				</p>
 		      				</summary>
 							    {{ .Content }}

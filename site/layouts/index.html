@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 <body class="w-100 source_sans_proregular black-70 highlight bg-near-white lh-copy" id="top">
+{{ partial "nav.html" . }}
 <!-- The big featured header on the homepage, with the site logo and description -->
 <!--<header id="site-head" {{ if .Site.Params.cover }}style="background-image: url({{ .Site.Params.cover }})"{{ end }}>
     <div class="vertical">
@@ -16,8 +17,7 @@
         </div>
     </div>
 </header>-->
-
-<b class="w-100 white fixed z-999 mt0 pa1 top-0 dark-red" id="debugInfo">0</b>
+<b class="w-10 fixed z-999 mt0 pa1 top-0 dark-red" id="debugInfo">0</b>
 	<div id="newList">
 		<ul class="list">
 		{{ range .Data.Pages.ByWeight }}

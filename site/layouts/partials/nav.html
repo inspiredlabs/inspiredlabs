@@ -1,0 +1,12 @@
+<!--Called on: single.html and index.html-->
+<nav class="w-100 bg-black fixed z-999 mt0 pa1 top-0 white">
+	{{ range .Site.Pages.ByWeight }}
+		{{ if eq .Type  "post" }}
+		<ul>
+			<li>
+				<a href="{{ .URL }}">{{ .Title }}</a>
+			</li>
+		</ul>
+		{{ end }}	
+	{{ end }}			
+</nav>

@@ -1,10 +1,15 @@
+<style>
+	nav ul li a { color: rgba(170, 170, 170, 1); }
+</style>
 <!--Called on: single.html and index.html-->
-<nav class="w-100 bg-black fixed z-999 mt0 pa1 top-0 white">
+<nav class="w-100 fixed z-999 mt0 pa1 top-0 white"><!--bg-black-->
+	<!-- Understand scope: https://www.youtube.com/watch?v=juSnHsCX9RU -->
+	{{ $thisTitle := .Title }}
 	{{ range .Site.Pages.ByWeight }}
 		{{ if eq .Type  "post" }}
-		<ul>
+		<ul class="list">
 			<li>
-				<a href="{{ .URL }}">{{ .Title }}</a>
+				<a href="{{ .URL }}" style="{{ if eq .Title $thisTitle }} color: rgba(0, 0, 0, 0.7); {{ end }}">{{ .Title }}</a>
 			</li>
 		</ul>
 		{{ end }}	

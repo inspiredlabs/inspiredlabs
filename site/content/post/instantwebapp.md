@@ -2,7 +2,7 @@
 date: 2019-02-03T15:51:47.060Z
 title: InstantWebapp
 description: Web design to fit the world of apps
-assignment: Frontend Developer & Entrepreneur –  Boutiques & SMEs.
+assignment: Frontend Developer for Boutiques & SMEs.
 ---
 <!--From Summer&nbsp;2011-->
 
@@ -18,13 +18,11 @@ Intended for entrepreneurs who want to control costs with risk-free content deli
 
 Meeting business goals, controlling costs and avoiding gotchas does not mean undesirable, generic design work. Delighting the user is straightforward with design constraints that apply to many organisations. Serving as a foundation, templates can advance the development of marketing campaigns, content and aesthetics.
 
-
-
 ### Characteristics
 
 #### Looks like an app
 
-Completing tasks on an app deserves good user interface design. The interface looks like it belongs on a customer's device. Clear, readable text, decent hit areas and strong calls-to-action make achieving goals possible.
+Completing tasks on an app deserves good user interface design. The interface looks like it belongs on a customer's device. Clear, readable text, decent hit areas and thoughtful calls-to-action meet business goals.
 
 #### Launches like an app
 
@@ -45,8 +43,6 @@ Designed to flow around different screen types, the layout adapts to client devi
 Designed to be flexible, the template can handle poor network connections. Without extraneous widgets content delivery is as fast as possible over cellular networks.
 
 {{<flickity src="https://inspiredlabs.co.uk/images/iwa-tdb-01.jpg" title="TheDiscoBunny.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
-
-
 
 ### My small business? – There's an app for that!
 

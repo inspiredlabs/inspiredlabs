@@ -1,7 +1,7 @@
 ---
 date: 2019-07-27T17:23:55.364Z
-title: '3Si '
-description: CRM for Mensa & National Farmer's Union
+title: CRM platform
+description: '3Si, Mensa & National Farmer''s Union'
 assignment: UX design & content marketing
 ---
 {{<flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
@@ -20,7 +20,7 @@ Produced a high performance static site and a fresh perspective on their marketi
 
 <!--### Explore
 
-Marketing Brochure-->
+Marketing Brochure
 
 ### Visit
 
@@ -31,17 +31,18 @@ Marketing Brochure-->
 # About the production in detail
 
 ## UX designer | Template design for other designers | Writing marketing material
+-->
 
 ### Communicating values
 Developing CRM solutions for not‑for‑profit companies, can be complicated. 3Si needed someone technical make design improvements, yet follow the brand spirit. 
 
-### Original written content
-By rewriting 3Si's marketing material for an audience of non-technical people we were able to eliminate jargon and misunderstanding.
+### The end of misunderstanding
+By rewriting the [Marketing Brochure](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) for an audience of non-technical people we eliminated jargon. This helped improve communication accross the company.
 
-After intensive research the marketing material was produced over a focused 7 week period. This material has an emphasis on clarity.
+After intensive research the marketing material was produced over a 7 week focus period. 
 
 ### Brand spirit
-The visual language of [OM.Net](http://inspiredlabs.co.uk/3-si.com/index.html#modules) was designed to be cohesive across print and desktop, yet optimised for mobile. This echoed existing material.
+This material has an emphasis on clarity. The visual language of [OM.Net](http://inspiredlabs.co.uk/3-si.com/index.html#modules) was designed to be cohesive across print and desktop, yet optimised for mobile. This echoed what was already existing.
 
 A simple landing page was tested to maintain attention. 
 

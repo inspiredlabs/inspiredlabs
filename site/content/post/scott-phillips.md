@@ -1,10 +1,10 @@
 ---
 date: 2019-02-13T17:29:28.349Z
 title: Scott Phillips
-description: Graphic Design & Frontend Development
-assignment: Fearless creative for those who innovate
+description: Fearless creative for those who innovate
+assignment: Graphic Design & Frontend Development
 ---
-Meeting business requirements for National Geographic, [Siemens](https://vimeo.com/124142652), [Bowers & Wilkins](https://vimeo.com/124144694), and ambitious startups.
+Meeting business requirements for [National Geographic](https://inspiredlabs.co.uk/j/), [Siemens](https://vimeo.com/124142652), [Bowers & Wilkins](https://vimeo.com/124144694), and ambitious startups.
 
 My work applies thorough, user-friendly design that moves projects forward. These can be greenfield projects like attention engineering for Aris Technologies. Or a communication strategy for Vaultarch, an award‑winning deep‑tech company.
 
@@ -16,7 +16,7 @@ But, don't worry if you're not there yet – I also contribute to smaller projec
 
 <hr>
 
-Maybe this experience isn't what you are looking for, and that's ok. I work best with talented individuals who innovate. I'm proud to be a fearless creative who can also take on board practical constraints.
+Maybe this experience isn't what you are looking for, and that's ok. I work best with talented individuals who innovate. I'm proud to be a fearless creative who takes on board practical constraints.
 
 Send me an [email](alan.scott.phillips@pm.me?subject=I%20have%20seen%20your%20website).
 

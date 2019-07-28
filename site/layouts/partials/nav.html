@@ -1,17 +1,20 @@
-<style>
+<!--<style>
 	nav ul li a { color: rgba(170, 170, 170, 1); }
-</style>
+</style>-->
 <!--Called on: single.html and index.html-->
 <nav class="w-30 fixed z-999 mt0 pa1 top-0 white right-0"><!--bg-black-->
-	<ul class="list">
+	<ul class="list source_sans_prolight">
 	<!-- Understand scope: https://www.youtube.com/watch?v=juSnHsCX9RU -->
 	{{ $thisTitle := .Title }}
 	{{ range .Site.Pages.ByWeight }}
 		{{ if eq .Type  "post" }}
 			<li class="fl w-100">
-				<a href="{{ .URL }}" class="{{ if eq .Title $thisTitle }} no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l tracked-tight {{ end }}">{{ .Title }}</a>
+				<a href="{{ .URL }}" class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l tracked-tight {{ if eq .Title $thisTitle }}source_sans_proregular{{ end }}">{{ .Title }}</a>
 			</li>
 		{{ end }}	
 	{{ end }}			
 	</ul>
 </nav>
+
+
+<!--<a href="{{ .URL }}" class="">{{ .Title }}</a>-->

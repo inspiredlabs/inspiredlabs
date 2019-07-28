@@ -32,8 +32,8 @@
 					      	<time class="black b">{{- dateFormat " 2006-01-01" .Date -}}</time>
 				      	</a>
 			    			<hr class="ba bw1 mb0 b--black-10"/>
-				      	<details class="details" open>
-				      		<summary class="list">
+				      	<div class="details" open>
+				      		<div class="list">
 				      			<header class="fl w-100 pr4-ns">
 				      				<!--a id="blog-logo" href="{{ .Site.BaseURL}}">
 				      				    {{ if .Site.Params.logo }}
@@ -52,7 +52,7 @@
 				      			<p class="f4-ns mt0-ns">
 			      					<span class="source_sans_prosemibold">{{ .Params.assignment}}</span>
 			      				</p>
-		      				</summary>
+		      				</div>
 							    {{ .Content }}
 		
 							    <!--footer class="post-footer">
@@ -65,7 +65,7 @@
 							    {{ end }}
 							
 							    </footer-->
-			      		</details>
+			      		</div>
 			       </div><!-- /fr outline -->
 		      </div><!-- /w-two-thirds -->
 		    </div><!-- /ph2-ns -->
@@ -80,6 +80,6 @@
 
 {{ partial "script.html" .}}
 
-{{ partial "sticky" . }}
+<script>/*{{ partial "sticky" . }}*/</script>
 </body>
 </html>

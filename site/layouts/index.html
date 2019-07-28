@@ -18,21 +18,22 @@
         </div>
     </div>
 </header>-->
-	<div id="newList">
-		<ul class="list">
-		{{ range .Data.Pages.ByWeight }}
-			{{ if eq .Type  "post" }}
-				{{ .Render "post"}}
-			{{ end }}
+
+<div id="newList">
+	<ul class="list">
+	{{ range .Data.Pages.ByWeight }}
+		{{ if eq .Type  "post" }}
+			{{ .Render "post"}}
 		{{ end }}
-		</ul>
-	</div>
+	{{ end }}
+	</ul>
+</div>
 
 
 {{ partial "footer.html" .}}
 
 {{ partial "script.html" .}}
 
-<!--{{ partial "sticky" . }}-->
+<!--<script>/*{{ partial "sticky" . }}*/</script>-->
 </body>
 </html>

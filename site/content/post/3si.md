@@ -39,25 +39,22 @@ Marketing Brochure
 -->
 
 ### Communicating values
-Developing CRM solutions for not‑for‑profit companies, can be complicated. 3Si needed someone technical make design improvements, yet follow the brand spirit. 
+Developing a CRM platform can be complicated. 3Si needed someone technical to make design improvements, yet inkeeping with 20 years of brand heritage. 
 
-### The end of misunderstanding
-By rewriting the [Marketing Brochure](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) for an audience of non-technical people we eliminated jargon. This helped improve communication accross the company.
+### Jargon-buster
+By rewriting their [Brochure](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) for an audience of non-technical people, I concentrated on benefits, without jargon. This improved communication across product, throughout the company.
 
-After intensive research the marketing material was produced over a 7 week focus period. 
+After intensive research, the marketing material was produced with laser-focus over 7 weeks. 
 
-### Brand spirit
-This material has an emphasis on clarity. The visual language of [OM.Net](http://inspiredlabs.co.uk/3-si.com/index.html#modules) was designed to be cohesive across print and desktop, yet optimised for mobile. This echoed what was already existing.
+### Brand heritage, updated
+The new material has an emphasis on clarity. The visual language of [OM.Net](http://inspiredlabs.co.uk/3-si.com/index.html#modules) was designed to be cohesive across print and desktop, yet optimised for mobile in harmony with what is already in circulation.
 
 A simple landing page was tested to maintain attention. 
 
-With a colour‑blind theme, clear navigation and an emphasis on readability: people can find the information they need. This helps make the right purchase decision.
+With a colour‑blind theme, clear navigation and an emphasis on readability: people can find the information they need. Helping make the right purchase decision.
 
 ### Template design
-Each template was designed to reduce production time and reduce unnecessary decision making. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) material contain this original content. 
-
-
-
+Each template was designed to reduce production time and unnecessary decision making. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) material contain the same original content. 
 
 
 <!--

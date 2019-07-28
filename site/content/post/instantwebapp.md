@@ -1,8 +1,8 @@
 ---
 date: 2019-02-03T15:51:47.060Z
 title: InstantWebapp
-description: Web design to fit the world of apps
-assignment: Frontend Developer for Boutiques & SMEs.
+description: Web design for a world of apps
+assignment: Frontend Developer for SME boutiques
 ---
 <!--From Summer&nbsp;2011-->
 
@@ -10,13 +10,17 @@ assignment: Frontend Developer for Boutiques & SMEs.
 
 ## Philosophy
 
-### Designed to reduce investment risk
+### Reduce investment risk
 
-Intended for entrepreneurs who want to control costs with risk-free content delivery to their customer's devices.
+Intended for entrepreneurs to control their costs, and guarantee content delivery to their customer's devices.
 
-#### Good design is responsible
+#### Responsible design
 
-Meeting business goals, controlling costs and avoiding gotchas does not mean undesirable, generic design work. Delighting the user is straightforward with design constraints that apply to many organisations. Serving as a foundation, templates can advance the development of marketing campaigns, content and aesthetics.
+Meeting business goals, controlling costs and avoiding gotchas does not mean generic, undesirable websites. Delighting the user is easier when the same constraints apply across organisations. Design templates lay the groundwork. 
+
+Advancing marketing campaigns, content and aesthetics on top of a sound foundation is better than spending on reinvention.
+
+ 
 
 ### Characteristics
 

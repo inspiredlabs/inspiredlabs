@@ -8,8 +8,8 @@
 	{{ $thisTitle := .Title }}
 	{{ range .Site.Pages.ByWeight }}
 		{{ if eq .Type  "post" }}
-			<li>
-				<a href="{{ .URL }}" style="{{ if eq .Title $thisTitle }} color: rgba(0, 0, 0, 0.7); {{ end }}">{{ .Title }}</a>
+			<li class="fl w-100">
+				<a href="{{ .URL }}" class="{{ if eq .Title $thisTitle }} no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l tracked-tight {{ end }}">{{ .Title }}</a>
 			</li>
 		{{ end }}	
 	{{ end }}			

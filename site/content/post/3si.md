@@ -2,7 +2,7 @@
 date: 2019-07-27T17:23:55.364Z
 title: CRM platform
 description: 'Jargon-busting champion for the end-user '
-assignment: 'UX Designer & Content Marketer – 3Si, Stoke&#8209;on&#8209;Trent'
+assignment: 'UX Designer & Content Marketer – 3Si, Stoke-on-Trent'
 ---
 {{<flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
 
@@ -21,7 +21,9 @@ Produced a high performance static site and a fresh perspective on their designs
 > how things flow and the way the message is conveyed to the user.  
 > – [Chris Sinclair](http://inspiredlabs.co.uk/3-si.com/) Managing Director, 3Si
 
-<!--### Explore
+<!--
+non breaking hyphen: &#8209;
+### Explore
 
 Marketing Brochure
 

@@ -1,18 +1,21 @@
 ---
 date: 2019-07-27T17:23:55.364Z
 title: CRM platform
-description: '3Si, Mensa & National Farmer''s Union'
-assignment: UX design & content marketing
+description: 'Jargon-busting champion for the end-user '
+assignment: 'UX Designer & Content Marketer – 3Si, Stoke&#8209;on&#8209;Trent'
 ---
-{{<flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+{{<flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
 
 ### Who are 3Si, and what they do?
 
-Derived from their surname Chris Sinclair, Pete Sinclair, and their Father – a silent partner, [3Si](http://inspiredlabs.co.uk/3-si.com/) sell their CRM application to handle volumes of membership and subscription data. Their flagship product is called  [OM.Net](http://inspiredlabs.co.uk/3-si.com/#modules).
+Derived from their surname Chris Sinclair, Pete Sinclair, and their Father – a silent partner, [3Si](http://inspiredlabs.co.uk/3-si.com/) sell their CRM application to handle volumes of membership and subscription data. Their flagship product is called [OM.Net](http://inspiredlabs.co.uk/3-si.com/#modules). 
+
+### Client work
+The [OM.Net](http://inspiredlabs.co.uk/3-si.com/#clients) platform is for Nonprofit Organisations such as Mensa, The National Farmer's Union and Trading Standards. I was also concerned with the web platform for The Pathological Society.
 
 ### Legacy of the project
 
-Produced a high performance static site and a fresh perspective on their marketing material, whilst honouring what is already in use.
+Produced a high performance static site and a fresh perspective on their designs, whilst honouring what is already in use.
 
 > Scott fully understands the concepts of design…  
 > how things flow and the way the message is conveyed to the user.  
@@ -30,7 +33,7 @@ Marketing Brochure
 
 # About the production in detail
 
-## UX designer | Template design for other designers | Writing marketing material
+## UX designer | Template design for thier designers | Writing marketing material
 -->
 
 ### Communicating values

@@ -10,6 +10,10 @@ title = "Locality"
   [[Params.description]]
     description = "A description of this website"
 
+  [[Params.assignment]]
+    assignment = "Designer & Frontend Developer"
+
+
   [[Params.links]]
     title = "Email"
     url = "mailto:alan.scott.phillips@pm.me"

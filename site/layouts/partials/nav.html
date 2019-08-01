@@ -3,50 +3,60 @@
 </style>-->
 <!--Called on: single.html and index.html-->
 <nav class="w-30 fixed z-999 mt0 pa1 top-0 white right-0"><!--bg-black-->
-	<ul class="list source_sans_prolight"><!-- fl w-100 mb4 pa0 data-gumshoe ttu tracked -->
-		
-		<!-- `{{ if eq (relURL .URL) ("/" | safeHTML) }}<hr/>{{ end }}`: discourse.gohugo.io/t/how-to-check-for-home-page/149/17 -->
-		<li class="fl w-100 h3">
-			{{ if .IsHome }}
-			<form class="ml3 bb bw1 b--light-gray w-70">
-			  <input id="searchEntry" class="input-reset o-40 pl0 bn bg-transparent bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l" type="text" aria-describedby="search" placeholder="Search" oninput="inputUpdate(value);"/>
-			  
-			  <!-- 
-
-			  search:
-			  https://listjs.com/
-			  
-			  redirect: 			  
-			  "netlify" "cms" "redirect" post: https://www.netlify.com/docs/redirects/
-			  
-			  admin: app.netlify.com/sites/hungry-wozniak-e915f8/overview
-			  
-			  classes: http://tachyons.io/docs/table-of-styles/
-
-			  -->
-			  
-			  <!-- analytics?
-			  - demo.openwebanalytics.com
-			  - matomo.org/faq
-			  - "goal" customVar: stackoverflow.com/questions/10325453/track-form-input-in-google-analytics-goal
-			  -->
-			</form>
-			{{ end }}
-		</li>
+<!-- `{{ if eq (relURL .URL) ("/" | safeHTML) }}<hr/>{{ end }}`: discourse.gohugo.io/t/how-to-check-for-home-page/149/17 -->
+{{ if .IsHome }}
+<ul class="list source_sans_prolight ttu"><!-- fl w-100 mb4 pa0 data-gumshoe ttu tracked -->
+	<li class="fl w-100 ttn"><!-- h3 -->
+		<form class="ml3 bb bw1 b--light-gray w-70 relative">
+			<button value="clear" class="absolute right-0 bn z-1 bg-transparent pointer " onclick="searchEntryZero();resetArticleSearch();" value=""><span class="input-reset pr0 bn bg-transparent bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l o-30">&#215;</span>
+			</button>
+			<!--
+			<svg viewBox="112 -112 32 32" class="bg-transparent dim pointer w-50" >
+			  <use xlink:href="#clear"></use>
+			</svg>
+			-->
+		  <input id="searchEntry" class="input-reset o-40 pl0 bn bg-transparent bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l" type="text" aria-describedby="search" placeholder="Search" oninput="inputUpdate(value);" />
+		</form>
+	</li>
 	
-		<!-- Understand scope: youtube.com/watch?v=juSnHsCX9RU -->
-		{{ $thisTitle := .Title }}
-		{{ range .Site.Pages.ByWeight }}
-			{{ if eq .Type  "post" }}
-				<li class="fl w-100">
-					<a href="{{ .URL }}" class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l tracked-tight {{ if eq .Title $thisTitle }}source_sans_proregular{{ end }}">{{ .Title }}</a>
-				</li>
-			{{ end }}	
-		{{ end }}			
-	</ul>
+	<li class="fl w-100">
+	  <a href="javascript:void()" class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l tracked-tight"
+	  onclick="articleSearch.search(searchString = 'OpenCV');">AI</a><!-- AI&thinsp;&amp;&thinsp;ML -->
+	</li>
+	<li class="fl w-100">
+	  <a href="javascript:void()" class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l tracked-tight"
+	  onclick="articleSearch.search(searchString = 'UX');">UX</a><!-- UI&thinsp;&amp;&thinsp;UX --><!--https://stackoverflow.com/questions/2760784/how-to-calculate-css-letter-spacing-v-s-tracking-in-typography-->
+	</li> 
+	<li class="fl w-100">
+	  <a href="javascript:void()" class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l"
+	  onclick="articleSearch.search(searchString = 'Visual');">Visual</a> 
+	</li>
+	<li class="fl w-100">
+	  <a href="javascript:void()" class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l"
+	  onclick="articleSearch.search(searchString = 'Award');">Awards</a> 
+	</li>
+	<li class="fl w-100">
+	  <a class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l" href="#portfolio">Portfolio</a> 
+	</li>
+	<li class="fl w-100 pb6">
+	  <a class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l" href="#contact">Contact</a> 
+	</li>
+
+</ul>
+{{ end }}
+		
+<!-- Understand scope: youtube.com/watch?v=juSnHsCX9RU -->
+{{ if eq .Type  "post" }}
+<ul class="list source_sans_prolight ttn">
+{{ $thisTitle := .Title }}
+{{ range .Site.Pages.ByWeight }}
+	{{ if eq .Type  "post" }}
+		<li class="fl w-100">
+			<a href="{{ .URL }}" class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l tracked-tight {{ if eq .Title $thisTitle }}source_sans_proregular{{ end }}">{{ .Title }}</a>
+		</li>
+	{{ end }}	
+{{ end }}
+</ul>
+{{ end }}
+	
 </nav>
-<!--<a href="{{ .URL }}" class="">{{ .Title }}</a>-->
-
-
-
-

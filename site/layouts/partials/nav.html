@@ -9,7 +9,27 @@
 		<li class="fl w-100 h3">
 			{{ if .IsHome }}
 			<form class="ml3 bb bw1 b--light-gray w-70">
-			  <input id="searchEntry" class="input-reset o-40 pl0 bn bg-transparent bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l" type="text" aria-describedby="search" placeholder="Search" oninput="inputUpdate(value);"/><!-- analytics? -->
+			  <input id="searchEntry" class="input-reset o-40 pl0 bn bg-transparent bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l" type="text" aria-describedby="search" placeholder="Search" oninput="inputUpdate(value);"/>
+			  
+			  <!-- 
+
+			  search:
+			  https://listjs.com/
+			  
+			  redirect: 			  
+			  "netlify" "cms" "redirect" post: https://www.netlify.com/docs/redirects/
+			  
+			  admin: app.netlify.com/sites/hungry-wozniak-e915f8/overview
+			  
+			  classes: http://tachyons.io/docs/table-of-styles/
+
+			  -->
+			  
+			  <!-- analytics?
+			  - demo.openwebanalytics.com
+			  - matomo.org/faq
+			  - "goal" customVar: stackoverflow.com/questions/10325453/track-form-input-in-google-analytics-goal
+			  -->
 			</form>
 			{{ end }}
 		</li>

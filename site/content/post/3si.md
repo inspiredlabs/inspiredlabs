@@ -4,7 +4,7 @@ title: CRM platform
 description: 'Jargon-busting champion for the end-user '
 assignment: 'UX Designer & Content Designer – 3Si, Stoke-on-Trent'
 ---
-### Content without boundaries{{<flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+{{<flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
 
 ### Who are 3Si, and what they do?
 

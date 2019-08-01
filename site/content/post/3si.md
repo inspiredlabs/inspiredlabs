@@ -2,7 +2,7 @@
 date: 2019-07-27T17:23:55.364Z
 title: CRM platform
 description: 'Jargon-busting champion for the end-user '
-assignment: 'UX Designer & Content Marketer – 3Si, Stoke-on-Trent'
+assignment: 'UX Designer & Content Designer – 3Si, Stoke-on-Trent'
 ---
 {{<flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
 
@@ -39,14 +39,14 @@ Marketing Brochure
 -->
 
 ### Communicating values
-Developing a CRM platform can be complicated. 3Si needed someone technical to make design improvements, yet inkeeping with 20 years of brand heritage. 
+Developing a CRM platform can be complicated. 3Si needed someone technical to make design improvements, yet inkeeping with 20 years of heritage. 
 
-### Jargon-buster
-By rewriting their [Brochure](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) for an audience of non-technical people, I concentrated on benefits, without jargon. This improved communication across product, throughout the company.
+### Content without boundries
+By rewriting their [Brochure](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) for an audience of non-technical people, I concentrated on benefits, without jargon. This improved communication throughout the company because beforehand the product did not use a glossary.
 
 After intensive research, the marketing material was produced with laser-focus over 7 weeks. 
 
-### Brand heritage, updated
+### Content without boundries
 The new material has an emphasis on clarity. The visual language of [OM.Net](http://inspiredlabs.co.uk/3-si.com/index.html#modules) was designed to be cohesive across print and desktop, yet optimised for mobile in harmony with what is already in circulation.
 
 A simple landing page was tested to maintain attention. 

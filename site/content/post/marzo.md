@@ -1,23 +1,32 @@
 ---
-title: Marzò
 date: 2019-02-03T15:49:50.219Z
+title: Marzò
 description: Intelligent systems for traditional farming
-assignment: ML, OpenCV, Python. Mobile first eCommerce, static site on NetlifyCMS.
+assignment: 'Designer, Frontend Developer & ML Prototyping in OpenCV '
 ---
 
 <!--Design & Development. Winter&nbsp;2017 - Spring&nbsp;2019
   Marzò-->
-
+<!--
 ### Marzò are interested in technology that can improve their fledgling business.
-
 #### The problem with quality control
 Automating farm activities isn't always viable, and still relies on a hierarchy of farmhands.
-
 Monitoring people's output is often met with resistance. So to improve precision harvesting and simplify the rules, algorithmic comparison provides a cost-effective way to monitor yeilds. By prototyping with OpenCV, the business is exploring the viability of automation and reaping the benefits.
+-->
+
+
 
 #### Communicating family values
-A warm, welcoming website appeals to food connoisseurs and locals looking for the best organic produce. This mobile‑first site uses powerful, responsive tools to generate nible pages.
+A warm, welcoming website clear for local people looking for fresh, organic produce. Yet appealing to food connoisseurs, even overseas.
 
-For manageable styling: Tachyons adapts to marketing needs – without growing the underlying codebase. It works by compounding utility classes for each page element. Supplemental classes can easily be written to extend the defaults and works nicely with blazy for progressive image handling.
+#### Powerful tools for nimble pages
 
-HUGO, a static site generator producing flat file inside NetlifyCMS. This puts content firmly in the hands of authors to produce rich, multilingual content – all without a bloated database layer.
+This mobile first eCommerce site runs via NetlifyCMS, an author GUI. A static site generator called HUGO produces flat files without a database. 
+
+#### Manageable styling
+Tachyons adapts to design needs. By patching existing classes we fix the libraries limitations. Consciously adding utility classes keeps things manageable, while extending default behavior. 
+
+These work with Javascript for accessibility and plugins like blazy.js for image handling.
+
+This combination places content in the hands of the author. Resulting in lightweight, rich, multilingual content – without bloat. 
+

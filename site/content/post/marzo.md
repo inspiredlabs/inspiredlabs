@@ -2,7 +2,7 @@
 date: 2019-02-03T15:49:50.219Z
 title: Marzò
 description: Intelligent systems for traditional farming
-assignment: 'Designer, Frontend Developer & ML Prototyping in OpenCV '
+assignment: 'Designer, Frontend Developer & ML with OpenCV'
 ---
 
 <!--Design & Development. Winter&nbsp;2017 - Spring&nbsp;2019

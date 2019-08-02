@@ -2,9 +2,8 @@
 date: 2019-02-03T15:49:50.219Z
 title: Marzò
 description: Intelligent systems for traditional farming
-assignment: Designer, Frontend Developer &  OpenCV ML
+assignment: Graphic Designer & Developer
 location: Italy
-
 ---
 
 <!--Design & Development. Winter&nbsp;2017 - Spring&nbsp;2019

@@ -1,0 +1,22 @@
+<!--<style>a:-webkit-any-link {text-decoration: none;cursor: pointer;}</style>-->
+<!-- image -->
+<a class="mb5 db no-underline white-80 hover-white" href="{{ .Get `selectCell` }}" style="border:3px solid {{ .Get `color` }};">
+	<!--	https://flickity.metafizzy.co/api.html#selectcell		-->
+	<figure class="w-100 ma0 bg-black-80"><!--<figure {{ if isset .Params "class" }}class="{{ index .Params "class" }}"{{ end }}>-->
+	    {{ if isset .Params "link"}}<a href="{{ index .Params "link"}}">{{ end }}
+	        <img class="b-lazy no-select w-100 ma0" src="data:image/gif,GIF89a,AAAAAAE" data-src="{{ index .Params "src" }}" {{ if or (isset .Params "alt") (isset .Params "caption") }}alt="{{ if isset .Params "alt"}}{{ index .Params "alt"}}{{else}}{{ index .Params "caption" }}{{ end }}"{{ end }} />
+	    {{ if isset .Params "link"}}</a>{{ end }}
+	    {{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
+	    <figcaption class="pa3">{{ if isset .Params "title" }}
+	        <span class="">{{ index .Params "title" }}</span>{{ end }}
+	        {{ if or (isset .Params "caption") (isset .Params "attr")}}<p>
+	        {{ index .Params "caption" }}
+	        {{ if isset .Params "attrlink"}}<a href="{{ index .Params "attrlink"}}"> {{ end }}
+	            {{ index .Params "attr" }}
+	        {{ if isset .Params "attrlink"}}</a> {{ end }}
+	        </p> {{ end }} 
+	    </figcaption>
+	    {{ end }}
+	</figure>
+</a>
+<!-- image -->

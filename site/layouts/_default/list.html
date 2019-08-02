@@ -1,9 +1,0 @@
-<div id="content">
-	<ul class="list">
-	{{ range .Data.Pages.ByWeight }}
-		{{ if eq .Type  "post" }}
-			{{ .Render "post"}}
-		{{ end }}
-	{{ end }}
-	</ul>
-</div>

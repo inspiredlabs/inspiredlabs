@@ -8,7 +8,7 @@ title = "Inspired Labs"
 
 [Params]
   [[Params.description]]
-    description = "Scott Phillips, Design Generalist"
+    description = "Scott Phillips is a Designer & Frontend Developer"
 
   [[Params.assignment]]
     assignment = "Designer & Frontend Developer"

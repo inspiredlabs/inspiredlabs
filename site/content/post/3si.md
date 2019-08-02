@@ -2,7 +2,8 @@
 date: 2019-07-27T17:23:55.364Z
 title: CRM platform
 description: 'Jargon-busting champion for the end-user '
-assignment: 'UX Designer & Content Designer – 3Si, Stoke-on-Trent'
+assignment: UX Designer & Content Designer
+location: 3Si, Stoke-on-Trent
 ---
 {{<flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
 

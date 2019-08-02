@@ -2,7 +2,8 @@
 	<data class="meta dn">
 		{{ .Title }}
 		{{ .Description }}
-		{{ .Params.assignment }}		
+		{{ .Params.assignment }}
+		{{ .Params.location }}		
 		{{ .PlainWords }}
 	</data>
 
@@ -44,8 +45,11 @@
 		      				</h2>
 		      			</header>
 		      			<p class="f4-ns mt0-ns">
-		      					<span class="source_sans_prosemibold">{{ .Params.assignment }}</span><!-- | safeHTML-->
-		      				</p>
+		      				<span class="source_sans_prosemibold">{{ .Params.assignment }}</span>
+		      				{{ if .Params.location }}
+		      				<span class="source_sans_probold">&hairsp;—&nbsp;{{ .Params.location }}</span><!-- | safeHTML-->
+		      				{{ end }}
+		      			</p>
       				</summary>
 					    {{ .Content }}
 

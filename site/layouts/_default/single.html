@@ -5,11 +5,13 @@
 	<ul class="list">
 	
 		<li class='post-holder'>
-			<!--data class="meta dn">
-				{{ .Title }}
-				{{ .Description }}
-				{{ .PlainWords }}
-			</data-->
+		<!--<data class="meta dn">
+			{{ .Title }}
+			{{ .Description }}
+			{{ .Params.assignment }}
+			{{ .Params.location }}		
+			{{ .PlainWords }}
+		</data>-->
 		
 		<!--{{ if .Params.class }}
 		<article class="{{ .Params.class }}">
@@ -49,7 +51,10 @@
 				      				</h2>
 				      			</header>
 				      			<p class="f4-ns mt0-ns">
-			      					<span class="source_sans_prosemibold">{{ .Params.assignment}}</span>
+				      				<span class="source_sans_prosemibold">{{ .Params.assignment }}</span>
+				      				{{ if .Params.location }}
+				      				<span class="source_sans_probold">&hairsp;—&nbsp;{{ .Params.location }}</span><!-- | safeHTML-->
+				      				{{ end }}
 			      				</p>
 		      				</div>
 							    {{ .Content }}

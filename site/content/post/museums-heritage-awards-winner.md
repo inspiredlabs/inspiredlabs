@@ -4,7 +4,8 @@ title: M+H Awards Winner
 description: >-
   Children’s Centre for Civilisation & Creativity by Mallinson's Architects &
   Engineers
-assignment: 'Designer, Animator & Mentor – Atacama Ltd, Oxford'
+assignment: Designer, Animator & Mentor
+location: Atacama Ltd, Oxford
 ---
 <!-- date: Winter&nbsp;2010 - Winter&nbsp;2011 -->
 
@@ -16,10 +17,11 @@ The Children’s Centre for Civilisation & Creativity, Heliopolis, Egypt endured
 
 Mallinson's winning the Museum + Heritage award in 2012 because of well organised design. Together, collaborators solved problems outside Egypt so the holistic design became a reality.
 	      		
-{{<figure src="https://inspiredlabs.co.uk/images/mallinson-01.jpg" title="30m LED wall interior">}}
-	
+{{<flickity src="https://inspiredlabs.co.uk/images/mallinson-01.jpg" title="30m LED wall interior" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}	
 
-<!--## Large-scale Graphics | 2D/3D Animation | Game design | Character artwork
+<!--
+{{<figure src="https://inspiredlabs.co.uk/images/mallinson-01.jpg" title="30m LED wall interior">}}
+## Large-scale Graphics | 2D/3D Animation | Game design | Character artwork
 -->
 
 ### Beyond content creation
@@ -32,4 +34,4 @@ Appointed to create mixed digital media, including games, touch interfaces and a
 
 Throughout the project, I had the privilege of mentoring Junior artists. We produced multi-format visuals on deadline for the opening ceremony.
 
-{{<figure src="https://inspiredlabs.co.uk/images/mallinson-02.jpg" title="30m LED wall exterior">}}
+{{<flickity src="https://inspiredlabs.co.uk/images/mallinson-02.jpg" title="30m LED wall exterior" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}

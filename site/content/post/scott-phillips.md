@@ -2,7 +2,8 @@
 date: 2019-02-13T17:29:28.349Z
 title: Scott Phillips
 description: Fearless creative for those who innovate
-assignment: Graphic Design & Frontend Development
+assignment: Graphic Designer & Developer
+
 ---
 Meeting business requirements for [National Geographic](https://inspiredlabs.co.uk/j/), [Siemens](https://vimeo.com/124142652), [Bowers & Wilkins](https://vimeo.com/124144694), and ambitious startups.
 

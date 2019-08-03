@@ -1,0 +1,3 @@
+[submodule "site/themes/ga-hugo-theme"]
+	path = site/themes/ga-hugo-theme
+	url = https://github.com/giraffeacademy/ga-hugo-theme.git

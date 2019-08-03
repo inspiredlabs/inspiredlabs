@@ -1,9 +1,48 @@
 {{ partial "head" . }}
 {{ partial "nav.html" . }}
 
+
+{{/* partial "header" (dict "Kind" .Kind "Template" "List") }}
+{{ .Content }}
+{{ range .Pages }}
+<div style="border: 1px solid black; margin:10px; padding:10px; ">
+	<div style="font-size:20px;">
+		<a href="{{.URL}}">{{.Title}}</a>
+	</div>
+	<div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+
+	<div style="color:grey; font-size:16px;">{{ if .Params.tags }}<strong>Tags:</strong>
+		{{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{end}}
+	{{end}}
+	</div>
+
+	<div style="color:grey; font-size:16px;">{{ if .Params.categories }}<strong>Categories:</strong>
+		{{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{end}}
+	{{end}}
+	</div>
+
+	<div style="color:grey; font-size:16px;">{{ if .Params.moods }}<strong>Moods:</strong>
+		{{range .Params.moods}}<a href="{{ "/moods/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{end}}
+	{{end}}
+	</div>
+
+	<p style="font-size:18px;">{{.Summary}}</p>
+</div>
+{{ end */}}
+
+
 <div id="content">
 	<ul class="list">
+		{{ range .Data.Pages.ByWeight }}
+
 			<li class="post-holder"><!-- Begin: li.html -->
+				<data class="meta dn">
+					{{ .Title }}
+					{{ .Description }}
+					{{ .Params.assignment }}
+					{{ .Params.location }}		
+					{{ .PlainWords }}
+				</data>
 			
 			<article class="mt5"><!-- id="" -->
 				<section class="cf w-100 pv3 f4 ph3 ph4-ns">
@@ -11,18 +50,16 @@
 					  <div class="ph2-ns">
 					    <div class="fl w-100 w-70-ns pr4"><!-- w-two-thirds -->
 					      <div class="pv4 fr w-100 w-90-m w-80-l"><!-- outline bg-black-05 truncate no-wrap -->
-					      	
-					      	<a href="../../" class="no-underline dim db f6 ttu tracked gray source_sans_prolight"><!--{{.Site.Home}}-->
-					      		<svg style="-webkit-transform: translate3d(0,0,0);" viewBox="-356 234.3 128 128" class="no-select pr3 h07 gray">
-					      			<use xlink:href="#home"></use>
-					      		</svg>
-					      		<!--span class="pr3">{{ .Site.Title }}</span-->
-					      		<time class="black b">{{- dateFormat " 2006-01-01" .Date -}}</time>
+					      	<a href="{{ .Permalink }}" class="no-underline dim db f6 ttu tracked gray source_sans_prolight">
+					      		<svg style="-webkit-transform: translate3d(0,0,0);" viewbox="0 0 482 482" class="no-select pr3 h07 gray">
+					      			<use xlink:href="#url"></use>
+					      		</svg>     	
+					      		<!--span class="pr3">{{ .Permalink }}</span-->
+						      	<time class="black b">{{- dateFormat " 2006-01-01" .Date -}}</time>
 					      	</a>
-					      	
 				    			<hr class="ba bw1 mb0 b--black-10"/>
-					      	<!--<details class="details">-->
-					      		<span class="list"><!-- summary -->
+					      	<details class="details">
+					      		<summary class="list">
 					      			<header class="fl w-100 pr4-ns">
 					      				<!--a id="blog-logo" href="{{ .Site.BaseURL}}">
 					      				    {{ if .Site.Params.logo }}
@@ -44,17 +81,19 @@
 					      				<span class="source_sans_probold">&hairsp;—&nbsp;{{ .Params.location }}</span><!-- | safeHTML-->
 					      				{{ end }}
 					      			</p>
-			      				</span><!-- /summary -->
+			      				</summary>
 								    {{ .Content }}
 			
-				      		<!--</details>-->
+				      		</details>
 				       </div><!-- /fr outline -->
 			      </div><!-- /w-two-thirds -->
 			    </div><!-- /ph2-ns -->
 			  </div><!-- /mw9 center ph3-ns -->
 				</section><!-- /cf w-100 pv3 f4 ph3 ph4-ns --> 
 			</article>
-		</li><!-- /li.html -->
+			</li><!-- /li.html -->
+			
+		{{ end }}
 	</ul>
 </div>
 {{ partial "footer" . }}

@@ -1,8 +1,4 @@
-<!--<style>
-	nav ul li a { color: rgba(170, 170, 170, 1); }
-</style>-->
-<!--Called on: single.html and index.html-->
-<nav class="w-30 fixed z-999 mt0 pa1 top-0 white right-0"><!--bg-black-->
+<nav class="w-30 fixed z-999 mt0 pa1 top-0 white right-0 overflow-y overflow-x-hidden h-100 vh-100"><!--bg-black-->
 <!-- `{{ if eq (relURL .URL) ("/" | safeHTML) }}<hr/>{{ end }}`: discourse.gohugo.io/t/how-to-check-for-home-page/149/17 -->
 {{ if .IsHome }}
 <ul class="list source_sans_prolight ttu"><!-- fl w-100 mb4 pa0 data-gumshoe ttu tracked -->
@@ -35,9 +31,9 @@
 	  <button class="pointer bn bg-transparent bg-animate ttu w-100 tl pa3 border-box f3 f2-ns f3-m f2-l"
 	  onclick="articleSearch.search(searchString = 'Award');">Awards</button> 
 	</li>
-	<li class="fl w-100">
+	<!--li class="fl w-100">
 	  <a class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l" href="#portfolio">Portfolio</a> 
-	</li>
+	</li-->
 	<li class="fl w-100">
 	  <a class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l" href="#contact">Contact</a> 
 	</li>
@@ -48,19 +44,21 @@
 
 </ul>
 {{ end }}
-		
-<!-- Understand scope: youtube.com/watch?v=juSnHsCX9RU -->
-{{ if eq .Type  "post" }}
+
+<!-- https://discourse.gohugo.io/t/how-to-check-if-not-homepage/9086 -->
+{{if not .IsHome}}
 <ul class="list source_sans_prolight ttn">
-{{ $thisTitle := .Title }}
-{{ range .Site.Pages.ByWeight }}
-	{{ if eq .Type  "post" }}
-		<li class="fl w-100">
-			<a href="{{ .URL }}" class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l tracked-tight {{ if eq .Title $thisTitle }}source_sans_proregular{{ end }}">{{ .Title }}</a>
+	<li class=""><!-- fl 100 -->
+		<a href="/" class="no-underline bg-animate flex items-center pa3 pb0 border-box f3 f2-ns f3-m f2-l tracked-tight ttu">Home</a>
+	</li>
+	{{ $thisTitle := .Title }}
+	{{ range .Site.Pages.ByWeight }}
+		<li class=""><!-- fl 100 -->
+			<a href="{{ .URL }}" class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l tracked-tight {{ if eq .Title $thisTitle }}source_sans_proregular{{ end }}">{{ .Title }}</a><!-- pa3 -->
 		</li>
-	{{ end }}	
-{{ end }}
+	{{ end }}
 </ul>
 {{ end }}
+<!-- Understand scope: youtube.com/watch?v=juSnHsCX9RU -->
 	
 </nav>

@@ -72,3 +72,20 @@
 </ul>
 {{ end }}
 </nav>
+
+<script>{{/*
+<nav class="w-100 fixed z-999 mt0 pa1 top-0 white"><!--bg-black-->
+	<!-- Understand scope: https://www.youtube.com/watch?v=juSnHsCX9RU -->
+	{{ $thisTitle := .Title }}
+	{{ range .Site.Pages.ByWeight }}
+		{{ if eq .Type  "post" }}
+		<ul class="list">
+			<li>
+				<a href="{{ .URL }}" style="{{ if eq .Title $thisTitle }} color: rgba(0, 0, 0, 0.7); {{ end }}">{{ .Title }}</a>
+			</li>
+		</ul>
+		{{ end }}	
+	{{ end }}			
+</nav>
+*/}}
+</script>

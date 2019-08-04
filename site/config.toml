@@ -1,4 +1,5 @@
 #baseurl = "/" #{{ .Site.BaseURL }} "./" local only
+relativeURLs = "true"
 languageCode = "en-gb" #Initial configuration reset
 title = "Inspired Labs"
 #disableKinds = ["home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]#"page",

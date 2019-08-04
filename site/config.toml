@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "./" #{{ .Site.BaseURL }} only works with: "./"
 languageCode = "en-gb" #Initial configuration reset
 title = "Inspired Labs"
 #disableKinds = ["home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]#"page",

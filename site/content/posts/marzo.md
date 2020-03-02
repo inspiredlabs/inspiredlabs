@@ -1,4 +1,5 @@
 ---
+draft: true
 date: 2019-02-03T15:49:50.219Z
 title: Marzò
 description: Intelligent systems for traditional farming

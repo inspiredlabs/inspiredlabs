@@ -1,4 +1,4 @@
-<nav class="w-25 w-30-l fixed z-999 mt0 pa1 top-0 white right-0 overflow-y overflow-x-hidden h-100 vh-100"><!--bg-black-->
+<nav class="w-25 w-30-l fixed z-5 mt0 pa1 top-0 white right-0 overflow-y overflow-x-hidden h-100 vh-100"><!--bg-black-->
 <!-- `{{ if eq (relURL .URL) ("/" | safeHTML) }}<hr/>{{ end }}`: discourse.gohugo.io/t/how-to-check-for-home-page/149/17 -->
 {{ if .IsHome }}
 <ul class="list source_sans_prolight"><!-- fl w-100 mb4 pa0 data-gumshoe ttu tracked -->
@@ -28,7 +28,7 @@
 	  onclick="articleSearch.search(searchString = 'Contact');">Contact</button> 
 	</li>
 	<li class="fl w-100">
-	  <a class="no-underline bg-animate flex items-center pa3 border-box f3 f2-ns f3-m f2-l" href="#portfolio">Portfolio</a> 
+    <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 border-box f3 f2-ns f3-m f2-l" id="menuOpen" aria-expanded="">Portfolio</button>
 	</li>
 	<li class="fl w-100">
 	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 border-box f3 f2-ns f3-m f2-l"

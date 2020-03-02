@@ -27,7 +27,7 @@
 						      	<time class="black b">{{- dateFormat " 2006-01-01" .Date -}}</time>
 					      	</a>
 				    			<hr class="ba bw1 mb0 b--black-10"/>
-					      	<details class="details">
+                  <details class="details" {{ if .Params.open }}open='open' {{ end }}>
 					      		<summary class="list">
 					      			<header class="fl w-100 pr4-ns">
 					      				<!--a id="blog-logo" href="{{ .Site.BaseURL}}">

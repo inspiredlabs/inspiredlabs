@@ -5,14 +5,11 @@
 
 /* fade in image when loaded */
 .carousel-cell {  
-  margin-right: /* 10px */;
+  /*margin-right: 10px */;
   background: darkcyan;
   counter-increment: carousel-cell;
   transition: opacity 0.4s;
-  
 }
-
-
 
 .carousel-cell.flickity-bg-lazyloaded,
 .carousel-cell.flickity-lazyerror {
@@ -20,10 +17,9 @@
 }
 
 .carousel-nav .carousel-cell {  
-  margin-right: /* 10px */;
+  /*margin-right: 10px */;
   background: darkgreen;
-  counter-increment: carousel-cell;
-  border:2px solid red ;
+  counter-increment: carousel-cell;  
 }
 
 /* cell number */
@@ -31,12 +27,10 @@
   display: block;
   text-align: center;
   content: counter(carousel-cell);
-  line-height: 5rem;
-  font-size: 5rem;
+  /* line-height: 5rem; */
+  /* font-size: 5rem; */
   color: white;
 }
-
-
  
   button[aria-expanded="true"] {
   /* https://codepen.io/inspiredlabs/pen/ydadxB
@@ -46,7 +40,6 @@
   */
   
 }
-
 
 #menu {
   background: #eee;
@@ -58,8 +51,7 @@
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-
+  animation-fill-mode: both; /* */
 }
 
 @keyframes fadeInOut {
@@ -76,43 +68,56 @@
   -webkit-animation-name: fadeInOut;
   animation-name: fadeInOut;
 } /* https://www.tutorialspoint.com/css/css_animation_fade_in.htm */
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  border-color: white;
+}
 </style>
 
 
-<aside class="fadeInOut w-100 vw-100 top-0 left-0 absolute z-max debug" id="menu">
+<aside class="fadeInOut w-100 vw-100 top-0 left-0 absolute z-9999 debug" id="menu" aria-expanded="false">
 
-  <button class="bn bg-transparent button-reset light-gray fr w-10 right-0 top-0 fixed z-9999 f-headline ts1-dark-gray pointer" id="menuClose" style="display:inline-block">×</button><!-- https://codepen.io/inspiredlabs/pen/ydadxB -->
+  <button
+    class="bn bg-transparent button-reset light-gray fr w-10 right-0 top-0 fixed z-max f-headline ts1-dark-gray pointer"
+    id="menuClose" style="display:inline-block">×</button><!-- https://codepen.io/inspiredlabs/pen/ydadxB -->
   
   <div class="w-50 fixed z-2 mt0 pa1 top-0 z-2">
-    <a href="#cell1">Cell 1</a>,
-    <a href="#cell2">Cell 2</a>,
-    <a href="#cell3">Cell 3</a>,
-    <a href="#cell4">Cell 4</a>,
-    <a href="#cell5">Cell 5</a>
+    <a href="#cell01">Cell 1</a>,
+    <a href="#cell02">Cell 2</a>,
+    <a href="#cell03">Cell 3</a>,
+    <a href="#cell04">Cell 4</a>,
+    <a href="#cell05">Cell 5</a>
   </div>
 
-  <div class="carousel carousel-nav bg-transparent bn h4 w-100 bottom-0 left-0 z-3 absolute fixed" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "prevNextButtons": false }'><!-- h3 h3-ns h3-m h3-l -->
-    <div class="carousel-cell w-10 pointer"></div>
-    <div class="carousel-cell w-10 pointer"></div>
-    <div class="carousel-cell w-10 pointer"></div>
-    <div class="carousel-cell w-10 pointer"></div>
-    <div class="carousel-cell w-10 pointer"></div>
+  <div class="carousel carousel-nav bg-transparent bn ma0 pa0 h5 w-100 bottom-0 left-0 z-3 absolute fixed" ><!-- data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l -->
+    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell01"></div>
+    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell02"></div>
+    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell03"></div>
+    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell04"></div>
+    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell05"></div>
   </div>
+
+
+
 
   <!-- Flickity HTML init -->
-  <div class="carousel carousel-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1" data-flickity='{ "prevNextButtons": false, "pageDots": false, "wrapAround": true, "contain": true, "hash": true, "bgLazyLoad": true }'>
+  <div class="carousel carousel-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1" ><!-- data-flickity='{ "prevNextButtons": false, "pageDots": false, "wrapAround": true, "contain": true, "hash": true,
+  "bgLazyLoad": true }' -->
     
-    <div class="carousel-cell w-100 vh-100 cover o-0" data-flickity-bg-lazyload="https://unsplash.it/640/480/?random"></div>
-
-    <div class="carousel-cell w-100 vh-100" id="cell1"></div>
-    <div class="carousel-cell w-100 vh-100" id="cell2"></div>
-    <div class="carousel-cell w-100 vh-100" id="cell3"></div>
-    <div class="carousel-cell w-100 vh-100" id="cell4"></div>
-    <div class="carousel-cell w-100 vh-100" id="cell5"></div>
+    <div class="carousel-cell w-100 vh-100 cover o-0" id="cell01"
+     data-flickity-bg-lazyload="https://unsplash.it/640/480/?random"></div>
+    
+    <div class="carousel-cell w-100 vh-100" id="cell02"></div>
+    <div class="carousel-cell w-100 vh-100" id="cell03"></div>
+    <div class="carousel-cell w-100 vh-100" id="cell04"></div>
+    <div class="carousel-cell w-100 vh-100" id="cell05"></div>
   </div>
 </aside>
 
+
+
 {{ .Render "list" }}
+  
 
 <script src="{{ .Site.BaseURL | absURL }}js/flickity.js"></script>
 
@@ -141,41 +146,66 @@
 </script>
 
 <script>
+  // Store togglable elements
+  const toggleButton = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  // Two discreet functions
+  let expanded = true;
+  function toggleMenu() {
+    if (expanded == true) {
+      //do...
+      scrolling();
+      closeMenu();
+    } else if (expanded == false) {
+      //do...
+      static();
+      showMenu();
+    } return;
+  }
+
+  // The menu is NOT expanded, so...
+  function showMenu() {
+    menu.toggleAttribute('hidden', false);
+
+    setTimeout(function () {
+
+      toggleButton.toggleAttribute('aria-expanded', true);
+      expanded = true;
+    }, 10);
+  };//showMenu()
+
+  // The menu IS expanded, so...
+  function closeMenu() {
+
+    toggleButton.toggleAttribute('aria-expanded', false);
+
+    setTimeout(function () {
+      menu.toggleAttribute('hidden', true);
+      expanded = false;
+    }, 0);
+  }//closeMenu()
+
+
+  // Attach click handler to toggle
+  toggleButton.addEventListener('click', (e) => {
+    toggleMenu();
+    //return;
+  });
+
+  
+
+</script>
+
+
+<script>
   // Store toggle and menu elements
   
   const menuClose = document.getElementById('menuClose');
-  const menuOpen = document.getElementById('menuOpen');
-  const menu = document.getElementById('menu');
-
-
-  const toggleMenu = function (e) {
-    // Get current expanded value and force to boolean
-    const expanded = menuOpen.getAttribute('aria-expanded') === 'true' ? true : false;
-
-    // Set new expanded value
-    menuOpen.setAttribute('aria-expanded', !expanded);
-    // Show/hide menu
-    menu.toggleAttribute('hidden', expanded);
-
-    if (menuOpen.aria-expanded === true) {
-      /* static(); */
-      alert('hello')
-    } return;
-  };
-
   // Attach click handler to toggle
   menuClose.addEventListener('click', (e) => {
     toggleMenu();
-    scrolling();
-  });
-
-  // Attach click handler to toggle
-  menuOpen.addEventListener('click', (e) => {
-    toggleMenu();
-    static();
-  });
-
-  
+  });  
 </script>
 
 <script>
@@ -191,13 +221,33 @@
         isEscape = (e.keyCode == 27);
       }
       if (isEscape) {
-        toggleMenu();
+        //do...
         scrolling();
+        closeMenu();
       }
     };
   
   
   
+</script>
+
+<script>
+  var carousel = document.querySelector('.carousel');
+
+  var flickity = new Flickity('.carousel-main', {
+    hash: true,
+    contain: true,
+    pageDots: false,
+    wrapAround: true,
+    bgLazyLoad: true,
+    prevNextButtons: false
+  });
+  var nav = new Flickity('.carousel-nav', {
+    asNavFor: '.carousel-main',
+    contain: true,
+    pageDots: false
+  });
+
 </script>
 
 <script>
@@ -305,8 +355,8 @@
 
 <script>
   (function () {
-    // IIFE //toggleMenu();
-    //alert('ciao')
-    static();
+    // IIFE
+    scrolling();
+    closeMenu();
   })();
 </script>

@@ -1,36 +1,23 @@
 <style>
-  .carousel {
-  /* background: #383838; */
-}
 
 /* fade in image when loaded */
-.carousel-cell {  
+.portfolio-cell {  
   /*margin-right: 10px */;
   background: darkcyan;
-  counter-increment: carousel-cell;
+  /* counter-increment: portfolio-cell; */
   transition: opacity 0.4s;
+  opacity:0;
 }
 
-.carousel-cell.flickity-bg-lazyloaded,
-.carousel-cell.flickity-lazyerror {
+.portfolio-cell.flickity-bg-lazyloaded,
+.portfolio-cell.flickity-lazyerror {
   opacity: 1;
 }
 
-.carousel-nav .carousel-cell {  
-  /*margin-right: 10px */;
+.portfolio-nav .portfolio-cell {  
   background: darkgreen;
-  counter-increment: carousel-cell;  
 }
 
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  /* line-height: 5rem; */
-  /* font-size: 5rem; */
-  color: white;
-}
  
   button[aria-expanded="true"] {
   /* https://codepen.io/inspiredlabs/pen/ydadxB
@@ -48,8 +35,8 @@
   border: 1px solid #999;
   margin-top: 0.5em;
   max-width: 20em;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; /* */
 }
@@ -69,17 +56,43 @@
   animation-name: fadeInOut;
 } /* https://www.tutorialspoint.com/css/css_animation_fade_in.htm */
 
-.carousel-nav .carousel-cell.is-nav-selected {
+.portfolio-nav .portfolio-cell.is-nav-selected {
+  border-color: #f8f8f8;
+}
+.portfolio-nav .portfolio-cell:hover {
   border-color: white;
 }
 </style>
+<style>
+  .portfolio-cell {
+    opacity: 0;
+  }
 
+  .portfolio img {
+    /* padding-left: 0rem;
+    padding-right: 0rem; */
+
+    position: absolute;
+    /* min-height: 100%; */
+    /* height: 100vh !important; */
+
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    background-position: center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+</style>
 
 <aside class="fadeInOut w-100 vw-100 top-0 left-0 absolute z-9999 debug" id="menu" aria-expanded="false">
 
   <button
-    class="bn bg-transparent button-reset light-gray fr w-10 right-0 top-0 fixed z-max f-headline ts1-dark-gray pointer"
-    id="menuClose" style="display:inline-block">×</button><!-- https://codepen.io/inspiredlabs/pen/ydadxB -->
+    class="bn bg-transparent button-reset light-gray fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l ts1-dark-gray pointer"
+    id="menuClose" >×</button><!-- https://codepen.io/inspiredlabs/pen/ydadxB -->
   
   <div class="w-50 fixed z-2 mt0 pa1 top-0 z-2">
     <a href="#cell01">Cell 1</a>,
@@ -89,31 +102,45 @@
     <a href="#cell05">Cell 5</a>
   </div>
 
-  <div class="carousel carousel-nav bg-transparent bn ma0 pa0 h5 w-100 bottom-0 left-0 z-3 absolute fixed" ><!-- data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l -->
-    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell01"></div>
-    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell02"></div>
-    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell03"></div>
-    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell04"></div>
-    <div class="carousel-cell ba bw1 b--moon-gray w-10 top-0 ma0 pa0 h4 pointer" for="cell05"></div>
+  <div class="portfolio portfolio-nav bg-transparent bn ma0 pa0 h4 w-100 bottom-2 left-0 z-3 absolute fixed" ><!-- data-flickity='{ "asNavFor": ".portfolio-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l --><!-- https://tachyons.io/components/layout/aspect-ratio-1x1/index.html -->
+
+      {{ range .Data.Pages.ByWeight }}
+      {{ with .Resources.ByType "image" }}
+      {{ range . }}
+      <img class="cell-{{ sha1 .Title }} 
+        cover portfolio-cell ba bw1 b--moon-gray pointer h3 w3 h4-l w4-l"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+        data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
+      {{ end }}
+      {{ end }}
+      {{ end }}
   </div>
 
-
-
-
   <!-- Flickity HTML init -->
-  <div class="carousel carousel-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1" ><!-- data-flickity='{ "prevNextButtons": false, "pageDots": false, "wrapAround": true, "contain": true, "hash": true,
+  <div class="portfolio portfolio-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1" ><!-- data-flickity='{ "prevNextButtons": false, "pageDots": false, "wrapAround": true, "contain": true, "hash": true,
   "bgLazyLoad": true }' -->
     
-    <div class="carousel-cell w-100 vh-100 cover o-0" id="cell01"
-     data-flickity-bg-lazyload="https://unsplash.it/640/480/?random"></div>
-    
-    <div class="carousel-cell w-100 vh-100" id="cell02"></div>
-    <div class="carousel-cell w-100 vh-100" id="cell03"></div>
-    <div class="carousel-cell w-100 vh-100" id="cell04"></div>
-    <div class="carousel-cell w-100 vh-100" id="cell05"></div>
+    {{ range .Data.Pages.ByWeight }}
+    {{ with .Resources.ByType "image" }}
+    {{ range . }}
+    {{/* NOTE: sha1 .Title https://discourse.gohugo.io/t/looking-for-a-futureproof-uniqueid/18936/4 */}}
+    <img id="cell-{{ sha1 .Title }}" class="portfolio-cell no-select cell-{{ sha1 .Title }} 
+                    w-100 vw-100 h-100 vh-100"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+      data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
   </div>
 </aside>
 
+
+
+
+<div class="bg-yellow">
+
+</div>
 
 
 {{ .Render "list" }}
@@ -183,7 +210,7 @@
     setTimeout(function () {
       menu.toggleAttribute('hidden', true);
       expanded = false;
-    }, 0);
+    }, 10);
   }//closeMenu()
 
 
@@ -210,31 +237,27 @@
 
 <script>
 
-  
-
-    document.onkeydown = function(e) {
-      e = e || window.event;
-      var isEscape = false;
-      if ('key' in e) {
-        isEscape = (e.key == 'Escape' || e.key == 'Esc');
-      } else {
-        isEscape = (e.keyCode == 27);
-      }
-      if (isEscape) {
-        //do...
-        scrolling();
-        closeMenu();
-      }
-    };
-  
-  
-  
+document.onkeydown = function(e) {
+  e = e || window.event;
+  var isEscape = false;
+  if ('key' in e) {
+    isEscape = (e.key == 'Escape' || e.key == 'Esc');
+  } else {
+    isEscape = (e.keyCode == 27);
+  }
+  if (isEscape) {
+    //do...
+    scrolling();
+    closeMenu();
+  }
+};  
 </script>
 
 <script>
-  var carousel = document.querySelector('.carousel');
+  // better dissolve: https://stackoverflow.com/questions/6121203/how-to-do-fade-in-and-fade-out-with-javascript-and-css
+  var portfolio = document.querySelector('.portfolio');
 
-  var flickity = new Flickity('.carousel-main', {
+  var flickity = new Flickity('.portfolio-main', {
     hash: true,
     contain: true,
     pageDots: false,
@@ -242,10 +265,12 @@
     bgLazyLoad: true,
     prevNextButtons: false
   });
-  var nav = new Flickity('.carousel-nav', {
-    asNavFor: '.carousel-main',
+  var nav = new Flickity('.portfolio-nav', {
+    asNavFor: '.portfolio-main',
     contain: true,
-    pageDots: false
+    pageDots: false,
+    bgLazyLoad: 5
+    
   });
 
 </script>

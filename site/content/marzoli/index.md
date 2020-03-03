@@ -1,12 +1,18 @@
 ---
-draft: true
-date: 2019-02-03T15:49:50.219Z
+date:
+weight:
 title: Marzò
 description: Intelligent systems for traditional farming
 assignment: Graphic Designer & Developer
 location: Italy
-
+open: true
 ---
+
+<!--date: 2019-02-03T15:49:50.219Z-->
+
+<!--
+{{/* <flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
+-->
 
 #### Communicating family values
 A warm, welcoming website clear for local people looking for fresh, organic produce. Yet appealing to food connoisseurs, even overseas.

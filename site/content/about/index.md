@@ -1,11 +1,14 @@
 ---
-draft: true
-date: 2019-02-13T17:29:28.349Z
+draft: 
+weight: 1
 title: Scott Phillips
 description: Fearless creative for those who innovate
 assignment: Graphic Designer & Developer
 
 ---
+
+<!--date: 2019-02-13T17:29:28.349Z-->
+
 Meeting business requirements for [National Geographic](https://inspiredlabs.co.uk/j/), [Siemens](https://vimeo.com/124142652), [Bowers & Wilkins](https://vimeo.com/124144694), and ambitious startups.
 
 My work applies thorough, user-friendly design that moves projects forward. These can be greenfield projects like attention engineering for Aris Technologies. Or a communication strategy for Vaultarch, an award‑winning deep‑tech company.

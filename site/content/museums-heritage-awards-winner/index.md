@@ -1,16 +1,28 @@
 ---
-draft: true
-date: 2019-02-03T15:51:16.535Z
+date: 
+weight: 
 title: M+H Awards Winner
 description: >-
   Children’s Centre for Civilisation & Creativity by Mallinson's Architects &
   Engineers
 assignment: Designer, Animator & Mentor
 location: Atacama Ltd, Oxford
+open: true
 ---
+
+<!--date: 2019-02-03T15:51:16.535Z-->
+
+<!--
+{{/* <flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}-->
+
+---
+draft: true
+
 <!-- date: Winter&nbsp;2010 - Winter&nbsp;2011 -->
 
-{{<flickity src="https://inspiredlabs.co.uk/images/mallinson-00.jpg" title="Museums & Heritage Awards Winner" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+<!--
+{{/* <flickity src="https://inspiredlabs.co.uk/images/mallinson-00.jpg" title="Museums & Heritage Awards Winner" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
+-->
 
 ## A huge achievement, against all odds
 

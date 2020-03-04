@@ -11,15 +11,14 @@
 					  <div class="ph2-ns">
 					    <div class="fl w-100 w-70-ns pr4"><!-- w-two-thirds -->
 					      <div class="pv4 fr w-100 w-90-m w-80-l"><!-- outline bg-black-05 truncate no-wrap -->
-					      	
-					      	<a href="../../" class="no-underline dim db f6 ttu tracked gray source_sans_prolight"><!--{{.Site.Home}}-->
-					      		<svg style="-webkit-transform: translate3d(0,0,0);" viewBox="-356 234.3 128 128" class="no-select pr3 h07 gray">
-					      			<use xlink:href="#home"></use>
-					      		</svg>
-					      		<!--span class="pr3">{{ .Site.Title }}</span-->
-					      		<time class="black b">{{- dateFormat " 2006-01-01" .Date -}}</time>
-					      	</a>
-					      	
+                  <a href="{{ .Site.BaseURL }}" class="no-underline db f4 source_sans_prolight charcoal"><!-- class="no-underline db f5 courier" -->
+                    <!-- ttn tracked source_sans_prolight -->
+                    <svg style="-webkit-transform: translate3d(0,0,0);" viewBox="-356 234.3 128 128" class="no-select pr3 h1">
+                      <use xlink:href="#home"></use>
+                    </svg>
+                    <span>{{ .Site.BaseURL | absURL | replaceRE "//" "" }}{{/* .Site.Title */}}</span>
+                    <!-- <time class="black b">{{- dateFormat " 2006-01-01" .Date -}}</time> -->
+                  </a>
 				    			<hr class="ba bw1 mb0 b--black-10"/>
 					      	<!--<details class="details">-->
 					      		<span class="list"><!-- summary -->
@@ -43,10 +42,13 @@
 					      				{{ if .Params.location }}
 					      				<span class="source_sans_probold">&hairsp;—&nbsp;{{ .Params.location }}</span><!-- | safeHTML-->
 					      				{{ end }}
-					      			</p>
+                      </p>
+                      {{ partial "date" . }}
 			      				</span><!-- /summary -->
-								    {{ .Content }}
-			
+                    <!-- .Content -->
+                    
+                      {{ partial "content" . }}
+                    
 				      		<!--</details>-->
 				       </div><!-- /fr outline -->
 			      </div><!-- /w-two-thirds -->

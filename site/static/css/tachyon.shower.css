@@ -10801,23 +10801,25 @@ blockquote a {
 
 
 .post-holder ul {
-  padding-left: 0;
+  /* padding-left: 0; */
 }
 
 .post-holder ul li ul li {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   /*padding-left:0;*/
 }
 
 
 .post-holder * a {
-  color: rgba(166, 166, 166, 1);
+  /*color: rgba(56, 56, 56, 0.6);/* #383838 hex to rgb */
+  /* opacity: 0.6 */
 }
 
 .post-holder * a:focus,
 .post-holder * a:hover {
-  color: rgba(166, 166, 166, 0.8);
-  transition: color 0.15s ease-in;
+  /*color: rgba(56, 56, 56, 1);*/
+  /* opacity: 1; */
+  /* transition: opacity 0.15s ease-in; */
 }
 
 /*</style>*/
@@ -11751,27 +11753,23 @@ input:focus::placeholder {
 
 .hover-o-100:hover {
   opacity: 1;
-  transition: all .25s ease;
 }
 
 @media screen and (min-width: 30em) {
   .hover-o-100-ns:hover {
     opacity: 1;
-    transition: all .25s ease;
   }
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .hover-o-100-m:hover {
     opacity: 1;
-    transition: all .25s ease;
   }
 }
 
 @media screen and (min-width: 60em) {
   .hover-o-100-l:hover {
     opacity: 1;
-    transition: all .25s ease;
   }
 }
 

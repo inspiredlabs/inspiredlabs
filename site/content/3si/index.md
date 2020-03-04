@@ -1,11 +1,20 @@
 ---
 draft: 
-date: 2019-07-27T17:23:55.364Z
+date: 2015-12-137T17:23:55.364Z
+weight: 
 title: CRM platform
 description: 'Jargon-busting champion for the end-user '
 assignment: UX Designer & Content Designer
-location: 3Si, Stoke-on-Trent
+location: 3Si, Newcastle-Under-Lyme
 ---
+
+<!--location: 3Si, Stoke-on-Trent-->
+<!--Summer2015 – Winter 2015-->
+<!--Copywriting & designing marketing material templates for a data-driven, multi-platform CRM.-->
+<!--Bootstrap4, HTML5, CSS3 & JS, Font Creation, AdobeCS
+	- from: https://inspiredlabs.co.uk/cv/design-professional-scott-phillips-cv-2018.pdf
+-->
+
 {{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
 
 ### Who are 3Si, and what they do?

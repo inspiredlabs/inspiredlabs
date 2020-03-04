@@ -17,7 +17,6 @@
 .portfolio-nav .portfolio-cell {  
   background: darkgreen;
 }
-
  
   button[aria-expanded="true"] {
   /* https://codepen.io/inspiredlabs/pen/ydadxB
@@ -25,8 +24,7 @@
   background: #ddd; 
   color: white;
   */
-  
-}
+  }
 
 #menu {
   background: #eee;
@@ -88,7 +86,7 @@
   }
 </style>
 
-<aside class="fadeInOut w-100 vw-100 top-0 left-0 absolute z-9999 " id="menu" aria-expanded="false"><!-- debug -->
+<aside class="fadeInOut w-100 vw-100 top-0 left-0 z-9999 fixed" id="menu" aria-expanded="false"><!-- debug -->
 
   <button
     class="bn bg-transparent button-reset light-gray fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l ts1-dark-gray pointer"
@@ -103,9 +101,10 @@
     <a href="#cell05">Cell 5</a>
   </div> -->
 
-  <div class="portfolio portfolio-nav bg-transparent bn ma0 pa0 h4 w-100 bottom-2 left-0 z-3 absolute fixed" ><!-- data-flickity='{ "asNavFor": ".portfolio-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l --><!-- https://tachyons.io/components/layout/aspect-ratio-1x1/index.html -->
+  <div class="portfolio portfolio-nav bg-transparent bn ma0 pa0 h4 w-100 bottom-2 left-0 z-3 absolute fixed o-40 hover-o-100 transition" ><!-- data-flickity='{ "asNavFor": ".portfolio-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l --><!-- https://tachyons.io/components/layout/aspect-ratio-1x1/index.html -->
 
-      {{ range .Data.Pages.ByWeight }}
+    
+      {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
       {{ with .Resources.ByType "image" }}
       {{ range . }}
       <img class="cell-{{ sha1 .Title }} 
@@ -121,7 +120,7 @@
   <div class="portfolio portfolio-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1" ><!-- data-flickity='{ "prevNextButtons": false, "pageDots": false, "wrapAround": true, "contain": true, "hash": true,
   "bgLazyLoad": true }' -->
     
-    {{ range .Data.Pages.ByWeight }}
+    {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
     {{ with .Resources.ByType "image" }}
     {{ range . }}
     {{/* NOTE: sha1 .Title https://discourse.gohugo.io/t/looking-for-a-futureproof-uniqueid/18936/4 */}}
@@ -136,16 +135,7 @@
   </div>
 </aside>
 
-
-
-
-<div class="bg-yellow">
-
-</div>
-
-
 {{ .Render "list" }}
-  
 
 <script src="{{ .Site.BaseURL | absURL }}js/flickity.js"></script>
 
@@ -263,14 +253,15 @@ document.onkeydown = function(e) {
     contain: true,
     pageDots: false,
     wrapAround: true,
-    bgLazyLoad: true,
+    bgLazyLoad: 3,
     prevNextButtons: false
   });
   var nav = new Flickity('.portfolio-nav', {
     asNavFor: '.portfolio-main',
     contain: true,
     pageDots: false,
-    bgLazyLoad: 5
+    //wrapAround: true,
+    bgLazyLoad: 3
     
   });
 
@@ -386,3 +377,7 @@ document.onkeydown = function(e) {
     closeMenu();
   })();
 </script>
+<!-- OFFLINE:
+  https://gohugohq.com/howto/go-offline-with-service-worker/ -->
+<!-- OPTIMISE WITHOUT IMAGES:
+   https://gtmetrix.com/reports/hungry-wozniak-e915f8.netlify.com/NA0xKvbj -->

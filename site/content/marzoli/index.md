@@ -1,11 +1,11 @@
 ---
-date:
+date: 2018-12-13T09:00:00Z
 weight:
 title: Marzò
 description: Intelligent systems for traditional farming
 assignment: Graphic Designer & Developer
 location: Italy
-open: true
+open: false
 ---
 
 <!--date: 2019-02-03T15:49:50.219Z-->

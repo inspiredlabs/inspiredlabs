@@ -1,0 +1,6 @@
+{{ if .Date }}
+<p class="f4-ns mt0-ns">
+  <time class="source_sans_regular">{{ .Date | dateFormat "January 2006" }}</time>
+  <!-- "Monday, January 2, 2006" from: https://discourse.gohugo.io/t/dateformat-with-date-and-time-from-frontmatter/5663/4 -->
+</p>
+{{ end }}

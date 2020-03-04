@@ -1,5 +1,7 @@
 ---
-date: 
+
+draft: 
+date: 2011-12-13T09:00:00Z
 weight: 
 title: M+H Awards Winner
 description: >-
@@ -7,7 +9,8 @@ description: >-
   Engineers
 assignment: Designer, Animator & Mentor
 location: Atacama Ltd, Oxford
-open: true
+open: false
+
 ---
 
 <!--date: 2019-02-03T15:51:16.535Z-->
@@ -15,7 +18,6 @@ open: true
 <!--
 {{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}-->
 
----
 
 
 <!-- date: Winter&nbsp;2010 - Winter&nbsp;2011 -->

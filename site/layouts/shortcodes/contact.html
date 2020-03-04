@@ -1,0 +1,38 @@
+<form accept-charset=utf-8 method=POST enctype="application/x-www-form-urlencoded" class="mt5 f5 f4-ns" name="contact"
+  action="{{ .Site.BaseURL }}done/" netlify-honeypot="gotcha" netlify><!-- action="/thank-you" -->
+  <input name=subject type=hidden value="Design opportunity">
+  <input name=gotcha class=dn />
+  <div class=mb4>
+    <label for=email class="f6 f5-ns ttu tracked-mega pl3">Address</label>
+    <input type=email name=email id=email class="input-reset br0 bn pa3 w-100 bg-white-90" placeholder="your@email.com"
+      pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+      required>
+  </div>
+  <div class=mb4>
+    <label for=business class="f6 f5-ns ttu tracked-mega pl3">Tell me about yourself</label>
+    <select class="input-reset select-reset br0 bn pa3 w-100 f5 f5-ns mr0 bg-white-90" id=business name=business
+      required>
+      <option value=startup selected class=sans-serif>Startup entrepreneur</option>
+      <option value=established class=sans-serif>Established business</option>
+      <option value=recruiter class=sans-serif>Recruiter</option>
+    </select>
+  </div>
+  <div class="mb4 dn" id="opportunity">
+    <label for=reason class="f6 f5-ns ttu tracked-mega pl3">Opportunity</label>
+    <select class="input-reset select-reset br0 bn pa3 w-100 f5 f5-ns mr0 bg-white-90" id=reason name=reason required>
+      <option selected class=sans-serif>Consultancy</option>
+      <option class=sans-serif>Remote contractor</option>
+      <option class=sans-serif>In-house relocation package</option>
+    </select>
+  </div>
+  <div class=mb4>
+    <label for=message class="f6 f5-ns ttu tracked-mega pl3">Message</label>
+    <textarea class="input-reset br0 bn pa3 mw-100 bg-white-90" id=message name=message rows=4 placeholder="Dear Scott,"
+      style="min-width:100%;" required></textarea>
+  </div>
+  <div class="fr cb cf mb3 mb6-ns">
+    <input
+      class="input-reset pointer dib mv2 br0 f6 f5-ns b ph4 ph5-ns ph5-m ph6-m pv3 ba bw2-ns b--black white bg-dark-gray ttu tracked-mega hover-bg-near-black w-100 db"
+      type=submit value=Send>
+  </div>
+</form>

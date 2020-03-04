@@ -13,15 +13,15 @@ open: true
 <!--date: 2019-02-03T15:51:16.535Z-->
 
 <!--
-{{/* <flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}-->
+{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}-->
 
 ---
-draft: true
+
 
 <!-- date: Winter&nbsp;2010 - Winter&nbsp;2011 -->
 
 <!--
-{{/* <flickity src="https://inspiredlabs.co.uk/images/mallinson-00.jpg" title="Museums & Heritage Awards Winner" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
+{{/* <flickity src="museums-heritage-awards-winner/images/mallinson-00.jpg" title="Museums & Heritage Awards Winner" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
 -->
 
 ## A huge achievement, against all odds
@@ -30,10 +30,10 @@ The Children’s Centre for Civilisation & Creativity, Heliopolis, Egypt endured
 
 Mallinson's winning the Museum + Heritage award in 2012 because of well organised design. Together, collaborators solved problems outside Egypt so the holistic design became a reality.
 	      		
-{{<flickity src="https://inspiredlabs.co.uk/images/mallinson-01.jpg" title="30m LED wall interior" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}	
+{{<flickity src="museums-heritage-awards-winner/images/mallinson-01.jpg" title="30m LED wall interior" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}	
 
 <!--
-{{<figure src="https://inspiredlabs.co.uk/images/mallinson-01.jpg" title="30m LED wall interior">}}
+{{<figure src="museums-heritage-awards-winner/images/mallinson-01.jpg" title="30m LED wall interior">}}
 ## Large-scale Graphics | 2D/3D Animation | Game design | Character artwork
 -->
 
@@ -47,4 +47,4 @@ Appointed to create mixed digital media, including games, touch interfaces and a
 
 Throughout the project, I had the privilege of mentoring Junior artists. We produced multi-format visuals on deadline for the opening ceremony.
 
-{{<flickity src="https://inspiredlabs.co.uk/images/mallinson-02.jpg" title="30m LED wall exterior" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+{{<flickity src="museums-heritage-awards-winner/images/mallinson-02.jpg" title="30m LED wall exterior" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}

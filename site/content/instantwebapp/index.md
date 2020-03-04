@@ -1,6 +1,6 @@
 ---
-date: 
-weight: 
+date:
+weight:
 title: InstantWebapp
 description: Web design for a world of apps
 assignment: Frontend Developer
@@ -10,14 +10,14 @@ open: true
 
 
 <!--
-{{/* <flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}-->
+{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}-->
 
 
 <!--date: 2019-02-03T15:51:47.060Z-->
 
 <!--From Summer&nbsp;2011-->
 
-{{<flickity src="https://inspiredlabs.co.uk/images/iwa-pablowoodward-01.jpg" title="PabloWoodward.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+{{<flickity src="instantwebapp/images/iwa-pablowoodward-01.jpg" title="PabloWoodward.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
 
 ## Philosophy
 
@@ -27,11 +27,11 @@ Intended for entrepreneurs to control their costs, and guarantee content deliver
 
 #### Responsible design
 
-Meeting business goals, controlling costs and avoiding gotchas does not mean generic, undesirable websites. Delighting the user is easier when the same constraints apply across organisations. Design templates lay the groundwork. 
+Meeting business goals, controlling costs and avoiding gotchas does not mean generic, undesirable websites. Delighting the user is easier when the same constraints apply across organisations. Design templates lay the groundwork.
 
 Advancing marketing campaigns, content and aesthetics on top of a sound foundation is better than spending on reinvention.
 
- 
+
 
 ### Characteristics
 
@@ -57,7 +57,7 @@ Designed to flow around different screen types, the layout adapts to client devi
 
 Designed to be flexible, the template can handle poor network connections. Without extraneous widgets content delivery is as fast as possible over cellular networks.
 
-{{<flickity src="https://inspiredlabs.co.uk/images/iwa-tdb-01.jpg" title="TheDiscoBunny.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+{{<flickity src="instantwebapp/images/iwa-tdb-01.jpg" title="TheDiscoBunny.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
 
 ### My small business? – There's an app for that!
 
@@ -81,7 +81,7 @@ Business owners that choose a system they don't need to learn require transparen
 
 #### Background
 
-Optimisations have made the user experience better with each version. 
+Optimisations have made the user experience better with each version.
 
 By combining content and graphics into fewer server requests we improve time to first meaningful interaction. Modern browsers make things snappy whilst working everywhere. There is no need for libraries like jQuery, which used to be the only option for compatibility.
 
@@ -89,4 +89,4 @@ By combining content and graphics into fewer server requests we improve time to 
 
 The design has undergone many iterations to achieve a GTMetrix UX score: 100%.
 
-{{<flickity src="https://inspiredlabs.co.uk/images/iwa-multitool-01.jpg" title="An early jQuery implementation" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+{{<flickity src="instantwebapp/images/iwa-multitool-01.jpg" title="An early jQuery implementation" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}

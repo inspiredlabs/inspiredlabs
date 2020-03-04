@@ -11,7 +11,7 @@ open: true
 <!--date: 2019-02-03T15:49:50.219Z-->
 
 <!--
-{{/* <flickity src="https://inspiredlabs.co.uk/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
+{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
 -->
 
 #### Communicating family values

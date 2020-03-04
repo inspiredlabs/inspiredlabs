@@ -4,7 +4,7 @@
 	<!--	https://flickity.metafizzy.co/api.html#selectcell		-->
 	<figure class="w-100 ma0 bg-black-80"><!--<figure {{ if isset .Params "class" }}class="{{ index .Params "class" }}"{{ end }}>-->
 	    {{ if isset .Params "link"}}<a href="{{ index .Params "link" }}">{{ end }}
-	        <img class="b-lazy no-select w-100 ma0" src="data:image/gif,GIF89a,AAAAAAE" data-src="{{ index .Params "src" | relURL }}" {{ if or (isset .Params "alt") (isset .Params "caption") }}alt="{{ if isset .Params "alt"}}{{ index .Params "alt"}}{{else}}{{ index .Params "caption" }}{{ end }}"{{ end }} />
+	        <img class="b-lazy no-select w-100 ma0" src="data:image/gif,GIF89a,AAAAAAE" data-src='{{ .Site.BaseURL }}{{ index .Params "src" }}' {{ if or (isset .Params "alt") (isset .Params "caption") }}alt="{{ if isset .Params "alt"}}{{ index .Params "alt"}}{{else}}{{ index .Params "caption" }}{{ end }}"{{ end }} />
 	    {{ if isset .Params "link"}}</a>{{ end }}
 	    {{ if or (or (isset .Params "title") (isset .Params "caption")) (isset .Params "attr")}}
 	    <figcaption class="pa3">{{ if isset .Params "title" }}
@@ -14,7 +14,7 @@
 	        {{ if isset .Params "attrlink"}}<a href="{{ index .Params "attrlink"}}"> {{ end }}
 	            {{ index .Params "attr" }}
 	        {{ if isset .Params "attrlink"}}</a> {{ end }}
-	        </p> {{ end }} 
+	        </p> {{ end }}
 	    </figcaption>
 	    {{ end }}
 	</figure>

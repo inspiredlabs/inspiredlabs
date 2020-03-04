@@ -57,10 +57,10 @@
 } /* https://www.tutorialspoint.com/css/css_animation_fade_in.htm */
 
 .portfolio-nav .portfolio-cell.is-nav-selected {
-  border-color: #f8f8f8;
+  border-color: dimgray;
 }
 .portfolio-nav .portfolio-cell:hover {
-  border-color: white;
+  border-color: var(--charcoal);
 }
 </style>
 <style>
@@ -88,19 +88,20 @@
   }
 </style>
 
-<aside class="fadeInOut w-100 vw-100 top-0 left-0 absolute z-9999 debug" id="menu" aria-expanded="false">
+<aside class="fadeInOut w-100 vw-100 top-0 left-0 absolute z-9999 " id="menu" aria-expanded="false"><!-- debug -->
 
   <button
     class="bn bg-transparent button-reset light-gray fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l ts1-dark-gray pointer"
     id="menuClose" >×</button><!-- https://codepen.io/inspiredlabs/pen/ydadxB -->
   
-  <div class="w-50 fixed z-2 mt0 pa1 top-0 z-2">
+  <!-- {{/* RANGE THROUGH THIS CORRECTLY */}}
+    <div class="w-50 fixed z-2 mt0 pa1 top-0 z-2">
     <a href="#cell01">Cell 1</a>,
     <a href="#cell02">Cell 2</a>,
     <a href="#cell03">Cell 3</a>,
     <a href="#cell04">Cell 4</a>,
     <a href="#cell05">Cell 5</a>
-  </div>
+  </div> -->
 
   <div class="portfolio portfolio-nav bg-transparent bn ma0 pa0 h4 w-100 bottom-2 left-0 z-3 absolute fixed" ><!-- data-flickity='{ "asNavFor": ".portfolio-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l --><!-- https://tachyons.io/components/layout/aspect-ratio-1x1/index.html -->
 
@@ -108,7 +109,7 @@
       {{ with .Resources.ByType "image" }}
       {{ range . }}
       <img class="cell-{{ sha1 .Title }} 
-        cover portfolio-cell ba bw1 b--moon-gray pointer h3 w3 h4-l w4-l"
+        cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l"
         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
         data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
       {{ end }}

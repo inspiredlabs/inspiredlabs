@@ -15,22 +15,21 @@ location: 3Si, Newcastle-Under-Lyme
 	- from: https://inspiredlabs.co.uk/cv/design-professional-scott-phillips-cv-2018.pdf
 -->
 
-{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
+<!-- {{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
+-->
 
 ### Who are 3Si, and what they do?
 
 Derived from their surname Chris Sinclair, Pete Sinclair, and their Father – a silent partner, [3Si](http://inspiredlabs.co.uk/3-si.com/) sell their CRM application to handle volumes of membership and subscription data. Their flagship product is called [OM.Net](http://inspiredlabs.co.uk/3-si.com/#modules). 
 
 ### Client work
-The [OM.Net](http://inspiredlabs.co.uk/3-si.com/#clients) platform is for Nonprofit Organisations such as Mensa, The National Farmer's Union and Trading Standards. I was also concerned with the web platform for The Pathological Society.
+The [OM.Net](http://inspiredlabs.co.uk/3-si.com/#clients) platform is for Nonprofit Organisations such as **Mensa**, **The National Farmer's Union** and **Trading Standards**. I was also concerned with the web platform for **The Pathological Society**.
 
 ### Legacy of the project
 
-Produced a high performance static site and a fresh perspective on their designs, whilst honouring what is already in use.
+A high performance static site was written for a fresh perspective on their design, whilst honouring branding already in use.
 
-> Scott fully understands the concepts of design…  
-> how things flow and the way the message is conveyed to the user.  
-> – [Chris Sinclair](http://inspiredlabs.co.uk/3-si.com/) Managing Director, 3Si
+> Scott fully understands the concepts of design… how things flow and the way the message is conveyed to the user. – [Chris&nbsp;Sinclair](http://inspiredlabs.co.uk/3-si.com/) Managing Director, 3Si
 
 <!--
 non breaking hyphen: &#8209;
@@ -50,22 +49,26 @@ Marketing Brochure
 -->
 
 ### Communicating values
-Developing a CRM platform can be complicated. 3Si needed someone technical to make design improvements, yet inkeeping with 20 years of heritage. 
+Developing a CRM platform can be complicated. **3Si** needs technical design improvements, yet look inkeeping with 20 years of heritage. 
 
 
-By rewriting their [Brochure](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) for an audience of non-technical people, I concentrated on benefits, without jargon. This improved communication throughout the company because beforehand the product did not use a glossary.
+By rewriting their [Brochure](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) for an audience of non-technical people, we explain the benefits, without jargon. The company didn't have a definitive glossary, so this project  improved communication for all&nbsp;involved.
 
-After intensive research, the marketing material was produced with laser-focus over 7 weeks. 
+After intensive research, marketing material was produced with laser-focus over 7 weeks. 
 
 ### Content without boundaries
-The new material has an emphasis on clarity. The visual language of [OM.Net](http://inspiredlabs.co.uk/3-si.com/index.html#modules) was designed to be cohesive across print and desktop, yet optimised for mobile in harmony with what is already in circulation.
+The new document  emphasises clarity. The visual language of [OM.Net](http://inspiredlabs.co.uk/3-si.com/index.html#modules) was designed to be cohesive across print and screen, whilst being optimised for mobile. This was all done with a nod to what was already in circulation.
 
-A simple landing page was tested to maintain attention. 
+### Content flow
 
-With a colour‑blind theme, clear navigation and an emphasis on readability: people can find the information they need. Helping make the right purchase decision.
+A simple landing page was produced so the document could be proofread in one&nbsp;go. This was written to hold and maintain attention, answer common questions and chime the right note – without&nbsp;duplication.
+
+### Clarity
+
+With a colour‑blind theme, clear navigation and an emphasis on readability people can find the information they need. The goal is to helping them make the right purchase&nbsp;decision.
 
 ### Template design
-Each template was designed to reduce production time and unnecessary decision making. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) material contain the same original content. 
+Each template was designed to reduce production time and unnecessary decision&nbsp;making. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) material contain the same refreshing&nbsp;content. 
 
 
 <!--

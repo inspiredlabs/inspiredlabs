@@ -24,7 +24,7 @@
   <!--link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/source_sans.css"-->
 
   <!-- regex101.com PCRE & backticks not quotes: https://discourse.gohugo.io/t/replacere-gives-syntax-error/22624/2 -->
-  {{ $style := resources.Get "css/tachyon_shower.css" | minify }}
+  {{ $style := resources.Get "css/tachyon_shower.css" | minify }}{{/* borks: tachyon.shower.css */}}
   <style>{{ $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS }}</style>
 
   {{ $style := resources.Get "css/source_sans.css" | minify }}
@@ -256,8 +256,6 @@ opacity: 0;
     blockquote a {
       opacity: .8;
     }
-
-    
   </style>
   
 </head>

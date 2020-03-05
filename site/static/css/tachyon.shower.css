@@ -19,6 +19,10 @@
 /* 08.11.19 .smooth-scroll			scroll-behavior:smooth  		addition								*/
 /* 26.11.19 .touch-manipulation	touch-action:manipulation   addition								*/
 
+/* Note: MERGE ME */
+/* translate/transitions */
+/* 05.03.20 .bg-debug… 	        background-color: red…      addition								*/
+
 /* Consider `.hover-o-*` convention. */
 /* Recycle existing class and break Tachyons convention. */
 /* 07.01.20 .emojisymbol			Semantic unicode-icons				addition								*/
@@ -3744,6 +3748,32 @@ code {
 .nested-links a:hover {
   color: #96ccff;
   transition: color 0.15s ease-in;
+}
+
+/* .mobile-portrait */
+.bg-debug {
+  background-color: red;
+}
+
+/* .mobile-landscape-ns */
+@media screen and (min-width: 30em) {
+  .bg-debug {
+    background-color: firebrick;
+  }
+}
+
+/* .tablet-portrait-m */
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .bg-debug {
+    background-color: orange;
+  }
+}
+
+/* .tablet-landscape-l */
+@media screen and (min-width: 60em) {
+  .bg-debug {
+    background-color: yellow;
+  }
 }
 
 /* Useful for display width */

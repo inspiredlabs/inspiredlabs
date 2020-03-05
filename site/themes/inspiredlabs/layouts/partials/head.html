@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Document Settings -->
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title> {{ .Title }} | {{ .Site.Title }} </title>
+
+  <meta name="HandheldFriendly" content="True" />
+  <!--<meta name="MobileOptimized" content="320" />-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tachyon Shower -->
+  <!-- link rel="stylesheet" href="https://instantwebapp.netlify.com/css/tachyon.shower.css" /-->
+
+  <!-- https://discourse.gohugo.io/t/glob-directory-and-minify-all-to-css/21154 -->
+  <!--link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/tachyon.shower.css"-->
+  <base href="{{ .Site.BaseURL }}" />
+  <!--<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/tachyons.min.css" />-->
+  <!--link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/source_sans.css"-->
+
+  <!-- regex101.com PCRE & backticks not quotes: https://discourse.gohugo.io/t/replacere-gives-syntax-error/22624/2 -->
+  {{ $style := resources.Get "css/tachyon_shower.css" | minify }}
+  <style>{{ $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS }}</style>
+
+  {{ $style := resources.Get "css/source_sans.css" | minify }}
+  <style>{{ $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS }}</style>
+
+  <!--TODO: TEMPLATE CSS -->
+  <style>
+    /* .carousel {
+background: #FAFAFA;
+}
+.carousel-cell {
+width: 100%;
+height: auto;
+margin-right: 10px;
+
+background: #333;
+}
+.carousel-cell-image {
+display: block;
+max-height: 100%;
+margin: 0 auto;
+max-width: 100%;
+opacity: 0;
+-webkit-transition: opacity 0.4s;
+      transition: opacity 0.4s;
+} */
+
+    /* fade in lazy loaded image: https://codepen.io/desandro/pen/vOeGzL */
+    .carousel-cell-image.flickity-lazyloaded,
+    .carousel-cell-image.flickity-lazyerror {
+      opacity: 1;
+    }
+
+    .near-white {
+      color: #f8f8f8;
+    }
+
+    .b--near-white {
+      border-color: #f8f8f8;
+    }
+
+    .bg-near-white {
+      background-color: #f8f8f8;
+    }
+  </style>
+
+  <style>
+    .no-select {
+      pointer-events: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-text-size-adjust: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      -ms-touch-action: none
+    }
+
+    *:focus {
+      outline: none
+    }
+
+    *::selection,
+    ::selection {
+      color: inherit;
+      background: transparent
+    }
+
+    *::-moz-selection,
+    ::-moz-selection {
+      color: inherit;
+      background: transparent
+    }
+
+    .highlight *::selection,
+    .highlight::selection {
+      color: white;
+      background: #666
+    }
+
+    .highlight *::-moz-selection,
+    .highlight::-moz-selection {
+      color: white;
+      background: #666
+    }
+
+    details {}
+
+    .no-highlight,
+    summary {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-text-size-adjust: none
+    }
+
+    summary {
+      width: 100%;
+      cursor: pointer
+    }
+
+    summary::after {
+      content: 'More…\2003';
+      display: inline-block;
+      min-width: 5.3rem;
+      margin: 1.6rem 0 2rem;
+      padding: 1rem 0;
+      background: var(--dim-cta);
+      color: white;
+      -webkit-letter-spacing: 0.2rem;
+      -moz-letter-spacing: 0.2rem;
+      -ms-letter-spacing: 0.2rem;
+      letter-spacing: 0.2rem;
+      border: 2px solid var(--dim-cta);
+      border-radius: 0;
+      font-size: 0.7rem;
+      text-align: right;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      font-weight: 500;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-transition: all 0.4s ease 0s;
+      transition: all 0.4s ease 0s;
+      text-transform: uppercase
+    }
+
+    summary:hover:after {
+      background: none;
+      border-color: var(--lit-cta);
+      background: var(--lit-cta)
+    }
+
+    details[open]>summary:after {
+      content: 'Less…\2003';
+      background: none;
+      color: var(--dim-cta)
+    }
+
+    details[open]>summary:hover:after {
+      border-color: var(--lit-cta);
+      background: var(--lit-cta);
+      color: white
+    }
+
+    summary::-webkit-details-marker {
+      display: none
+    }
+
+    details[open] summary~* {
+      animation: fade 0.666s ease-in-out 0s
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0
+      }
+
+      100% {
+        opacity: 1
+      }
+    }
+
+
+
+    /* :root{--tint-fg:darkgrey;--tint-bg:white;--dim-cta:darkgrey;--lit-cta:gainsboro}.tint-bg{background-color:var(--tint-bg)}.tint-fg{color:var(--tint-fg);fill:var(--tint-fg)}.dim-cta{color:var(--dim-cta);fill:var(--dim-cta)}.lit-cta{color:var(--lit-cta);fill:var(--lit-cta)}.hover-bg-gray{transition:all 1s ease-out} */
+    #searchEntry {
+      transition: opacity 1s ease
+    }
+
+    #searchEntry:focus,
+    #searchEntry:hover {
+      opacity: 1
+    }
+
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 99rem #f8f8f8 inset
+    }
+
+    .h07 {
+      height: 0.7rem;
+    }
+  </style>
+  <style>
+    details a figure,
+    details p a {
+      transition: all .2s ease-in-out;
+    }
+
+    details p a {
+      color: black;
+      cursor: pointer;
+    }
+
+    details p a:hover {
+      color: #383838;
+      cursor: pointer;
+    }
+
+    details hr {
+      border-color: rgba(0, 0, 0, .05);
+      border-width: .125rem;
+      border-bottom-style: solid;
+    }
+
+    /* https://discourse.gohugo.io/t/whats-best-way-to-style-markdown-on-single-pages/16622 */
+    /* https://discourse.gohugo.io/t/markdown-not-being-rendered-within-html-block/2532/3 */
+
+    /* Shortcode: gohugo.io/templates/shortcode-templates/ */
+    blockquote {
+      font-family: "Georgia", "serif";
+      font-size: 1.65rem;
+      font-style: italic;
+      opacity 1;
+      margin: 0;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    blockquote a {
+      opacity: .8;
+    }
+
+    
+  </style>
+  
+</head>
+
+<body class="w-100 source_sans_proregular black-70 highlight bg-near-white lh-copy" id="top">
+  <b class="w-10 fixed z-max mt0 pa1 top-0 moon-gray o-30" id="debugInfo">0</b>
+  {{ partial "svg.html" . }}  

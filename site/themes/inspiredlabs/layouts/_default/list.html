@@ -17,35 +17,11 @@
 
 <style>
 
-/* .mobile-portrait */
-.bg-debug {
-  background-color: red;
-}
 
-/* .mobile-landscape-ns */
-@media screen and (min-width: 30em) {
-  .bg-debug {
-    background-color: firebrick;
-  }
-}
-
-/* .tablet-portrait-m */
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .bg-debug {
-    background-color: orange;
-  }
-}
-
-/* .tablet-landscape-l */
-@media screen and (min-width: 60em) {
-  .bg-debug {
-    background-color: yellow;
-  }
-}
 </style>
 
 			<article class="mt5"><!-- id="" -->
-				<section class="cf w-100 pv3 ph3 ph4-ns"><!-- f4, moved to: `{{/* $content := $content | replaceRE "<p" "<p class='f4'" */}}` -->
+				<section class="cf w-100 pv3 ph3 ph4-ns ph3-m ph5-l"><!-- ok:`ph3 ph4-ns` f4, moved to: `{{/* $content := $content | replaceRE "<p" "<p class='f4'" */}}` -->
 					<div class="mw9 center ph3-ns">
 					  <div class="ph2-ns">
 					    <div class="fl w-100 w-70-ns pr4 pr0-ns w-90-m pr5-m pr5-l" ><!-- bg-debug class="fl w-100 w-70-ns pr4" w-two-thirds -->
@@ -59,7 +35,7 @@
 				    			<hr class="ba bw1 mb0 b--black-10"/>
                   <details class="details" {{ if .Params.open }}open='open' {{ end }}>
 					      		<summary class="list">
-					      			<header class="fl w-100 pr4-ns">
+					      			<header class="fl w-100"><!-- pr4-ns -->
 					      				<!--a id="blog-logo" href="{{ .Site.BaseURL}}">
 					      				    {{ if .Site.Params.logo }}
 					      				        <a id="blog-logo" href="{{ .Site.BaseURL}}"><img src="{{ .Site.Params.logo }}" alt="Blog Logo" /></a>

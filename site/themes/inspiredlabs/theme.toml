@@ -1,0 +1,12 @@
+# Hugo theme Template
+
+name = "inspiredlabs"
+license = "MIT"
+description = "Inspired Labs base theme"
+tags = []
+features = []
+min_version = "0.63.2"
+
+[author]
+  name = "Scott Phillips"
+  homepage = "https://inspiredlabs.co.uk/"

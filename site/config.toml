@@ -5,6 +5,7 @@ baseurl = "./" #local only
 
 languageCode = "en-gb" #Initial configuration reset
 title = "Inspired Labs"
+theme = "inspiredlabs" #ga-hugo-theme
 #disableKinds = ["home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]#"page",
 #theme = "ultimate-simplicity"
 #theme = "ga-hugo-theme"

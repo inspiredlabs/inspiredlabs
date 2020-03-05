@@ -32,7 +32,7 @@
   /* padding: 1em; */
   /* border: 1px solid #999; */
   /* margin-top: 0.5em; */
-  max-width: 20em;
+  /* max-width: 20em; */
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
@@ -155,7 +155,11 @@
 
 {{ .Render "list" }}
 
+
+{{ if .IsHome }}
+<link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/flickity.css"><!-- flickity.min.css -->
 <script src="{{ .Site.BaseURL | absURL }}js/flickity.js"></script>
+{{ end }}
 
 <style>
   .static {
@@ -271,7 +275,7 @@ document.onkeydown = function(e) {
     contain: true,
     pageDots: false,
     wrapAround: true,
-    bgLazyLoad: 3,
+    bgLazyLoad: true,
     prevNextButtons: false
   });
   var nav = new Flickity('.portfolio-nav', {
@@ -279,6 +283,7 @@ document.onkeydown = function(e) {
     contain: true,
     pageDots: false,
     //wrapAround: true,
+    prevNextButtons: false,
     bgLazyLoad: 3
     
   });

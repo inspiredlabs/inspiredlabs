@@ -392,12 +392,13 @@ document.onkeydown = function(e) {
   }
 </script-->
 
+
+
 <script>
-  (function () {
-    // IIFE
+  document.addEventListener("DOMContentLoaded", function () {
     scrolling();
     closeMenu();
-  })();
+  });
 </script>
 <!-- OFFLINE:
   https://gohugohq.com/howto/go-offline-with-service-worker/ -->

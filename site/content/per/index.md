@@ -3,7 +3,7 @@ date: 2016-05-13T09:00:00Z
 weight:
 title: PeR title
 description: PeR desc
-assignment: PeR assiginment
+assignment: PeR assignment
 location: PeR loc
 open: false
 ---

@@ -3,7 +3,7 @@ date: 2020-01-31T09:00:00Z
 weight: 
 title: alessandroronca title
 description: alessandroronca desc
-assignment: alessandroronca assiginment
+assignment: alessandroronca assignment
 location: alessandroronca loc
 open: false
 ---

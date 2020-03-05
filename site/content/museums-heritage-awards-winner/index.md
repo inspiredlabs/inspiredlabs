@@ -4,10 +4,10 @@ draft:
 date: 2011-12-13T09:00:00Z
 weight: 
 title: M+H Awards Winner
-description: >-
-  Children’s Centre for Civilisation & Creativity by Mallinson's Architects &
-  Engineers
-assignment: Designer, Animator & Mentor
+description: >
+  Children’s Centre for Civilisation &&nbsp;Creativity
+  <br/>by&nbsp;Mallinson's Architects &&nbsp;Engineers
+assignment: Designer, Animator &&nbsp;Mentor
 location: Atacama Ltd, Oxford
 open: false
 

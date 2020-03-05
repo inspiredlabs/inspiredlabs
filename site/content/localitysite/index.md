@@ -3,7 +3,7 @@ date:
 weight: 
 title: localitysite title
 description: localitysite desc
-assignment: localitysite assiginment
+assignment: localitysite assignment
 location: localitysite loc
 open: false
 ---

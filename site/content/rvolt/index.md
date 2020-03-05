@@ -3,7 +3,7 @@ date: 2019-12-13T09:00:00Z
 weight: 
 title: RVO.LT title
 description: rvolt desc
-assignment: rvolt assiginment
+assignment: rvolt assignment
 location: rvolt loc
 open: false
 ---

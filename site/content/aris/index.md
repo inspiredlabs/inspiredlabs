@@ -3,7 +3,7 @@ date: 2010-12-13T09:00:00Z
 weight: 
 title: aris title
 description: aris desc
-assignment: aris assiginment
+assignment: aris assignment
 location: aris loc
 open: false
 ---

@@ -3,7 +3,7 @@
 /* fade in image when loaded */
 .portfolio-cell {  
   /*margin-right: 10px */;
-  background: darkcyan;
+  background: var(--charcoal);
   /* counter-increment: portfolio-cell; */
   transition: opacity 0.4s;
   opacity:0;
@@ -15,7 +15,7 @@
 }
 
 .portfolio-nav .portfolio-cell {  
-  background: darkgreen;
+  background: black;
 }
  
   button[aria-expanded="true"] {
@@ -27,11 +27,11 @@
   }
 
 #menu {
-  background: #eee;
-  font-size: 2em;
-  padding: 1em;
-  border: 1px solid #999;
-  margin-top: 0.5em;
+  background: transparent;
+  /* font-size: 2em; */
+  /* padding: 1em; */
+  /* border: 1px solid #999; */
+  /* margin-top: 0.5em; */
   max-width: 20em;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
@@ -84,13 +84,27 @@
     background-size: cover;
     overflow: hidden;
   }
+
+  .translateY-custom {
+    -webkit-transform: translateY(60%);
+    transform: translateY(60%);
+    /* Analogue timing roblaplaca.com/examples/bezierBuilder */
+    -webkit-transition: all .8s cubic-bezier(.3, 0, .02, 1);
+			 -moz-transition: all .8s cubic-bezier(.3, 0, .02, 1);
+				 -o-transition: all .8s cubic-bezier(.3, 0, .02, 1);
+						transition: all .8s cubic-bezier(.3, 0, .02, 1);
+  }
+  .translateY-custom:hover {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 </style>
 
 <aside class="fadeInOut w-100 vw-100 top-0 left-0 z-9999 fixed" id="menu" aria-expanded="false"><!-- debug -->
 
   <button
-    class="bn bg-transparent button-reset light-gray fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l ts1-dark-gray pointer"
-    id="menuClose" >×</button><!-- https://codepen.io/inspiredlabs/pen/ydadxB -->
+    class="bn bg-transparent button-reset charcoal dim fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l pointer"
+    id="menuClose" >×</button><!-- near-white ts1-dark-gray https://codepen.io/inspiredlabs/pen/ydadxB -->
   
   <!-- {{/* RANGE THROUGH THIS CORRECTLY */}}
     <div class="w-50 fixed z-2 mt0 pa1 top-0 z-2">
@@ -101,19 +115,23 @@
     <a href="#cell05">Cell 5</a>
   </div> -->
 
-  <div class="portfolio portfolio-nav bg-transparent bn ma0 pa0 h4 w-100 bottom-2 left-0 z-3 absolute fixed o-40 hover-o-100 transition" ><!-- data-flickity='{ "asNavFor": ".portfolio-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l --><!-- https://tachyons.io/components/layout/aspect-ratio-1x1/index.html -->
-
-    
-      {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
-      {{ with .Resources.ByType "image" }}
-      {{ range . }}
-      <img class="cell-{{ sha1 .Title }} 
-        cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l"
-        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
-        data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
-      {{ end }}
-      {{ end }}
-      {{ end }}
+  <div class="bottom-0 h5 o-0 hover-o-100  w-100 left-0 z-3 fixed pt6 translateY-custom"><!-- debug bg-red  -->
+  <nav class="portfolio portfolio-nav bg-transparent bn ma0 pa0 h4 bottom-0 ">
+    <!-- data-flickity='{ "asNavFor": ".portfolio-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l -->
+    <!-- https://tachyons.io/components/layout/aspect-ratio-1x1/index.html -->
+  
+  
+    {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
+    {{ with .Resources.ByType "image" }}
+    {{ range . }}
+    <img class="cell-{{ sha1 .Title }} 
+          cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+      data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
+    {{ end }}
+    {{ end }}
+    {{ end }}
+  </nav>
   </div>
 
   <!-- Flickity HTML init -->

@@ -1,7 +1,7 @@
 {{ partial "head" . }}
 {{ partial "nav.html" . }}
 <div id="content">
-	<ul class="list">
+	<ul class="list pl0 w-measure">
     {{/* range .Data.Pages.ByWeight */}}
     {{ range .Data.Pages.ByDate.Reverse.ByWeight }}
     
@@ -15,12 +15,41 @@
 					{{ .PlainWords }}
 				</data>
 
+<style>
+
+/* this */
+.bg-debug {
+  background-color: red;
+}
+
+/* this-ns */
+@media screen and (min-width: 30em) {
+  .bg-debug {
+    background-color: firebrick;
+  }
+}
+
+/* this-m */
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .bg-debug {
+    background-color: orange;
+  }
+}
+
+/* this-l */
+@media screen and (min-width: 60em) {
+  .bg-debug {
+    background-color: yellow;
+  }
+}
+</style>
+
 			<article class="mt5"><!-- id="" -->
-				<section class="cf w-100 pv3 f4 ph3 ph4-ns">
+				<section class="cf w-100 pv3 ph3 ph4-ns"><!-- f4, moved to: `{{/* $content := $content | replaceRE "<p" "<p class='f4'" */}}` -->
 					<div class="mw9 center ph3-ns">
 					  <div class="ph2-ns">
-					    <div class="fl w-100 w-90-m pr4 w-80-l pr5-l" ><!-- class="fl w-100 w-70-ns pr4" w-two-thirds -->
-					      <div class="pv4 fr w-100 w-measure-m w-measure-l"><!-- debug outline bg-black-05 truncate no-wrap -->
+					    <div class="fl w-100 w-70-ns pr4 pr0-ns w-90-m pr5-m pr5-l" ><!-- bg-debug class="fl w-100 w-70-ns pr4" w-two-thirds -->
+					      <div class="pv4 fr w-100 w-100-m w-90-l"><!-- debug outline bg-black-05 truncate no-wrap -->
 					      	<a href="{{ .Permalink }}" class="no-underline db f4 source_sans_prolight charcoal"><!-- courier ttn tracked  -->
 					      		<svg style="-webkit-transform: translate3d(0,0,0);" viewbox="0 0 482 482" class="no-select pr3 h1 ">
 					      			<use xlink:href="#url"></use>

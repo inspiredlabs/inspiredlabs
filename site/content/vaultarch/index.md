@@ -1,5 +1,5 @@
 ---
-draft: true
+draft:
 date: 2017-12-13T09:00:00Z
 weight:
 title: Vaultarch
@@ -14,7 +14,7 @@ skills:
   - Networking
   - OpenCV
   - Linear Algebra
-open: 
+open:
 ---
 
 

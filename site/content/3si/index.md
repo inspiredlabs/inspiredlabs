@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: 
 date: 2015-12-137T17:23:55.364Z
 weight: 
 title: CRM platform

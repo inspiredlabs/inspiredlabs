@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: 
 date: 2016-05-13T09:00:00Z
 weight:
 title: PeR, Il Parco dell Energia Rinnovabile

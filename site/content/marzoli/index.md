@@ -1,11 +1,13 @@
 ---
+draft: true
 date: 2018-12-13T09:00:00Z
 weight:
+bg: #888
 title: Marzò
-description: Intelligent systems for traditional farming
+description: Traditional farming from The Marzoli Family
 assignment: Graphic Designer & Developer
 location: Italy
-open: false
+open: 
 ---
 
 <!--date: 2019-02-03T15:49:50.219Z-->
@@ -15,6 +17,7 @@ open: false
 -->
 
 #### Communicating family values
+
 A warm, welcoming website clear for local people looking for fresh, organic produce. Yet appealing to food connoisseurs, even overseas.
 
 #### Powerful tools for nimble pages
@@ -22,6 +25,7 @@ A warm, welcoming website clear for local people looking for fresh, organic prod
 This mobile first eCommerce site runs via NetlifyCMS, a web interface for writers. A static site generator called HUGO produces flat files without a database. This combination scores highly with Google PageSpeedInsights.
 
 #### Manageable styling
+
 Tachyons adapts to design needs. By patching existing classes fixes limitations in the library. Consciously adding utility classes keeps things manageable, while extending default behavior. 
 
 These work with Javascript for accessibility and for image handling blazy.js.
@@ -31,6 +35,7 @@ These work with Javascript for accessibility and for image handling blazy.js.
 This combination places content in the hands of the author. Resulting in lightweight, rich, multilingual content – without bloat. 
 
 #### Intelligent systems
+
 With OpenCV we aim to solve common problems during harvest. Machine learning and artificial intelligence should resolve challenges of abundance.
 
 

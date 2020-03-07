@@ -24,6 +24,8 @@ html { /*It works!*/ }
 /* Note: MERGE ME */
 /* translate/transitions */
 /* 05.03.20 .bg-debug… 	        background-color: red…      addition								*/
+/* 06.03.20 .near-white… 	      background-color: #f8f8f8;  CONFLICT: breakout vars	*/
+
 
 /* Consider `.hover-o-*` convention. */
 /* Recycle existing class and break Tachyons convention. */

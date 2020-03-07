@@ -1,12 +1,60 @@
 ---
-date: 
-weight: 
-title: localitysite title
-description: localitysite desc
-assignment: localitysite assignment
-location: localitysite loc
-open: false
+draft: true
+date: 2018-05-01T09:00:00Z
+weight:
+bg: f8f8f8
+title: Locality
+description: Luxury co-living
+assignment: Developer and Designer
+location: Nottinghill, London
+skills:
+  - HUGO
+  - JSON 
+  - Netlify
+  - Git
+  - Branding
+  - Graphic Communication
+open: 
 ---
-{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
 
-### Testing: localitysite/images
+<!--
+
+resources:
+  - src: images/localitysite.svg
+  - name: red
+
+
+https://scripter.co/hugo-leaf-and-branch-bundles/#examples
+	- index.md = Leaf Bundle
+	- _index.md = Branch Bundle
+Listing and resizing the resource images:
+	- https://stackoverflow.com/questions/48213883/image-processing-outside-bundles
+Nonsense examples:
+	- https://gohugo.io/content-management/image-processing/
+-->
+
+<!--{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}-->
+
+### Co-habitation Property Services
+
+This webapp helps people in the luxury rental market organise and filter rooms to taste.
+
+### JSON sanitisation in NetlifyCMS
+
+The filter takes JSON data and renders it client-side keeping the information up-to-date without having any other build process. 
+
+Terse code output from HUGO templates, catches dat-entry errors. This investment makes maintaining nuaces in the properties as simple as possible.
+
+<!--### Preview-->
+<!--flickity .select-cell -->
+
+<!--### Visit-->
+<!--my link-->
+
+<!--
+## The Project in detail
+
+### UX and code
+
+### Branding and Graphic Communication
+-->

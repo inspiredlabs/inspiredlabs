@@ -1,5 +1,5 @@
 ---
-draft: 
+draft: true
 date: 2015-12-137T17:23:55.364Z
 weight: 
 title: CRM platform
@@ -17,6 +17,8 @@ location: 3Si, Newcastle-Under-Lyme
 
 <!-- {{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
 -->
+
+## 3Si: 20 years of CRM development
 
 ### Who are 3Si, and what they do?
 
@@ -68,7 +70,7 @@ A simple landing page was produced so the document could be proofread in one&nbs
 With a colour‑blind theme, clear navigation and an emphasis on readability people can find the information they need. The goal is to helping them make the right purchase&nbsp;decision.
 
 ### Template design
-Each template was designed to reduce production time and unnecessary decision&nbsp;making. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) material contain the same refreshing&nbsp;content. 
+Each template was designed to reduce production time <!-- error rate, --> and unnecessary decision&nbsp;making. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) material contain the same refreshing&nbsp;content. 
 
 
 <!--

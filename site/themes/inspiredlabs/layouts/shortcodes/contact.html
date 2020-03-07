@@ -36,3 +36,37 @@
       type=submit value=Send>
   </div>
 </form>
+
+<script>
+  //www.youtube.com/watch?v=yEMQWyiEPFk
+  //stackoverflow.com/questions/23942893/javascript-obtain-value-of-select-option-without-submitting-form
+  //document.querySelectorAll('.my-class')[0].classList.toggle('selected')
+
+  // Business Type IIFE
+  (function () {
+    if (document.querySelector('#business').value == 'recruiter') {
+      document.querySelector('#opportunity').classList.toggle('db', 'dn');
+    } else {
+      document.querySelector('#opportunity').classList.add('dn');
+      document.querySelector('#opportunity').classList.remove('db');
+    };
+
+    // UI listener IIFE
+    (function () {
+      var value;
+      document.querySelector('#business').addEventListener('change', function () {
+        value = this.value;
+
+        if (this.value == 'recruiter') {
+          document.querySelector('#opportunity').classList.toggle('db', 'dn');
+        } else {
+          document.querySelector('#opportunity').classList.add('dn');
+          document.querySelector('#opportunity').classList.remove('db');
+        }
+
+      }, false);
+
+    })(); // UI listener IIFE
+
+  })(); // Business Type IIFE
+</script>

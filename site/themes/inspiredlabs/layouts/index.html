@@ -1,5 +1,7 @@
 <style>
 
+/* .portfolio img { background-color: yellow; } */
+
 /* fade in image when loaded */
 .portfolio-cell {  
   /*margin-right: 10px */;
@@ -13,18 +15,14 @@
 .portfolio-cell.flickity-lazyerror {
   opacity: 1;
 }
-
-.portfolio-nav .portfolio-cell {  
-  background: black;
-}
  
-  button[aria-expanded="true"] {
+button[aria-expanded="true"] {
   /* https://codepen.io/inspiredlabs/pen/ydadxB
   box-shadow: inset 5px 5px #999;
   background: #ddd; 
   color: white;
   */
-  }
+}
 
 #menu {
   background: transparent;
@@ -54,6 +52,10 @@
   animation-name: fadeInOut;
 } /* https://www.tutorialspoint.com/css/css_animation_fade_in.htm */
 
+.portfolio-nav .portfolio-cell, .portfolio img {
+  border-color: transparent;
+}
+
 .portfolio-nav .portfolio-cell.is-nav-selected {
   border-color: dimgray;
 }
@@ -65,7 +67,7 @@
   .portfolio-cell {
     opacity: 0;
   }
-
+  
   .portfolio img {
     /* padding-left: 0rem;
     padding-right: 0rem; */
@@ -86,6 +88,7 @@
   }
 
   .translateY-custom {
+    /* Alt: https://stackoverflow.com/questions/36794634/how-to-create-a-css-translatey-on-hover-effect */
     -webkit-transform: translateY(60%);
     transform: translateY(60%);
     /* Analogue timing roblaplaca.com/examples/bezierBuilder */
@@ -98,9 +101,12 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+  
 </style>
 
-<aside class="fadeInOut w-100 vw-100 top-0 left-0 z-9999 fixed" id="menu" aria-expanded="" hidden><!-- debug -->
+<aside class="fadeInOut w-100 vw-100 top-0 left-0 z-9999 fixed" id="menu" aria-expanded="" ><!-- debug hidden -->
+
+
 
   <button
     class="bn bg-transparent button-reset charcoal dim fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l pointer"
@@ -123,29 +129,41 @@
   
     {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
     {{ with .Resources.ByType "image" }}
+    
     {{ range . }}
-    <img class="cell-{{ sha1 .Title }} 
-          cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l"
+    <img class="cell-{{ sha1 .Title }}
+          cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l
+          bg-{{/* .RegularPages.Params.background */}}"
       src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
       data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
     {{ end }}
+    
     {{ end }}
     {{ end }}
   </nav>
   </div>
 
-  <!-- Flickity HTML init -->
-  <div class="portfolio portfolio-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1" ><!-- data-flickity='{ "prevNextButtons": false, "pageDots": false, "wrapAround": true, "contain": true, "hash": true,
+  <!-- Flickity HTML init GOAL:{{/* $bg := .Params.bg = f00 || .Params "description" */}}
+    {{/* $description := "#f00" }}{{ $description */}}
+   -->
+  <div class="portfolio portfolio-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1 " ><!-- data-flickity='{ "prevNextButtons": false, "pageDots": false, "wrapAround": true, "contain": true, "hash": true,
   "bgLazyLoad": true }' -->
     
+  
+
     {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
+    {{ $bg := .Params.bg }}
     {{ with .Resources.ByType "image" }}
+    
+    
     {{ range . }}
     {{/* NOTE: sha1 .Title https://discourse.gohugo.io/t/looking-for-a-futureproof-uniqueid/18936/4 */}}
-    <img id="cell-{{ sha1 .Title }}" class="portfolio-cell no-select cell-{{ sha1 .Title }} 
-                    w-100 vw-100 h-100 vh-100"
+    <img id="cell-{{ sha1 .Title }}" class='bg-
+                    portfolio-cell no-select cell-{{ sha1 .Title }} 
+                    w-100 vw-100 h-100 vh-100'
       src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
-      data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
+      data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}"
+      style="background-color:{{ $bg }}">
     {{ end }}
     {{ end }}
     {{ end }}
@@ -392,21 +410,21 @@ document.onkeydown = function(e) {
   }
 </script-->
 
-<!--script>
+<script>
   (function () {
     // IIFE
     scrolling();
     closeMenu();
   })();
-</script-->
+</script>
 
-<script>
+<!--script>
   document.addEventListener("DOMContentLoaded", function () {
     //scrolling();
     //closeMenu();
-    alert('Good morning: Android debug and realign footer');
+    //alert('Good morning: Android debug and realign footer');
   });
-</script>
+</script-->
 <!-- OFFLINE:
   https://gohugohq.com/howto/go-offline-with-service-worker/ -->
 <!-- OPTIMISE WITHOUT IMAGES:

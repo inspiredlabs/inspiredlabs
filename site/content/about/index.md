@@ -1,8 +1,8 @@
 ---
-draft: 
-weight: 99999
+draft: true
+weight: 888
 date: 
-open: true
+open: 
 title: Scott Phillips
 description: Design Generalist
 assignment: Conscientious champion of user needs

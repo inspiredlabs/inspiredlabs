@@ -1,5 +1,5 @@
 ---
-draft:
+draft: 
 date: 2012-01-01T09:00:00Z
 weight:
 bg: fffdf1
@@ -11,7 +11,7 @@ skills:
   - Branding
   - Typography
   - Graphic Communication
-open:
+open: true
 ---
 
 ### Carfax Cafe, Oxford

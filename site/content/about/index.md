@@ -1,6 +1,6 @@
 ---
 draft:
-weight:
+weight: 888
 bg:
 date:
 open: true

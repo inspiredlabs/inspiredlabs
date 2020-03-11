@@ -7,7 +7,7 @@ title: Marzò
 description: Traditional farming from The Marzoli Family
 assignment: Graphic Designer & Developer
 location: Italy
-open: 
+open: true
 ---
 
 <!--date: 2019-02-03T15:49:50.219Z-->
@@ -47,3 +47,7 @@ With OpenCV we aim to solve common problems during harvest. Machine learning and
 Automating farm activities isn't always viable, and still relies on a hierarchy of farmhands.
 Monitoring people's output is often met with resistance. So to improve precision harvesting and simplify the rules, algorithmic comparison provides a cost-effective way to monitor yeilds. By prototyping with OpenCV, the business is exploring the viability of automation and reaping the benefits.
 -->
+
+## Visit
+
+[Marzo.li](https://marzo.li/) <!-- Update Marzò -->

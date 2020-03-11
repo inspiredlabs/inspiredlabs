@@ -10760,14 +10760,14 @@ details * a {
 }
 
 details * a {
-  color: black;
-  cursor: pointer;
+  /* color: black;  */
+  /* cursor: pointer; */
 }
 
 details * a:hover {
-  color: white;
+  /* color: white; */
   /*background-color: rgba(0,0,0,.8);*/
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 code {
@@ -10840,18 +10840,18 @@ blockquote a {
 
 .post-holder ul li ul li {
   /* margin-left: 1rem; */
-  /*padding-left:0;*/
+  /* padding-left:0; */
 }
 
 
 .post-holder * a {
-  /*color: rgba(56, 56, 56, 0.6);/* #383838 hex to rgb */
-  /* opacity: 0.6 */
+  /* color: rgba(56, 56, 56, 0.8); *//* #383838 hex to rgb */
+  /* opacity: 0.8 */
 }
 
 .post-holder * a:focus,
 .post-holder * a:hover {
-  /*color: rgba(56, 56, 56, 1);*/
+  /* color: rgba(56, 56, 56, 1); */
   /* opacity: 1; */
   /* transition: opacity 0.15s ease-in; */
 }

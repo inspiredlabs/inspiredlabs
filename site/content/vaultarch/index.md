@@ -1,5 +1,5 @@
 ---
-draft:
+draft: 
 date: 2017-12-13T09:00:00Z
 weight:
 title: Vaultarch
@@ -14,7 +14,7 @@ skills:
   - Networking
   - OpenCV
   - Linear Algebra
-open:
+open: truefalse
 ---
 
 
@@ -24,7 +24,7 @@ open:
 
 Cambridge University's [Andrew Buchanan](https://vaultarch.com), set out to make counterfeit, theft and fraud a thing of the past: **Vaultarch** is a multi award winning Ltech (Legal tech) startup protecting valuable collectables.
 
-> Scott displayed energy & resourcefulness… He has good networking skills & an eye for the most important commercial factor <cite>– Andrew Buchanan, [Vaultarch](https://vaultarch.com) </cite>
+> Scott displayed energy & resourcefulness… He has good networking skills & an eye for the <!--most important--> commercial factor <cite>– Andrew Buchanan, [Vaultarch](https://vaultarch.com) </cite>
 
 <!--
 
@@ -41,14 +41,14 @@ Validating the project's scalability it is clear there is a need for a robust te
 
 ### Visit
 
-- [Vaultarch.com](https://vaultarch.com)
+- test. [Vaultarch.com](https://vaultarch.com)
 - [Startup Weekend](https://www.facebook.com/StartupWeekendHK/photos/a.934215303322582.1073741830.187953947948725/934223966655049/?type=3&theater)
 - [Startup Next](http://startupweekend.org/events?utf8=%E2%9C%93&date_range=past&q=hong+kong&button=)
 - [Facebook](https://www.facebook.com/vaultarch/)
 - [Twitter](https://twitter.com/vaultarch/)
 - [Cyberport2, Hong Kong](https://wego.here.com/directions/mix//Vaultarch,-Cyberport-2,-Hong-Kong:e-eyJuYW1lIjoiVmF1bHRhcmNoIiwiYWRkcmVzcyI6IkN5YmVycG9ydCAyLCBIb25nIEtvbmciLCJsYXRpdHVkZSI6MjIuMjYyMDcxOTc0Nzc2LCJsb25naXR1ZGUiOjExNC4xMzA2NTQzMzUwMiwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjoxNTA5NzMxNTg5MzMwNDE5fQ==?map=22.26207,114.13065,15,normal&fb_locale=en_GB)
 
----------------------------------------------------------------------------------
+----------------------------------------------------
 
 ## The project in detail
 
@@ -78,9 +78,9 @@ Attended events and working from campus to develop strategies for further seed f
 *   Research market validation, competitor analysis, patent and intellectual property considerations and hiring.
 *   Risk assessment covering: business risk, market risk and technical risk.
 
-### Slogan and copywriting
+### Content and copywriting
 
-Vaultarch's “Preventing counterfeit, thef & fraud” anchored each interaction, including design and fund raising.
+Vaultarch's “Preventing counterfeit, thef & fraud” acts as a foot-in-the-door when fund raising, where attention is scarse. And helps design interactions for consistency.
 
 <!--
 ###  Documentation & Research
@@ -89,10 +89,10 @@ Vaultarch's “Preventing counterfeit, thef & fraud” anchored each interaction
 
 ### Design improvements
 
-*   Rebrand emphasising contrast and stronger typography, tighter information architecture and improve accessibility.
-*   Condensed mission statement into memorable online content <!-- http://inspiredlabs.co.uk/vaultarch.com/banner-fonts/ -->
-*   Platform specific design details.
-*   Logo redesign for readability and perception.
+*   UX emphasising stronger contrast, typography <!--, tighter information architecture -->and accessibility.
+<!--*   Condensed mission statement into something memorable.--><!-- online content: http://inspiredlabs.co.uk/vaultarch.com/banner-fonts/ -->
+<!--*   Platform specific design details.-->
+*   Logo redesign for readability<!-- and perception-->.
 
 
 ### Summary

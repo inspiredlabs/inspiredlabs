@@ -17,7 +17,7 @@ skills:
   - Art Direction
   - Typography
   - Web design
-open: 
+open: true
 ---
 
 <!--{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
@@ -27,11 +27,13 @@ open:
 
 ### About Advanced
 
-[Advanced Animations](http://www.advancedanimations.co.uk/) is a traditional technical drawing office in Cheshire and a particularly inspiring environment. With clients such as: **Rolls Royce**, [**Siemens**](https://vimeo.com/124142652), [**Cummins**](http://www.advancedanimations.co.uk/animation/) and many other [household names](https://www.youtube.com/channel/UCUTHkGhyZ6eOvesWGjAczFQ), they have an impressive&nbsp;heritage.
+[Advanced Animations](http://www.advancedanimations.co.uk/) is a traditional technical drawing office offering services **Rolls&nbsp;Royce** and innovators such as:<!-- ,--> [**Siemens**](https://vimeo.com/124142652), [**Cummins**](http://www.advancedanimations.co.uk/animation/) and other  [household names](https://www.youtube.com/channel/UCUTHkGhyZ6eOvesWGjAczFQ). 
+
+Although, their&nbsp;heritage hasn't made them immune to technological&nbsp;progress.
 
 ### Legacy
 
-Brought on board specifically to modernise business practices together, we formed the foundation of the company's present business model – providing them a robust ROI, many years later.
+Brought on board specifically to modernise business practices, we formed the foundation of a new business model – providing them a robust ROI years into the&nbsp;future.
 
 
 <!--### Preview
@@ -51,7 +53,7 @@ https://www.advancedanimations.co.uk/
 
 ### Updating workflow and business model
 
-Simply put, templates were put into place to make rapid business decisions and accelerate work-flow. These aimed to give sales flexability, yet remain profitable by enforcing positive constraints for the art&nbsp;department.
+Simply put areas of the business were reduced to templates. When in place, they expediate business decisions, accelerate work-flow and increase flexability. By enforcing constraints there can be improvements to&nbsp;profitability.
 
 
 ### All-round technical artist

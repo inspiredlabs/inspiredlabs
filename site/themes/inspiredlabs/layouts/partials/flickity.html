@@ -1,0 +1,53 @@
+<div class="w-100 vw-100 top-0 left-0 z-9999 fixed">
+  <!-- fadeInOut -->
+  <!-- {{/* RANGE THROUGH THIS CORRECTLY */}}
+    <div class="w-50 fixed z-2 mt0 pa1 top-0 z-2">
+    <a href="#cell01">Cell 1</a>,
+    <a href="#cell02">Cell 2</a>,
+    <a href="#cell03">Cell 3</a>,
+    <a href="#cell04">Cell 4</a>,
+    <a href="#cell05">Cell 5</a>
+  </div> -->
+  <div class="bottom-0 h5 o-0 hover-o-100 w-100 left-0 z-3 fixed pt6 translateY-custom">
+    <!-- debug bg-red  -->
+    <nav class="portfolio portfolio-nav bg-transparent bn ma0 pa0 h4 bottom-0 ">
+      <!-- data-flickity='{ "asNavFor": ".portfolio-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l -->
+      <!-- https://tachyons.io/components/layout/aspect-ratio-1x1/index.html -->
+
+
+      {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
+      {{ $bg := .Params.bg }}
+      {{ with .Resources.ByType "image" }}
+
+      {{ range . }}
+      <img class="cell-{{ sha1 .Title }}
+                    cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l
+                    bg-{{/* .RegularPages.Params.background */}}"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+        data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}" style="background-color:{{ $bg | safeCSS }}">
+      {{ end }}
+
+      {{ end }}
+      {{ end }}
+    </nav>
+  </div>
+  <!-- Flickity HTML -->
+  <div class="portfolio portfolio-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1 ">
+    {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
+    {{ $bg := .Params.bg }}
+    {{ with .Resources.ByType "image" }}
+
+    {{ range . }}
+    {{/* NOTE: sha1 .Title https://discourse.gohugo.io/t/looking-for-a-futureproof-uniqueid/18936/4 */}}
+    <img id="cell-{{ sha1 .Title }}" class='bg-
+                            portfolio-cell no-select cell-{{ sha1 .Title }} 
+                            w-100 vw-100 h-100 vh-100'
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+      data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}" style="background-color:{{ $bg | safeCSS }}">
+    {{ end }}
+
+    {{ end }}
+    {{ end }}
+
+  </div><!-- /portfolio -->
+</div>

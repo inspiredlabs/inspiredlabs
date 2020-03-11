@@ -2,16 +2,16 @@
 draft: 
 date: 2010-01-01T09:00:00Z
 weight:
-bg: 
+bg:
 title: Bowers & Wilkins
 description: Remarkable simplicity
-assignment: Animator and Illustrator
-location: .
+assignment: Animator & Illustrator
+location: Thomas Manss, London
 skills:
   - Artworker
   - 2D/3D Animator
   - 3D Modeller
-open: 
+open: true
 
 ---
 
@@ -35,6 +35,6 @@ Turning 2D illustrations into versatile storytelling elements, we created a memo
 
 ### Thomas Manss creates something remarkable
 
-The outline of the brief was to tell the evolutionary story of **Bowers & Wilkins**, under strict oversight of the talented art-director: **Thomas Manss**. Ceding creative control to overcome the inherent complexities of making animation, we brought the **Bowers** story to life.  
+The outline of the brief was to tell the evolutionary story of **Bowers & Wilkins**, under strict oversight of the talented art-director: **Thomas Manss**. Ceding creative control to overcome the inherent complexities of making animation, we brought the **Bowers** story to life.
 
 Modelling and rendering realistic speaker components throughout their range was a pleasure – working with admirable, beautiful source&nbsp;material.

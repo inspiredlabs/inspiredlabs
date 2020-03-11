@@ -14,7 +14,7 @@ skills:
   - Git
   - Branding
   - Graphic Communication
-open: 
+open: true
 ---
 
 <!--
@@ -22,7 +22,6 @@ open:
 resources:
   - src: images/localitysite.svg
   - name: red
-
 
 https://scripter.co/hugo-leaf-and-branch-bundles/#examples
 	- index.md = Leaf Bundle
@@ -45,11 +44,16 @@ The filter takes JSON data and renders it client-side keeping the information up
 
 Terse code output from HUGO templates, catches dat-entry errors. This investment makes maintaining nuaces in the properties as simple as possible.
 
-<!--### Preview-->
-<!--flickity .select-cell -->
+<!--
+## Preview
+flickity .select-cell -->
 
-<!--### Visit-->
-<!--my link-->
+
+## Visit
+
+[Locality.site](https://locality.site/) <!-- Update Marzò -->
+
+<!-- * * * -->
 
 <!--
 ## The Project in detail

@@ -1,5 +1,5 @@
 ---
-draft: 
+draft: true
 date: 2016-05-13T09:00:00Z
 weight:
 title: PeR, Il Parco dell Energia Rinnovabile
@@ -15,7 +15,7 @@ skills:
   - Research
   - AdobeCS
   - Bootstrap, CSS & JS
-open: false
+open: true
 ---
 
 <!--May 2016

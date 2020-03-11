@@ -1,7 +1,8 @@
 ---
 draft: 
 date: 2018-05-01T09:00:00Z
-weight: 
+weight:
+bg:  
 title: Sebastian Smith Photography
 description: Advertising Graphics
 assignment: Retouch & Repair

@@ -1,5 +1,5 @@
 ---
-draft: 
+draft:
 date: 2018-05-01T09:00:00Z
 weight:
 bg: f8f8f8
@@ -9,7 +9,7 @@ assignment: Developer and Designer
 location: Nottinghill, London
 skills:
   - HUGO
-  - JSON 
+  - JSON
   - Netlify
   - Git
   - Branding
@@ -40,7 +40,7 @@ This webapp helps people in the luxury rental market organise and filter rooms t
 
 ### JSON sanitisation in NetlifyCMS
 
-The filter takes JSON data and renders it client-side keeping the information up-to-date without having any other build process. 
+The filter takes JSON data and renders it client-side keeping the information up-to-date without having any other build process.
 
 Terse code output from HUGO templates, catches dat-entry errors. This investment makes maintaining nuaces in the properties as simple as possible.
 

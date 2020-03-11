@@ -1,7 +1,8 @@
 ---
-draft: 
+draft:
 date: 2015-12-137T17:23:55.364Z
-weight: 
+weight:
+bg:
 title: CRM platform
 description: 'Jargon-busting champion for the end-user '
 assignment: UX Designer & Content Designer
@@ -22,7 +23,7 @@ location: 3Si, Newcastle-Under-Lyme
 
 ### Who are 3Si, and what they do?
 
-Derived from their surname Chris Sinclair, Pete Sinclair, and their Father – a silent partner, [3Si](http://inspiredlabs.co.uk/3-si.com/) sell their CRM application to handle volumes of membership and subscription data. Their flagship product is called [OM.Net](http://inspiredlabs.co.uk/3-si.com/#modules). 
+Derived from their surname Chris Sinclair, Pete Sinclair, and their Father – a silent partner, [3Si](http://inspiredlabs.co.uk/3-si.com/) sell their CRM application to handle volumes of membership and subscription data. Their flagship product is called [OM.Net](http://inspiredlabs.co.uk/3-si.com/#modules).
 
 ### Client work
 The [OM.Net](http://inspiredlabs.co.uk/3-si.com/#clients) platform is for Nonprofit Organisations such as **Mensa**, **The National Farmer's Union** and **Trading Standards**. I was also concerned with the web platform for **The Pathological Society**.
@@ -51,12 +52,12 @@ Marketing Brochure
 -->
 
 ### Communicating values
-Developing a CRM platform can be complicated. **3Si** needs technical design improvements, yet look inkeeping with 20 years of heritage. 
+Developing a CRM platform can be complicated. **3Si** needs technical design improvements, yet look inkeeping with 20 years of heritage.
 
 
 By rewriting their [Brochure](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) for an audience of non-technical people, we explain the benefits, without jargon. The company didn't have a definitive glossary, so this project  improved communication for all&nbsp;involved.
 
-After intensive research, marketing material was produced with laser-focus over 7 weeks. 
+After intensive research, marketing material was produced with laser-focus over 7 weeks.
 
 ### Content without boundaries
 The new document  emphasises clarity. The visual language of [OM.Net](http://inspiredlabs.co.uk/3-si.com/index.html#modules) was designed to be cohesive across print and screen, whilst being optimised for mobile. This was all done with a nod to what was already in circulation.
@@ -70,7 +71,7 @@ A simple landing page was produced so the document could be proofread in one&nbs
 With a colour‑blind theme, clear navigation and an emphasis on readability people can find the information they need. The goal is to helping them make the right purchase&nbsp;decision.
 
 ### Template design
-Each template was designed to reduce production time <!-- error rate, --> and unnecessary decision&nbsp;making. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) material contain the same refreshing&nbsp;content. 
+Each template was designed to reduce production time <!-- error rate, --> and unnecessary decision&nbsp;making. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) material contain the same refreshing&nbsp;content.
 
 
 <!--
@@ -84,7 +85,7 @@ Each template was designed to reduce production time <!-- error rate, --> and un
 *   You can see examples of this template used here: www.retinart.net/media/images/secret-law-of-page-harmony/RETINART\_secret-law-of-page-harmony.pdf
 *   Good link "secret-law-of-page-harmony" is from here: http://retinart.net/design-theory/
 
-> Simple is harder than complex: you have to work hard to get your thinking clean to make it simple.  
-> But it's worth it, because once you get there… you can move mountains.  
+> Simple is harder than complex: you have to work hard to get your thinking clean to make it simple.
+> But it's worth it, because once you get there… you can move mountains.
 > – [Steve Jobs](#) Apple
 -->

@@ -1,5 +1,5 @@
 ---
-draft: 
+draft:
 date: 2018-12-13T09:00:00Z
 weight:
 bg: #888
@@ -26,13 +26,13 @@ This mobile first eCommerce site runs via NetlifyCMS, a web interface for writer
 
 #### Manageable styling
 
-Tachyons adapts to design needs. By patching existing classes fixes limitations in the library. Consciously adding utility classes keeps things manageable, while extending default behavior. 
+Tachyons adapts to design needs. By patching existing classes fixes limitations in the library. Consciously adding utility classes keeps things manageable, while extending default behavior.
 
 These work with Javascript for accessibility and for image handling blazy.js.
 
 <!--list.js handles client-side search. And the gallery is handled by Flickity.-->
 
-This combination places content in the hands of the author. Resulting in lightweight, rich, multilingual content – without bloat. 
+This combination places content in the hands of the author. Resulting in lightweight, rich, multilingual content – without bloat.
 
 #### Intelligent systems
 

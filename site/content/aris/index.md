@@ -2,7 +2,8 @@
 draft: 
 date: 2007-05-01T09:00:00Z
 end: 2010-01-01T09:00:00Z
-weight: 
+weight:
+bg:  
 title: Aris Technologies
 description: Design for a development A-Team
 assignment: UI Designer, Typographer, Animator & Graphic Designer

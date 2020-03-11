@@ -2,6 +2,7 @@
 draft: 
 date: 2017-12-13T09:00:00Z
 weight:
+bg: 
 title: Vaultarch
 description: Preventing counterfeit, theft & fraud
 assignment: Graphic Designer & Marketer

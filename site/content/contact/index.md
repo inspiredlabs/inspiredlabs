@@ -1,6 +1,7 @@
 ---
 draft: true
-weight: 1
+weight:
+bg:  1
 date: 
 title: One
 description: Two

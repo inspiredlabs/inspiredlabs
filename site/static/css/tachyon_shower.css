@@ -91,7 +91,8 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight:
+bg:  bolder;
 }
 
 code,
@@ -1250,37 +1251,48 @@ code {
   font-style: normal;
 }
 
-.normal {
+.normalweight:
+bg:
   font-weight: 400;
 }
-
+weight:
+bg:
 .b {
   font-weight: 700;
-}
+}weight:
+bg:
 
 .fw1 {
-  font-weight: 100;
+  font-weight:
+bg:  100;
 }
 
-.fw2 {
+.fw2 {weight:
+bg:
   font-weight: 200;
 }
-
+weight:
+bg:
 .fw3 {
   font-weight: 300;
-}
+}weight:
+bg:
 
 .fw4 {
-  font-weight: 400;
+  font-weight:
+bg:  400;
 }
 
-.fw5 {
+.fw5 {weight:
+bg:
   font-weight: 500;
 }
-
+weight:
+bg:
 .fw6 {
   font-weight: 600;
-}
+}weight:
+bg:
 
 .fw7 {
   font-weight: 700;
@@ -4448,37 +4460,48 @@ code {
   }
 
   .fn-ns {
-    float: none;
+    floatweight:
+bg:
   }
 
-  .i-ns {
+  .i-ns {weight:
+bg:
     font-style: italic;
   }
-
+weight:
+bg:
   .fs-normal-ns {
     font-style: normal;
-  }
+  }weight:
+bg:
 
   .normal-ns {
-    font-weight: 400;
+    font-weight:
+bg:  400;
   }
 
-  .b-ns {
+  .b-ns {weight:
+bg:
     font-weight: 700;
   }
-
+weight:
+bg:
   .fw1-ns {
     font-weight: 100;
-  }
+  }weight:
+bg:
 
   .fw2-ns {
-    font-weight: 200;
+    font-weight:
+bg:  200;
   }
 
-  .fw3-ns {
+  .fw3-nsweight:
+bg:
     font-weight: 300;
   }
-
+weight:
+bg:
   .fw4-ns {
     font-weight: 400;
   }
@@ -6219,37 +6242,48 @@ code {
   .fl-m {
     float: left;
   }
-
+weight:
+bg:
   .fl-m,
   .fr-m {
-    _display: inline;
+    _dispweight:
+bg: line;
   }
 
-  .fr-m {
+  .fr-m {weight:
+bg:
     float: right;
   }
-
+weight:
+bg:
   .fn-m {
     float: none;
-  }
+  }weight:
+bg:
 
   .i-m {
-    font-style: italic;
+    font-weight:
+bg: italic;
   }
 
-  .fs-normal-m {
+  .fs-norweight:
+bg:
     font-style: normal;
   }
-
+weight:
+bg:
   .normal-m {
     font-weight: 400;
-  }
+  }weight:
+bg:
 
   .b-m {
-    font-weight: 700;
+    font-weight:
+bg:  700;
   }
 
-  .fw1-m {
+  .fw1-m weight:
+bg:
     font-weight: 100;
   }
 
@@ -7990,37 +8024,48 @@ code {
     flex-grow: 1;
   }
 
-  .flex-shrink-0-l {
+  .flex-sweight:
+bg: -l {
     flex-shrink: 0;
   }
-
+weight:
+bg:
   .flex-shrink-1-l {
     flex-shrink: 1;
-  }
+  }weight:
+bg:
 
   .fl-l {
-    float: left;
+    floatweight:
+bg:
   }
 
-  .fl-l,
+  .fl-l,weight:
+bg:
   .fr-l {
     _display: inline;
-  }
+  }weight:
+bg:
 
   .fr-l {
-    float: right;
+    floatweight:
+bg: ;
   }
 
-  .fn-l {
+  .fn-l {weight:
+bg:
     float: none;
   }
-
+weight:
+bg:
   .i-l {
     font-style: italic;
-  }
+  }weight:
+bg:
 
   .fs-normal-l {
-    font-style: normal;
+    font-weight:
+bg: normal;
   }
 
   .normal-l {
@@ -9254,7 +9299,8 @@ code {
 .highlight::-moz-selection {
   color: white;
   background: rgba(0, 0, 0, 0.4);
-}
+}weight:
+bg:
 
 .highlight *::selection,
 .highlight::selection {
@@ -10767,7 +10813,8 @@ details * a {
 details * a:hover {
   /* color: white; */
   /*background-color: rgba(0,0,0,.8);*/
-  /* cursor: pointer; */
+  /* cuweight:
+bg: ointer; */
 }
 
 code {

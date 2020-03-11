@@ -2,6 +2,7 @@
 draft: 
 date:
 weight:
+bg: 
 title: InstantWebapp
 description: Web design for a world of apps
 assignment: Frontend Developer

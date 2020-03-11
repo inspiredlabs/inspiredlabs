@@ -2,6 +2,7 @@
 draft: false
 date: 2019-12-13T09:00:00Z
 weight:
+bg: 
 title: Ice Coach
 description: Search Engine Whisperer 
 assignment: Design &amp; Development

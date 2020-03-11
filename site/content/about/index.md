@@ -1,7 +1,8 @@
 ---
-draft: 
-weight: 888
-date: 
+draft:
+weight:
+bg:
+date:
 open: true
 title: Scott Phillips
 description: Design Generalist

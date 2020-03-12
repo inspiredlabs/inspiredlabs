@@ -44,9 +44,9 @@
                     </h2>
                   </header>
                   <p class="f4-ns mt0-ns">
-                    <span class="source_sans_prosemibold">{{ .Params.assignment | safeHTML }}</span>
+                    <span class="source_sans_prosemibold">{{ if .Params.assignment }}{{ .Params.assignment | safeHTML }}{{end}}</span>
                     {{ if .Params.location }}
-                    <span class="source_sans_probold">&hairsp;—&nbsp;{{ .Params.location | safeHTML }}</span>
+                    <span class="source_sans_probold">&hairsp;—&nbsp;{{ if .Params.location }}{{.Params.location | safeHTML }}{{end}}</span>
                     <!-- | safeHTML-->
                     {{ end }}
                   </p>

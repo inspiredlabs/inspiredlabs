@@ -11,41 +11,41 @@
 			  <use xlink:href="#clear"></use>
 			</svg>
 			-->
-		  <input id="searchEntry" class="input-reset o-40 bn bg-transparent bg-animate flex items-center pa0 pt3 pb3 f4 f2-ns f3-m f2-l" type="text" aria-describedby="search" placeholder="Search" oninput="inputUpdate(value);" />
-		</form>
+		  <input id="searchEntry" class="input-reset o-40 bn bg-transparent bg-animate flex items-center pa0 pt3 pb3 f4 f2-ns f2-m f2-l" type="text" aria-describedby="search" placeholder="Search" oninput="inputUpdate(value);" />
+		</form><!-- f4 f2-ns f3-m f2-l -->
 	</li>
 	
 	<!--li class="fl w-100">
-	  <a class="no-underline bg-animate flex items-center pa3 pl0 f4 f2-ns f3-m f2-l" href="#contact">Contact</a>
-	</li-->
+	  <a class="no-underline bg-animate flex items-center pa3 pl0 f4 f2-ns f2-m f2-l" href="#contact">Contact</a>
+	</li--><!-- pl0 f4 f2-ns f3-m f2-l -->
 	
 	<li class="fl w-100">
-	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f3-m f2-l"
+	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f2-m f2-l"
 	  onclick="articleSearch.search(searchString = 'fearless');">About</button> 
 	</li>
 	<!--li class="fl w-100">
-	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f3-m f2-l"
+	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f2-m f2-l"
 	  onclick="articleSearch.search(searchString = 'Contact');">Contact</button> 
 	</li-->
 	<li class="fl w-100">
     <button data-a11y-dialog-show="my-accessible-dialog"
-      class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f3-m f2-l">Portfolio</button>
+      class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f2-m f2-l">Portfolio</button>
 	</li>
 	<li class="fl w-100">
-	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f3-m f2-l"
+	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f2-m f2-l"
 	  onclick="articleSearch.search(searchString = 'Award');">Awards</button> 
 	</li>
 	<li class="fl w-100">
-	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f3-m f2-l"
+	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f2-m f2-l"
 	  onclick="articleSearch.search(searchString = 'Visual');">Visual</button> 
 	</li>
 	
 	<li class="fl w-100">
-	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f3-m f2-l tracked-tight"
+	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f2 tracked-tight"
 	  onclick="articleSearch.search(searchString = 'UX');">UX</button><!-- UI&thinsp;&amp;&thinsp;UX --><!--https://stackoverflow.com/questions/2760784/how-to-calculate-css-letter-spacing-v-s-tracking-in-typography-->
 	</li>
 	<li class="fl w-100 pb6">
-	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f4 f2-ns f3-m f2-l tracked-tight"
+	  <button class="pointer bn bg-transparent bg-animate w-100 tl pa3 pl0 f2 tracked-tight"
 	  onclick="articleSearch.search(searchString = 'OpenCV');">AI</button><!-- AI&thinsp;&amp;&thinsp;ML -->
 	</li>
 
@@ -64,7 +64,7 @@
 	{{ range .Site.Pages.ByWeight }}
 		<li class=""><!-- fl 100 -->
 			<a href="{{ .URL }}"
-				class="no-underline bg-animate flex items-center pa3 pl0 f4 f2-ns f3-m f2-l tracked-tight
+				class="no-underline bg-animate flex items-center pa3 pl0 f2 tracked-tight
 				{{ if eq .Title $thisTitle }}
 					source_sans_proregular
 				{{ end }}">{{ .Title }}</a><!-- pa3 -->

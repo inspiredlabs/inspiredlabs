@@ -91,11 +91,11 @@
   <base href="{{ .Site.BaseURL }}" />
 
   <!-- regex101.com PCRE & backticks not quotes: https://discourse.gohugo.io/t/replacere-gives-syntax-error/22624/2 -->
-  {{ $style := resources.Get "css/tachyonshower.css" | minify }}
-  <style>{{ $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS }}</style>
+  {{- $style := resources.Get "css/tachyonshower.css" | minify -}}
+  <style>{{- $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS -}}</style>
 
-  {{ $style := resources.Get "css/sourcesans.css" | minify }}
-  <style>{{ $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS }}</style>
+  {{- $style := resources.Get "css/sourcesans.css" | minify -}}
+  <style>{{- $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS -}}</style>
 
   <!--TODO: TEMPLATE CSS -->
   <style>

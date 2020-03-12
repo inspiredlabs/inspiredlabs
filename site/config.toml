@@ -1,7 +1,7 @@
-baseurl = "./" #local only
+baseurl = "https://hungry-wozniak-e915f8.netlify.com/"  #"./" local only 
 #"https://hungry-wozniak-e915f8.netlify.com"
 #{{ .Site.BaseURL }} "/" && netlify
-relativeURLs = "true"
+#relativeURLs = "true"
 
 languageCode = "en-gb" #Initial configuration reset
 title = "Inspired Labs"

@@ -89,8 +89,12 @@
   <!-- https://discourse.gohugo.io/t/glob-directory-and-minify-all-to-css/21154 -->
   <!-- link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}{{/*css/tachyon_shower.css*/}}" -->
   <base href="{{ .Site.BaseURL }}" />
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/sourcesans.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/tachyonshower.css">
+  
+  {{/* if .IsHome }}{{ end */}}
+  <!-- <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/flickity.css"> --><!-- flickity.min.css -->
+  <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/sourcesans.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/tachyonshower.css">
+  
 
   <!-- regex101.com PCRE & backticks not quotes: https://discourse.gohugo.io/t/replacere-gives-syntax-error/22624/2 -->
   {{/* $style := resources.Get "css/tachyonshower.css" | minify */}}

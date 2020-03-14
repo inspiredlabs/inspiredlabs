@@ -1,5 +1,4 @@
-baseurl = "https://hungry-wozniak-e915f8.netlify.com/"  #"./" local only 
-#"https://hungry-wozniak-e915f8.netlify.com"
+baseurl = "./"  #"./" local only #https://hungry-wozniak-e915f8.netlify.com/
 #{{ .Site.BaseURL }} "/" && netlify
 #relativeURLs = "true"
 

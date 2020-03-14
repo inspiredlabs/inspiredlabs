@@ -1,4 +1,54 @@
-html { /*It works!*/ }
+/*! TACHYONSHOWER | demo: https://codepen.io/inspiredlabs/pen/LYPZVQK */
+/*! Utility classes for duplication-free layout expression  */
+/*{{/* partial "add-to-tachyon-shower" . */}} abstraction layer for components */
+/* Document this (then add postCSS and Purge into build process): */
+/*{{/* $style := resources.Get "css/uncssonline.css" | minify */}}*/
+/*{{/* $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS */}}*/
+
+
+/* 16.04.19	.dim 								transform:translateZ(0)			bug fix 	*/
+/* 17.04.19	.grow 							background-clip							bug fix 	*/
+/* 01.05.19	.ts 								shadow											addition 	*/
+/* 30.05.19	.f8 								0.6rem											addition 	*/
+/* 14.08.19	.debug *						display colours							media query addition 		*/
+/* 13.10.19	.b--transparent			border top highlight				moved cascade override	*/
+/* 04.11.19	.ma-auto						mr-auto ml-auto							+ missing top & bottom	*/
+/* 04.11.19 .backface-hidden		-webkit hide (flickity)			addition								*/
+/* 04.11.19 .no-focus-ring 			<button> + button-reset			addition								*/
+/* 06.11.19 .transition 				give up subpixel render 		-webkit-font-smoothing	*/
+/* 08.11.19 .smooth-scroll			scroll-behavior:smooth  		addition								*/
+/* 26.11.19 .touch-manipulation	touch-action:manipulation   addition								*/
+
+/* Consider `.hover-o-*` convention. */
+/* Recycle existing class and break Tachyons convention. */
+/* 07.01.20 .emojisymbol			Semantic unicode-icons				addition								*/
+/* 13.01.20 .link							word-wrap: break-word;				bug fix 								*/
+/* 24.01.20 .twitter, .facebook, .pm-blue-light, etc.				addition								*/
+/* 29.01.20 .portrait-etc 		horiz/vert nav & banners…			multiple media queries	*/
+/* 29.01.20 .no-body-scroll 	overscroll shortcut?					multiple rules comment	*/
+/* 29.01.20 `#menu nav`,`[aria-expanded=false]~#menu nav`…	See comment							*/
+/* 30.01.20 .ts1-white… 			text-shadow: 0px 0.125rem 0.125rem white;							*/
+/* 30.01.20 .ds2-dark-gray… 	filter: drop-shadow(0px 0.625rem 0.625rem #333);	*/
+
+/* Note: MERGE ME */
+/* translate/transitions */
+/* 05.03.20 .bg-debug… 	        background-color: red…      addition								*/
+/* 06.03.20 .near-white… 	      background-color: #f8f8f8;  CONFLICT: breakout vars	*/
+
+/* SORT ME */
+/* Integrate: https://uncss-online.com/ */
+/* .box-sizing,etc...{border-box;margin-top:0;margin-bottom:0;}. */
+/* .dim and .grow: https://github.com/tachyons-css/tachyons/issues/337 */
+/* .fill and .overflow-wrap: https://github.com/tachyons-css/tachyons/issues/211#issuecomment-351964732 */
+/* Restricted heights: https://github.com/tachyons-css/tachyons/issues/619 */
+/* tracked-none: https://github.com/tachyons-css/tachyons/issues/507 */
+/* shadow-none: https://github.com/tachyons-css/tachyons/issues/535 */
+/* https://github.com/tachyons-css/tachyons/issues/566 */
+
+/* Genarator: https://github.com/tachyons-css/tachyons/issues/459 */
+/*! TACHYONS v4.9.1 | http://tachyons.io */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* : .b--transparent { border-color: transparent; } */
 
 html {
   line-height: 1.15;
@@ -38,8 +88,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight:
-bg:  bolder;
+  font-weight: bolder;
 }
 
 code,
@@ -1198,48 +1247,37 @@ code {
   font-style: normal;
 }
 
-.normalweight:
-bg:
+.normal {
   font-weight: 400;
 }
-weight:
-bg:
+
 .b {
   font-weight: 700;
-}weight:
-bg:
+}
 
 .fw1 {
-  font-weight:
-bg:  100;
+  font-weight: 100;
 }
 
-.fw2 {weight:
-bg:
+.fw2 {
   font-weight: 200;
 }
-weight:
-bg:
+
 .fw3 {
   font-weight: 300;
-}weight:
-bg:
+}
 
 .fw4 {
-  font-weight:
-bg:  400;
+  font-weight: 400;
 }
 
-.fw5 {weight:
-bg:
+.fw5 {
   font-weight: 500;
 }
-weight:
-bg:
+
 .fw6 {
   font-weight: 600;
-}weight:
-bg:
+}
 
 .fw7 {
   font-weight: 700;
@@ -3744,6 +3782,11 @@ bg:
   outline: 1px solid gold;
 }
 
+/* Useful for display width */
+.debug * {
+  outline: 1px solid gold;
+}
+
 @media screen and (min-width: 30em) {
   .debug * {
     outline: 1px solid yellow;
@@ -4407,48 +4450,37 @@ bg:
   }
 
   .fn-ns {
-    floatweight:
-bg:
+    float: none;
   }
 
-  .i-ns {weight:
-bg:
+  .i-ns {
     font-style: italic;
   }
-weight:
-bg:
+
   .fs-normal-ns {
     font-style: normal;
-  }weight:
-bg:
+  }
 
   .normal-ns {
-    font-weight:
-bg:  400;
+    font-weight: 400;
   }
 
-  .b-ns {weight:
-bg:
+  .b-ns {
     font-weight: 700;
   }
-weight:
-bg:
+
   .fw1-ns {
     font-weight: 100;
-  }weight:
-bg:
+  }
 
   .fw2-ns {
-    font-weight:
-bg:  200;
+    font-weight: 200;
   }
 
-  .fw3-nsweight:
-bg:
+  .fw3-ns {
     font-weight: 300;
   }
-weight:
-bg:
+
   .fw4-ns {
     font-weight: 400;
   }
@@ -6189,48 +6221,37 @@ bg:
   .fl-m {
     float: left;
   }
-weight:
-bg:
+
   .fl-m,
   .fr-m {
-    _dispweight:
-bg: line;
+    _display: inline;
   }
 
-  .fr-m {weight:
-bg:
+  .fr-m {
     float: right;
   }
-weight:
-bg:
+
   .fn-m {
     float: none;
-  }weight:
-bg:
+  }
 
   .i-m {
-    font-weight:
-bg: italic;
+    font-style: italic;
   }
 
-  .fs-norweight:
-bg:
+  .fs-normal-m {
     font-style: normal;
   }
-weight:
-bg:
+
   .normal-m {
     font-weight: 400;
-  }weight:
-bg:
-
-  .b-m {
-    font-weight:
-bg:  700;
   }
 
-  .fw1-m weight:
-bg:
+  .b-m {
+    font-weight: 700;
+  }
+
+  .fw1-m {
     font-weight: 100;
   }
 
@@ -7971,48 +7992,37 @@ bg:
     flex-grow: 1;
   }
 
-  .flex-sweight:
-bg: -l {
+  .flex-shrink-0-l {
     flex-shrink: 0;
   }
-weight:
-bg:
+
   .flex-shrink-1-l {
     flex-shrink: 1;
-  }weight:
-bg:
+  }
 
   .fl-l {
-    floatweight:
-bg:
+    float: left;
   }
 
-  .fl-l,weight:
-bg:
+  .fl-l,
   .fr-l {
     _display: inline;
-  }weight:
-bg:
+  }
 
   .fr-l {
-    floatweight:
-bg: ;
+    float: right;
   }
 
-  .fn-l {weight:
-bg:
+  .fn-l {
     float: none;
   }
-weight:
-bg:
+
   .i-l {
     font-style: italic;
-  }weight:
-bg:
+  }
 
   .fs-normal-l {
-    font-weight:
-bg: normal;
+    font-style: normal;
   }
 
   .normal-l {
@@ -9246,8 +9256,7 @@ bg: normal;
 .highlight::-moz-selection {
   color: white;
   background: rgba(0, 0, 0, 0.4);
-}weight:
-bg:
+}
 
 .highlight *::selection,
 .highlight::selection {
@@ -10753,15 +10762,14 @@ details * a {
 }
 
 details * a {
-  /* color: black;  */
-  /* cursor: pointer; */
+  color: black;
+  cursor: pointer;
 }
 
 details * a:hover {
-  /* color: white; */
+  color: white;
   /*background-color: rgba(0,0,0,.8);*/
-  /* cuweight:
-bg: ointer; */
+  cursor: pointer;
 }
 
 code {
@@ -10829,25 +10837,23 @@ blockquote a {
 
 
 .post-holder ul {
-  /* padding-left: 0; */
+  padding-left: 0;
 }
 
 .post-holder ul li ul li {
-  /* margin-left: 1rem; */
-  /* padding-left:0; */
+  margin-left: 1rem;
+  /*padding-left:0;*/
 }
 
 
 .post-holder * a {
-  /* color: rgba(56, 56, 56, 0.8); *//* #383838 hex to rgb */
-  /* opacity: 0.8 */
+  color: rgba(166, 166, 166, 1);
 }
 
 .post-holder * a:focus,
 .post-holder * a:hover {
-  /* color: rgba(56, 56, 56, 1); */
-  /* opacity: 1; */
-  /* transition: opacity 0.15s ease-in; */
+  color: rgba(166, 166, 166, 0.8);
+  transition: color 0.15s ease-in;
 }
 
 /*</style>*/
@@ -11781,23 +11787,27 @@ input:focus::placeholder {
 
 .hover-o-100:hover {
   opacity: 1;
+  transition: all .25s ease;
 }
 
 @media screen and (min-width: 30em) {
   .hover-o-100-ns:hover {
     opacity: 1;
+    transition: all .25s ease;
   }
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .hover-o-100-m:hover {
     opacity: 1;
+    transition: all .25s ease;
   }
 }
 
 @media screen and (min-width: 60em) {
   .hover-o-100-l:hover {
     opacity: 1;
+    transition: all .25s ease;
   }
 }
 

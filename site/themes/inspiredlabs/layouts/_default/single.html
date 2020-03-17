@@ -1,13 +1,14 @@
 {{ partial "head" . }}
 
-<div class="fl w-80 w-80-ns w-two-thirds-m w-two-thirds-l bg-red pl2 ">
-  <div class="fr w-measure bg-green f4" style="max-width: 40rem;">
+<div class="fl w-80 w-80-ns w-two-thirds-m w-two-thirds-l  pl2 "><!-- bg-debug -->
+  <div class="fr w-measure  f4" style="max-width: 40rem;"><!-- bg-green -->
     {{ partial "content" . }}
   </div>
 
 </div>
-<div class="fl w-20 w-20-ns w-third-m w-third-l bg-gold source_sans_prolight pl2">
-  <ul class="list pl0 fs-5vmin fs-8vmax lh-5vh" ><!-- too large: fs-8vmin fs-5vmax lh-16vh --> 
+<div class="fl w-20 w-20-ns w-third-m w-third-l source_sans_prolight pl2"><!-- bg-gold -->
+  <ul class="list pl0 pl2-ns pl4-m pl4-l fs-5vmin fs-6vmin-ns fs-7vmin-m fs-8vmin-l lh-5vh" ><!-- `pl0` too large: fs-8vmin fs-5vmax lh-16vh --> 
+    <li class="underline">Search</li>
     <li>About</li>
     <li>Portfolio</li>
     <li>Awards</li>
@@ -19,10 +20,15 @@
 
 
 <div class="fl w-two-thirds bg-gold">
-  <div class="fr w-measure bg-red f4" >
-    <h2>footer</h2>
-  </div>
+  <ul class="fr w-measure bg-red source_sans_prolight list tr fs-5vmin fs-6vmin-ns fs-7vmin-m fs-8vmin-l lh-5vh">
+    <li>Portfolio</li>
+    <li>Awards</li>
+    <li>Visual</li>
+    <li>UX</li>
+    <li>AI</li>
+  </ul>
 </div>
+
 
 
 

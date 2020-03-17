@@ -4,7 +4,8 @@
 /* Document this (then add postCSS and Purge into build process): */
 /*{{/* $style := resources.Get "css/uncssonline.css" | minify */}}*/
 /*{{/* $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS */}}*/
-
+/* https://stylelint.io/demo */
+/* https://uncss-online.com/ */
 
 /* 16.04.19	.dim 								transform:translateZ(0)			bug fix 	*/
 /* 17.04.19	.grow 							background-clip							bug fix 	*/
@@ -34,6 +35,9 @@
 /* translate/transitions */
 /* 05.03.20 .bg-debug… 	        background-color: red…      addition								*/
 /* 06.03.20 .near-white… 	      background-color: #f8f8f8;  CONFLICT: breakout vars	*/
+/* 17.03.20 .fs-3vmax, .fs-3vmin to .fs-8vmax, .fs-8vmin		change									*/
+
+
 
 /* SORT ME */
 /* Integrate: https://uncss-online.com/ */
@@ -11947,53 +11951,279 @@ input:focus::placeholder {
   line-height: 20vh;
 }
 
-.fs-3vmax {
-  font-size: 3vmax;
-}
-
-.fs-5vmax {
-  font-size: 5vmax;
-}
-
-.fs-8vmax {
-  font-size: 8vmax;
-}
-
-.fs-10vmax {
-  font-size: 10vmax;
-}
-
-.fs-12vmax {
-  font-size: 12vmax;
-}
-
-.fs-14vmax {
-  font-size: 14vmax;
-}
-
 .fs-3vmin {
   font-size: 3vmin;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-3vmin-ns {
+    font-size: 3vmin;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-3vmin-m {
+    font-size: 3vmin;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-3vmin-l {
+    font-size: 3vmin;
+  }
+}
+
+
+.fs-4vmin {
+  font-size: 4vmin;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-4vmin-ns {
+    font-size: 4vmin;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-4vmin-m {
+    font-size: 4vmin;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-4vmin-l {
+    font-size: 4vmin;
+  }
 }
 
 .fs-5vmin {
   font-size: 5vmin;
 }
 
+@media screen and (min-width: 30em) {
+  .fs-5vmin-ns {
+    font-size: 5vmin;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-5vmin-m {
+    font-size: 5vmin;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-5vmin-l {
+    font-size: 5vmin;
+  }
+}
+
+
+.fs-6vmin {
+  font-size: 6vmin;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-6vmin-ns {
+    font-size: 6vmin;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-6vmin-m {
+    font-size: 6vmin;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-6vmin-l {
+    font-size: 6vmin;
+  }
+}
+
+
+.fs-7vmin {
+  font-size: 7vmin;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-7vmin-ns {
+    font-size: 7vmin;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-7vmin-m {
+    font-size: 7vmin;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-7vmin-l {
+    font-size: 7vmin;
+  }
+}
+
+
 .fs-8vmin {
   font-size: 8vmin;
 }
 
-.fs-10vmin {
-  font-size: 10vmin;
+@media screen and (min-width: 30em) {
+  .fs-8vmin-ns {
+    font-size: 8vmin;
+  }
 }
 
-.fs-12vmin {
-  font-size: 12vmin;
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-8vmin-m {
+    font-size: 8vmin;
+  }
 }
 
-.fs-14vmin {
-  font-size: 14vmin;
+@media screen and (min-width: 60em) {
+  .fs-8vmin-l {
+    font-size: 8vmin;
+  }
 }
+
+.fs-3vmax {
+  font-size: 3vmax;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-3vmax-ns {
+    font-size: 3vmax;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-3vmax-m {
+    font-size: 3vmax;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-3vmax-l {
+    font-size: 3vmax;
+  }
+}
+
+
+.fs-4vmax {
+  font-size: 4vmax;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-4vmax-ns {
+    font-size: 4vmax;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-4vmax-m {
+    font-size: 4vmax;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-4vmax-l {
+    font-size: 4vmax;
+  }
+}
+
+.fs-5vmax {
+  font-size: 5vmax;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-5vmax-ns {
+    font-size: 5vmax;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-5vmax-m {
+    font-size: 5vmax;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-5vmax-l {
+    font-size: 5vmax;
+  }
+}
+
+
+.fs-6vmax {
+  font-size: 6vmax;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-6vmax-ns {
+    font-size: 6vmax;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-6vmax-m {
+    font-size: 6vmax;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-6vmax-l {
+    font-size: 6vmax;
+  }
+}
+
+
+.fs-7vmax {
+  font-size: 7vmax;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-7vmax-ns {
+    font-size: 7vmax;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-7vmax-m {
+    font-size: 7vmax;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-7vmax-l {
+    font-size: 7vmax;
+  }
+}
+
+
+.fs-8vmax {
+  font-size: 8vmax;
+}
+
+@media screen and (min-width: 30em) {
+  .fs-8vmax-ns {
+    font-size: 8vmax;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fs-8vmax-m {
+    font-size: 8vmax;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .fs-8vmax-l {
+    font-size: 8vmax;
+  }
+}
+
+
 
 /*</style>*/
 

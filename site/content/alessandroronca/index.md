@@ -1,10 +1,10 @@
 ---
-draft: false
+draft: 
 date: 2019-12-13T09:00:00Z
 weight:
-bg: 
+bg:
 title: Ice Coach
-description: Search Engine Whisperer 
+description: Search Engine Whisperer
 assignment: Design &amp; Development
 location: Umbria, Italy
 open: false
@@ -24,9 +24,9 @@ Securing bookings as an Ice&nbsp;Coach and educator Alessandro&nbsp;Ronca vividl
 
 ### Multiple Challenges Accepted!
 
-Forseen technical challenges included: 
+Forseen technical challenges included:
 
-- NetlifyCMS doesn't officially support multilingual sites<!--LINK-->. 
+- NetlifyCMS doesn't officially support multilingual sites<!--LINK-->.
 - high-quality templates for **Schema.org** are largely undocumented<!--LINK-->.
 
 Both solutions were possible by writing complex templates with nested&nbsp;data.

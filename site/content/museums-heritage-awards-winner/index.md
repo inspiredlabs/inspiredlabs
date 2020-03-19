@@ -1,5 +1,5 @@
 ---
-draft: 
+draft:  
 date: 2011-12-13T09:00:00Z
 weight:
 bg:  

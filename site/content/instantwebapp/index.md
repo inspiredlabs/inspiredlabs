@@ -1,5 +1,5 @@
 ---
-draft: 
+draft:  
 date:
 weight:
 bg: 

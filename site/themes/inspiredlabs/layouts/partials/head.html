@@ -342,8 +342,9 @@ opacity: 0;
   {{ partial "svg.html" . }}  
 
   {{/* partial "sticky" . */}}
-  {{ if and ( ne .IsPage .IsHome ) }}
-  <span class="red">{{ .IsHome }}</span>
-  {{ else }}
-  <span class="blue">{{ .IsPage }}</span>
-  {{ end }}
+
+  {{/* if and ( ne .IsPage .IsHome ) */}}
+  <!-- <span class="red">{{ .IsHome }}</span> -->
+  {{/* else */}}
+  <!-- <span class="blue">{{ .IsPage }}</span> -->
+  {{/* end */}}

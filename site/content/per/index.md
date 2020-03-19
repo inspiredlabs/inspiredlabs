@@ -1,8 +1,8 @@
 ---
-draft: true
+draft: 
 date: 2016-05-13T09:00:00Z
 weight:
-bg: 
+bg:
 title: PeR, Il Parco dell Energia Rinnovabile
 description: Sustainability Research
 assignment: Designer & Content Writer
@@ -27,7 +27,7 @@ open: false
 
 ### Deep in an area of outstanding natural beauty
 
-With limited resources, such as no water, lead by engineer and entrepreneur [Alessandro Ranco](https://inspiredlabs.co.uk/per.umbria.it/en/index.html#philosophy) a small team has built on an ancient site. Adding power, irrigation, and a teaching block on top of where they live [PeR](https://inspiredlabs.co.uk/per.umbria.it/en/) has become the largest facility of it's kind in Italy. 
+With limited resources, such as no water, lead by engineer and entrepreneur [Alessandro Ranco](https://inspiredlabs.co.uk/per.umbria.it/en/index.html#philosophy) a small team has built on an ancient site. Adding power, irrigation, and a teaching block on top of where they live [PeR](https://inspiredlabs.co.uk/per.umbria.it/en/) has become the largest facility of it's kind in Italy.
 
 > …the tools exist to design better communities.<cite>– Alessandro Ranco, [PER](https://inspiredlabs.co.uk/per.umbria.it/en/index.html#philosophy)</cite>
 
@@ -127,6 +127,6 @@ To improve the site's user experience several key steps were taken. Semantic HTM
 *   The outcome of these optimisations combined is: Performance rated “A” via [tools.pingdom.com](https://tools.pingdom.com/#!/dm8jAX/http://inspiredlabs.co.uk/per.umbria.it/en/index.html) and a [PageSpeed rating: 99%](http://inspiredlabs.co.uk/gtmetrix.com/reports/per.umbria.it.pdf).
 
 <!--
-> What is information architecture?  
+> What is information architecture?
 > …it’s an attitude, not a process, and a responsibility.<cite>– [Richard Saul Wurman](http://understandinggroup.com/information-architecture/cool-finds-bonus-richard-saul-wurman-interview-knowledge-management/) on unfamiliarity and understanding</cite>
 -->

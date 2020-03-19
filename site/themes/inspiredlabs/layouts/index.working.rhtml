@@ -1,73 +1,112 @@
+{{ partial "head" . }}
+{{ partial "nav.html" . }}
+
+<div id="content">
+  <ul class="list ">
+    <!-- pl0 -->
+
+    {{ range .Data.Pages.ByDate.Reverse.ByWeight }}
+    {{ if ne .Title "Contact" }}
+    {{ .Render "li" }}
+    {{ end }}
+    {{ end }}
+
+
+    {{ range .Data.Pages.ByDate.Reverse.ByWeight }}
+    {{ if eq .Title "Contact" }}
+    {{ .Render "li" }}
+    {{ end }}
+    {{ end }}
+
+
+  </ul>
+</div>
+{{/* partial "portfolio" . */}}
 <style>
+  /* .portfolio img { background-color: yellow; } */
 
-/* .portfolio img { background-color: yellow; } */
+  /* fade in image when loaded */
+  .portfolio-cell {
+    /*margin-right: 10px */
+    ;
+    /* background: var(--charcoal); */
+    /* counter-increment: portfolio-cell; */
+    transition: opacity 0.4s;
+    opacity: 0;
+  }
 
-/* fade in image when loaded */
-.portfolio-cell {  
-  /*margin-right: 10px */;
-  /* background: var(--charcoal); */
-  /* counter-increment: portfolio-cell; */
-  transition: opacity 0.4s;
-  opacity:0;
-}
+  .portfolio-cell.flickity-bg-lazyloaded,
+  .portfolio-cell.flickity-lazyerror {
+    opacity: 1;
+  }
 
-.portfolio-cell.flickity-bg-lazyloaded,
-.portfolio-cell.flickity-lazyerror {
-  opacity: 1;
-}
- 
-button[aria-expanded="true"] {
-  /* https://codepen.io/inspiredlabs/pen/ydadxB
+  button[aria-expanded="true"] {
+    /* https://codepen.io/inspiredlabs/pen/ydadxB
   box-shadow: inset 5px 5px #999;
   background: #ddd; 
   color: white;
   */
-}
+  }
 
-#menu {
-  background: transparent;
-  /* font-size: 2em; */
-  /* padding: 1em; */
-  /* border: 1px solid #999; */
-  /* margin-top: 0.5em; */
-  /* max-width: 20em; */
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; /* */
-}
+  #menu {
+    background: transparent;
+    /* font-size: 2em; */
+    /* padding: 1em; */
+    /* border: 1px solid #999; */
+    /* margin-top: 0.5em; */
+    /* max-width: 20em; */
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    /* */
+  }
 
-@keyframes fadeInOut {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
-} 
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
 
-@-webkit-keyframes fadeInOut {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
+    100% {
+      opacity: 1;
+    }
+  }
 
-.fadeInOut {
-  -webkit-animation-name: fadeInOut;
-  animation-name: fadeInOut;
-} /* https://www.tutorialspoint.com/css/css_animation_fade_in.htm */
+  @-webkit-keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
 
-.portfolio-nav .portfolio-cell, .portfolio img {
-  border-color: transparent;
-}
+    100% {
+      opacity: 1;
+    }
+  }
 
-.portfolio-nav .portfolio-cell.is-nav-selected {
-  border-color: dimgray;
-}
-.portfolio-nav .portfolio-cell:hover {
-  border-color: var(--charcoal);
-}
+  .fadeInOut {
+    -webkit-animation-name: fadeInOut;
+    animation-name: fadeInOut;
+  }
+
+  /* https://www.tutorialspoint.com/css/css_animation_fade_in.htm */
+
+  .portfolio-nav .portfolio-cell,
+  .portfolio img {
+    border-color: transparent;
+  }
+
+  .portfolio-nav .portfolio-cell.is-nav-selected {
+    border-color: dimgray;
+  }
+
+  .portfolio-nav .portfolio-cell:hover {
+    border-color: var(--charcoal);
+  }
 </style>
 <style>
   .portfolio-cell {
     opacity: 0;
   }
-  
+
   .portfolio img {
     /* padding-left: 0rem;
     padding-right: 0rem; */
@@ -93,10 +132,11 @@ button[aria-expanded="true"] {
     transform: translateY(60%);
     /* Analogue timing roblaplaca.com/examples/bezierBuilder */
     -webkit-transition: all .8s cubic-bezier(.3, 0, .02, 1);
-			 -moz-transition: all .8s cubic-bezier(.3, 0, .02, 1);
-				 -o-transition: all .8s cubic-bezier(.3, 0, .02, 1);
-						transition: all .8s cubic-bezier(.3, 0, .02, 1);
+    -moz-transition: all .8s cubic-bezier(.3, 0, .02, 1);
+    -o-transition: all .8s cubic-bezier(.3, 0, .02, 1);
+    transition: all .8s cubic-bezier(.3, 0, .02, 1);
   }
+
   .translateY-custom:hover {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -107,104 +147,108 @@ button[aria-expanded="true"] {
  * Necessary styling for the dialog to work
  * -------------------------------------------------------------------------- */
 
-/**
+  /**
  * When `<dialog>` is properly supported, the overlay is implied and can be
  * styled with `::backdrop`, which means the DOM one should be removed.
  */
-[data-a11y-dialog-native] .dialog-overlay {
-  display: none;
-}
+  [data-a11y-dialog-native] .dialog-overlay {
+    display: none;
+  }
 
-/**
+  /**
  * When `<dialog>` is not supported, its default display is `inline` which can
  * cause layout issues.
  */
-dialog[open] {
-  display: block;
-}
+  dialog[open] {
+    display: block;
+  }
 
-.dialog[aria-hidden="true"] {
-  display: none;
-}
+  .dialog[aria-hidden="true"] {
+    display: none;
+  }
 
-/* -------------------------------------------------------------------------- *\
+  /* -------------------------------------------------------------------------- *\
  * Styling to make the dialog look like a dialog
  * -------------------------------------------------------------------------- */
 
-.dialog-overlay {
-  /* z-index: 2; */
-  background-color: rgba(0, 0, 0, 0.66);
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
+  .dialog-overlay {
+    /* z-index: 2; */
+    background-color: rgba(0, 0, 0, 0.66);
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.66);
-}
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.66);
+  }
 
-.dialog-content {
-  background-color: rgb(255, 255, 255);
-  /* z-index: 3; */
-  /* position: fixed; */
-  /* top: 50%;
+  .dialog-content {
+    background-color: rgb(255, 255, 255);
+    /* z-index: 3; */
+    /* position: fixed; */
+    /* top: 50%;
   left: 50%; */
-  /* -webkit-transform: translate(-50%, -50%);
+    /* -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
-  margin: 0;
-  
-}
+    margin: 0;
 
-/* -------------------------------------------------------------------------- *\
+  }
+
+  /* -------------------------------------------------------------------------- *\
  * Extra dialog styling to make it shiny
  * -------------------------------------------------------------------------- */
 
-@keyframes fade-in {
-  /* IT WORKS! */
-  /* from { opacity: 0;  }
+  @keyframes fade-in {
+    /* IT WORKS! */
+    /* from { opacity: 0;  }
   to { opacity: 1;  } */
-}
+  }
 
-@keyframes appear {
-  /* IT WORKS! */
-  /* from { transform: translate(-50%, -40%); opacity: 0; }
+  @keyframes appear {
+    /* IT WORKS! */
+    /* from { transform: translate(-50%, -40%); opacity: 0; }
   to { transform: translate(-50%, -50%); opacity: 1; } */
-}
+  }
 
-.dialog:not([aria-hidden='true']) > .dialog-overlay {
-  /* IT WORKS! */
-  /* animation: fade-in 200ms 1 both; */
-}
+  .dialog:not([aria-hidden='true'])>.dialog-overlay {
+    /* IT WORKS! */
+    /* animation: fade-in 200ms 1 both; */
+  }
 
-.dialog:not([aria-hidden='true']) > .dialog-content {
-  /* IT WORKS! */
-  /* animation: appear 400ms 150ms 1 both; */
-}
+  .dialog:not([aria-hidden='true'])>.dialog-content {
+    /* IT WORKS! */
+    /* animation: appear 400ms 150ms 1 both; */
+  }
 
-.dialog-content {
-  /* width: 100%;
+  .dialog-content {
+    /* width: 100%;
   min-width: 100%;
   height: 100%;
   min-height: 100%; */
-}
+  }
 
-.dialog-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-}
+  .dialog-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 
-.dialog-close {
-  cursor: pointer;
-  transition: 0.15s;
-}
+  .dialog-close {
+    cursor: pointer;
+    transition: 0.15s;
+  }
+  
+</style>
 
+<style>
 {{ range .Data.Pages.ByDate.Reverse }}
 {{ $bg := .Params.bg }}
 {{ with .Resources.ByType "image" }}
 {{ range . }}
 
+#cell-{{ sha1 .Title }}, 
 .cell-{{ sha1 .Title }} {
   background-color:#{{ $bg | safeCSS }};
 }
@@ -215,16 +259,75 @@ dialog::backdrop {
 {{ end }}
 </style>
 
-<aside class="dialog relative z-9999 " id="my-accessible-dialog"><!-- fixed fadeInOut -->
+
+<aside class="dialog relative z-9999 " id="my-accessible-dialog">
+  <!-- fixed fadeInOut -->
   <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
   <dialog class=" w-100 vw-100 top-0 left-0" aria-labelledby="dialogTitle" aria-describedby="dialogDescription">
     <button data-a11y-dialog-hide aria-label="Close this dialog window"
-    class="dialog-close
-    bn bg-transparent button-reset charcoal dim fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l pointer"
-    >&times;</button><!-- near-white ts1-dark-gray https://codepen.io/inspiredlabs/pen/ydadxB -->
-    
-      {{ partial "flickity" . }}
-    
+      class="dialog-close
+    bn bg-transparent button-reset charcoal dim fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l pointer">&times;</button>
+    <!-- near-white ts1-dark-gray https://codepen.io/inspiredlabs/pen/ydadxB -->
+
+    {{/* partial "flickity" . */}}
+    <div class="w-100 vw-100 top-0 left-0 z-9999 fixed">
+      <!-- fadeInOut -->
+      <!-- {{/* RANGE THROUGH THIS CORRECTLY */}}
+          <div class="w-50 fixed z-2 mt0 pa1 top-0 z-2">
+          <a href="#cell01">Cell 1</a>,
+          <a href="#cell02">Cell 2</a>,
+          <a href="#cell03">Cell 3</a>,
+          <a href="#cell04">Cell 4</a>,
+          <a href="#cell05">Cell 5</a>
+        </div> -->
+
+      
+      <div class="bottom-0 h5 o-0 hover-o-100 w-100 left-0 z-3 fixed pt6 translateY-custom">
+        <!-- debug bg-red  -->
+        <nav class="portfolio portfolio-nav bg-transparent bn ma0 pa0 h4 bottom-0 ">
+          <!-- data-flickity='{ "asNavFor": ".portfolio-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l -->
+          <!-- https://tachyons.io/components/layout/aspect-ratio-1x1/index.html -->
+
+
+          {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
+          {{ $bg := .Params.bg }}
+          {{ with .Resources.ByType "image" }}
+          {{ range . }}
+          
+          <img 
+            class="cell-{{ sha1 .Title }}
+            bg-test
+            cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+            data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </nav>
+      </div>
+
+      <!-- Flickity HTML -->
+      <div class="portfolio portfolio-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1 ">
+        
+        {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
+        {{ $bg := .Params.bg }}
+        {{ with .Resources.ByType "image" }}
+        {{ range . }}
+
+        {{/* NOTE: sha1 .Title https://discourse.gohugo.io/t/looking-for-a-futureproof-uniqueid/18936/4 */}}
+        <img
+          id="cell-{{ sha1 .Title }}"
+          class='bg-test
+          portfolio-cell no-select cell-{{ sha1 .Title }} w-100 vw-100 h-100 vh-100'
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+          data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
+        {{ end }}
+        {{ end }}
+        {{ end }}
+
+      </div><!-- /portfolio -->
+    </div>
+
   </dialog>
 </aside>
 
@@ -249,7 +352,7 @@ dialog::backdrop {
     };
     document.documentElement.className += 'static';
   };
-  
+
   const scrolling = function () {
     document.ontouchmove = function (e) {
       e.enableDefault()
@@ -259,7 +362,7 @@ dialog::backdrop {
 </script>
 
 <!-- src="main.js" -->
-<script >
+<script>
   /* global NodeList, Element, Event, define */
 
   (function (global) {
@@ -732,7 +835,7 @@ dialog::backdrop {
       // dialog.hide() // add static();
       // dialog.destroy()
     });
-    }());
+  }());
 </script>
 
 
@@ -882,15 +985,15 @@ document.onkeydown = function(e) {
     }, 10);//setTimeout
 
   };//portfolio();
-  
+
 
   (function () {
     // IIFE
     window.addEventListener('orientationchange', function () {
-      
+
       var originalBodyStyle = getComputedStyle(document.body).getPropertyValue('display');
       document.body.style.display = 'none';
-      
+
       setTimeout(function () {
         document.body.style.display = originalBodyStyle;
       }, 10);//setTimeout
@@ -966,3 +1069,5 @@ document.onkeydown = function(e) {
   https://gohugohq.com/howto/go-offline-with-service-worker/ -->
 <!-- OPTIMISE WITHOUT IMAGES:
    https://gtmetrix.com/reports/hungry-wozniak-e915f8.netlify.com/NA0xKvbj -->
+{{ partial "footer" . }}
+{{ partial "sticky" . }}

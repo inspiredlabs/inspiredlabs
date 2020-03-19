@@ -2,7 +2,7 @@
 draft:
 date: 2018-12-13T09:00:00Z
 weight:
-bg: #888
+bg: 383838
 title: Marzò
 description: Traditional farming from The Marzoli Family
 assignment: Graphic Designer & Developer

@@ -1,5 +1,5 @@
 ---
-draft:
+draft: 
 weight: 888
 bg:
 date:

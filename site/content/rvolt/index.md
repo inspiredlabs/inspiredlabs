@@ -1,9 +1,9 @@
 ---
-draft:
+draft: 
 date: 2019-06-01T09:00:00Z
 weight:
-bg: 
-title: RVO.LT 
+bg:
+title: RVO.LT
 description: High Impact, Low Impediment, Low Energy R&amp;D
 assignment: Community Platform
 location: Umbria, Italy
@@ -18,7 +18,7 @@ open: false
 ---
 title: "Default_date"
 date: 2020-03-04T15:54:51Z
-draft: true
+draft: 
 ---
 -->
 
@@ -27,7 +27,7 @@ draft: true
 
 ### Beyond Sustainability
 
-The platform shares 20 years of learning about domestic and community sustainability. 
+The platform shares 20 years of learning about domestic and community sustainability.
 
 The aim is to connect other design sucesses with people across&nbsp;disciplines.
 
@@ -35,7 +35,7 @@ The aim is to connect other design sucesses with people across&nbsp;disciplines.
 
 ### Areas of focus
 
-Designed with Generalists in mind, the project brings attention to key areas of change: Health, Education, Food, Transport and Shelter. 
+Designed with Generalists in mind, the project brings attention to key areas of change: Health, Education, Food, Transport and Shelter.
 
 This isn't focused on countries finding ways to justify the costs of managing the Climate Crisis – but how design should raise life quality for billions.
 
@@ -45,4 +45,3 @@ This isn't focused on countries finding ways to justify the costs of managing th
 
 <!--
 ## Project in detail-->
-

@@ -16,15 +16,13 @@
 
 
       {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
-      {{/* $bg := .Params.bg */}}
+      {{ $bg := .Params.bg }}
       {{ with .Resources.ByType "image" }}
 
       {{ range . }}
-      <img class="cell-{{ sha1 .Title }}
-                    cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l
-                    bg-{{/* .RegularPages.Params.background */}}"
+      <img data="{{ .Title }}" class="cell-{{ sha1 .Title }} cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l"
         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
-        data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}" style='background-color:{{/* $bg | safeCSS */}}'>
+        data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}" style='background-color:{{ $bg | safeCSS }}'>
       {{ end }}
 
       {{ end }}
@@ -34,16 +32,15 @@
   <!-- Flickity HTML -->
   <div class="portfolio portfolio-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1 ">
     {{ range .Data.Pages.ByDate.Reverse }}{{/* .ByWeight */}}
-    {{/* $bg := .Params.bg */}}
+    {{ $bg := .Params.bg }}
     {{ with .Resources.ByType "image" }}
 
     {{ range . }}
     {{/* NOTE: sha1 .Title https://discourse.gohugo.io/t/looking-for-a-futureproof-uniqueid/18936/4 */}}
-    <img id="cell-{{ sha1 .Title }}" class='bg-
-                            portfolio-cell no-select cell-{{ sha1 .Title }} 
+    <img data="{{ .Title }}" id="cell-{{ sha1 .Title }}" class='portfolio-cell no-select cell-{{ sha1 .Title }} 
                             w-100 vw-100 h-100 vh-100'
       src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
-      data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}" style='background-color:{{/* $bg | safeCSS */}}'>
+      data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}" style='background-color:{{ $bg | safeCSS }}'>
     {{ end }}
 
     {{ end }}

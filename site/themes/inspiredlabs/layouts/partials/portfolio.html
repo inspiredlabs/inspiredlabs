@@ -205,10 +205,13 @@ dialog::backdrop {
 {{ with .Resources.ByType "image" }}
 {{ range . }}
 
+{{if ne $bg ""}}
+
 .cell-{{ sha1 .Title }} {
   background-color:#{{ $bg | safeCSS }};
 }
 
+{{ end }}
 
 {{ end }}
 {{ end }}

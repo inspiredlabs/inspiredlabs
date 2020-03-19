@@ -205,12 +205,16 @@ dialog::backdrop {
 {{ with .Resources.ByType "image" }}
 {{ range . }}
 
-{{if ne $bg ""}}
+
+{{ if (not (isset .Params "bg")) | or (eq .Params.bg "") }}
 
 .cell-{{ sha1 .Title }} {
   background-color:#{{ $bg | safeCSS }};
 }
-
+{{ else }}
+.cell-{{ sha1 .Title }} {
+  background-color:#000;
+}
 {{ end }}
 
 {{ end }}

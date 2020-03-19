@@ -11,7 +11,7 @@ skills:
   - Branding
   - Typography
   - Graphic Communication
-open: true
+open: false
 ---
 
 ### Carfax Cafe, Oxford

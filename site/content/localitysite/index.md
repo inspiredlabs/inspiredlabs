@@ -14,7 +14,7 @@ skills:
   - Git
   - Branding
   - Graphic Communication
-open: true
+open: false
 ---
 
 <!--

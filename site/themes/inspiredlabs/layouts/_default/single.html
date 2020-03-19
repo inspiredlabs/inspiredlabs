@@ -1,37 +1,66 @@
 {{ partial "head" . }}
+{{ partial "nav.html" . }}
 
-<div class="fl w-80 w-80-ns w-80-m w-two-thirds-l pl2"><!-- bg-debug -->
-  <div class="fr w-measure  f4" style="max-width: 40rem;"><!-- bg-green -->
-    {{ partial "content" . }}
-  </div>
+<div id="content">
+  <ul class="list ">
+    <!-- {{/* .Render "li" */}} -->
+    <li class="post-holder">
 
+      <data class="meta dn">
+        {{ .Title }}{{/* What sanitisation formatting needs to be done? */}}
+        {{ .Description }}
+        {{ .Params.assignment }}
+        {{ .Params.location }}
+        {{ .PlainWords }}
+      </data>
+
+      <article class="mt5">
+        <section class="cf w-100 pv3">
+          <div class="fl w-80 w-80-ns w-80-m w-two-thirds-l pl2">
+            <div class="fr w-100 w-100-ns w-100-m measure-custom-l f4">
+              <a href="{{ .Site.BaseURL }}" class="no-underline db f4 source_sans_prolight charcoal">
+                <svg style="-webkit-transform: translate3d(0,0,0);" viewBox="-356 234.3 128 128"
+                  class="no-select pr3 h1">
+                  <use xlink:href="#home"></use>
+                </svg>
+                <span>{{ .Site.BaseURL | absURL | replaceRE "//" "" }}</span><!-- class="blue" -->
+              </a>
+              <hr class="ba bw1 mb0 b--black-10" />
+
+
+              <div class="no-clutter">
+                <header class="fl w-100">
+                  <h1 class="f2 lh-title fw9 mb3 pt0">
+                    <span class="source_sans_probold">{{ .Title | safeHTML }}</span>
+                  </h1>
+                  <h2 class="f3 mid-gray lh-title">
+                    <span class="source_sans_probold">{{ .Description | safeHTML }}</span>
+                  </h2>
+                </header>
+
+
+
+                <p class="f4-ns mt0-ns">
+                  <span
+                    class="source_sans_prosemibold">{{ if .Params.assignment }}{{ .Params.assignment | safeHTML }}{{end}}</span>
+                  {{ if .Params.location }}
+                  <span
+                    class="source_sans_probold">&hairsp;—&nbsp;{{ if .Params.location }}{{.Params.location | safeHTML }}{{end}}</span>
+                  <!-- | safeHTML-->
+                  {{ end }}
+                </p>
+                {{ partial "date" . }}
+              </div>
+              {{ partial "content.html" . }}
+
+
+
+            </div><!-- /fr -->
+          </div><!-- /fl -->
+        </section><!-- /cf -->
+      </article><!-- /mt5 -->
+    </li><!-- /post-holder -->
+  </ul><!-- /list -->
 </div>
-<div class="fl w-20 w-20-ns w-20-m w-third-l source_sans_prolight pl2"><!-- bg-debug -->
-  <ul class="list pl0 pl2-ns pl3-m pl4-l fs-5vmin fs-6vmin-ns fs-7vmin-m fs-8vmin-l lh-5vh" ><!-- `pl0` too large: fs-8vmin fs-5vmax lh-16vh -->
-    <li class="underline">Search</li>
-    <li>About</li>
-    <li>Portfolio</li>
-    <li>Awards</li>
-    <li>Visual</li>
-    <li>UX</li>
-    <li>AI</li>
-  </ul>
-</div>
 
-
-<div class="fl w-two-thirds bg-gold">
-  <ul class="fr w-measure bg-red source_sans_prolight list tr fs-5vmin fs-6vmin-ns fs-7vmin-m fs-8vmin-l lh-5vh">
-    <li>Portfolio</li>
-    <li>Awards</li>
-    <li>Visual</li>
-    <li>UX</li>
-    <li>AI</li>
-  </ul>
-</div>
-
-
-
-
-
-
-
+{{ partial "footer" . }}

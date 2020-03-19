@@ -19,7 +19,7 @@ module.exports = merge(common, {
     watchContentBase: true,
     stats: "none",
     quiet: false,
-    open: true,
+    open: false,
     historyApiFallback: {
       rewrites: [{from: /./, to: "404.html"}]
     }

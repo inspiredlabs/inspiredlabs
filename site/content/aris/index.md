@@ -1,25 +1,25 @@
 ---
-draft: 
+draft:
 date: 2007-05-01T09:00:00Z
 end: 2010-01-01T09:00:00Z
 weight:
-bg:  
+bg:
 title: Aris Technologies
 description: Design for a development A-Team
 assignment: UI Designer, Typographer, Animator & Graphic Designer
-location: Oxford Science Park, Oxfordshire
+location: Oxford&nbsp;Science&nbsp;Park
 skills:
   - Lead UI Designer
   - UX Designer
   - Game Designer
-  - Typographer 
+  - Typographer
   - Brand Designer
   - 2D/3D Animator
   - junior coder (AS3, HTML and CSS)
-open: true
+open: false
 ---
 
-<!-- 2007 - 2010 
+<!-- 2007 - 2010
 {{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
 -->
 

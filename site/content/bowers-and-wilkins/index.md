@@ -11,7 +11,7 @@ skills:
   - Artworker
   - 2D/3D Animator
   - 3D Modeller
-open: true
+open: false
 
 ---
 

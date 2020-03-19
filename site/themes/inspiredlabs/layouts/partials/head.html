@@ -190,7 +190,9 @@ opacity: 0;
       background: #666
     }
 
-    details {}
+    .measure-custom-l {
+      max-width: 40rem;
+    }
 
     .no-highlight,
     summary {
@@ -338,3 +340,10 @@ opacity: 0;
 <body class="w-100 source_sans_proregular black-70 highlight bg-near-white lh-copy " id="top"><!-- debug -->
   <b class="w-10 fixed z-max mt0 pa1 top-0 moon-gray o-30" id="debugInfo">0</b>
   {{ partial "svg.html" . }}  
+
+  {{/* partial "sticky" . */}}
+  {{ if and ( ne .IsPage .IsHome ) }}
+  <span class="red">{{ .IsHome }}</span>
+  {{ else }}
+  <span class="blue">{{ .IsPage }}</span>
+  {{ end }}

@@ -16,7 +16,7 @@ skills:
   - Research
   - AdobeCS
   - Bootstrap, CSS & JS
-open: true
+open: false
 ---
 
 <!--May 2016

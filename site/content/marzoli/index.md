@@ -7,7 +7,7 @@ title: Marzò
 description: Traditional farming from The Marzoli Family
 assignment: Graphic Designer & Developer
 location: Italy
-open: true
+open: false
 ---
 
 <!--date: 2019-02-03T15:49:50.219Z-->

@@ -6,10 +6,10 @@ bg:
 title: Sebastian Smith Photography
 description: Advertising Graphics
 assignment: Retouch & Repair
-location: NYC
+location: New York, New York
 skills:
   - Photoshop
-open: true
+open: false
 ---
 
 <!--{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}

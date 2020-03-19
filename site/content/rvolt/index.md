@@ -7,7 +7,7 @@ title: RVO.LT
 description: High Impact, Low Impediment, Low Energy R&amp;D
 assignment: Community Platform
 location: Umbria, Italy
-open: true
+open: false
 
 ---
 

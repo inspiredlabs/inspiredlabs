@@ -7,7 +7,7 @@ title: Ice Coach
 description: Search Engine Whisperer 
 assignment: Design &amp; Development
 location: Umbria, Italy
-open: true
+open: false
 
 ---
 

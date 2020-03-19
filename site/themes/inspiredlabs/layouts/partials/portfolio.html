@@ -209,11 +209,11 @@ dialog::backdrop {
 {{ if (not (isset .Params "bg")) | or (eq .Params.bg "") }}
 
 .cell-{{ sha1 .Title }} {
-  background-color:#{{ $bg | safeCSS }};
+  background-color:#000;
 }
 {{ else }}
 .cell-{{ sha1 .Title }} {
-  background-color:#000;
+  background-color:#{{ $bg | safeCSS }};
 }
 {{ end }}
 

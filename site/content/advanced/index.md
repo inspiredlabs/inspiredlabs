@@ -2,7 +2,7 @@
 draft:  
 date: 2005-06-01T09:00:00Z
 weight:
-bg:  
+bg: inherit  
 title: Advanced Animations
 description: Business Modernisation
 assignment: 3D Animator, Artist & Typographer

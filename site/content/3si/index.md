@@ -2,7 +2,7 @@
 draft: 
 date: 2015-05-01T09:00:00Z
 weight:
-bg:
+bg: inherit
 title: CRM platform
 description: 'Jargon-busting champion for the end-user '
 assignment: UX Designer & Content Designer

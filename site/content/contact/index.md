@@ -1,9 +1,9 @@
 ---
-draft:  
+draft:
 weight: 1
-bg: 
-date: 
-title: Contact 
+bg: inherit
+date:
+title: Contact
 description: Scott Phillips
 assignment: Design Generalist
 open: true

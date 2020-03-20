@@ -1,7 +1,7 @@
 ---
 draft: 
 weight: 888
-bg:
+bg: inherit
 date:
 open: false
 title: Scott Phillips

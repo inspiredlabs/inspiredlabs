@@ -207,21 +207,13 @@ dialog::backdrop {
 
 {{/* https://discourse.gohugo.io/t/stray-isset-error-since-0-57-1/20256/5 */}}
 {{/* if or (isset .Site.Params "bg") (isset .Params "bg") */}}
+{{/* THIS if (isset .Params.bg 0) */}}
+{{/* if (isset .Params.bg "nil") | (not (isset .Params "bg")) */}}
 {{/* how to handle empty frontmatter params? */}}
 
-{{ if isset .Params "bg" }}
-
-  .cell-{{ sha1 .Title }} {    
-    background:#{{ $bg | safeCSS }};
-  }
-
-{{ else }}
-
-  .cell-{{ sha1 .Title }} {
-    background:inherit;
-  }
-
-{{ end }}
+.cell-{{ sha1 .Title }} {    
+  background:#{{ $bg | safeCSS }};
+}
 
 {{ end }}
 {{ end }}

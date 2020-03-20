@@ -2,7 +2,7 @@
 draft:  
 date:
 weight:
-bg: 
+bg: inherit 
 title: InstantWebapp
 description: Web design for a world of apps
 assignment: Frontend Developer

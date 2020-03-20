@@ -54,16 +54,13 @@ button[aria-expanded="true"] {
 
 .portfolio-nav .portfolio-cell, .portfolio img {
   opacity: 0.6;
-  /* xxx */
 }
 
 .portfolio-nav .portfolio-cell.is-nav-selected {
   opacity: 1;
-  /* yyy */
 }
 .portfolio-nav .portfolio-cell:hover {
   opacity: 1;
-  /* zzz */
 }
 </style>
 <style>
@@ -209,16 +206,16 @@ dialog::backdrop {
 {{ range . }}
 
 
-{{ if isset .Params.bg 0 }}
+{{ if or (isset .Site.Params "bg") (isset .Params "bg") }}
 
-  .cell-{{ sha1 .Title }} {
-    background:inherit;
+  .cell-{{ sha1 .Title }} {    
+    background:#{{ $bg | safeCSS }};
   }
 
 {{ else }}
 
   .cell-{{ sha1 .Title }} {
-    background:#{{ $bg | safeCSS }};
+    background:inherit;
   }
 
 {{ end }}

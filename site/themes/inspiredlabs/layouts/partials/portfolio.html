@@ -53,14 +53,17 @@ button[aria-expanded="true"] {
 } /* https://www.tutorialspoint.com/css/css_animation_fade_in.htm */
 
 .portfolio-nav .portfolio-cell, .portfolio img {
-  border-color: transparent;
+  opacity: 0.6;
+  /* xxx */
 }
 
 .portfolio-nav .portfolio-cell.is-nav-selected {
-  border-color: dimgray;
+  opacity: 1;
+  /* yyy */
 }
 .portfolio-nav .portfolio-cell:hover {
-  border-color: var(--charcoal);
+  opacity: 1;
+  /* zzz */
 }
 </style>
 <style>
@@ -206,15 +209,18 @@ dialog::backdrop {
 {{ range . }}
 
 
-{{ if (not (isset .Params "bg")) | or (eq .Params.bg "") }}
+{{ if isset .Params.bg 0 }}
 
-.cell-{{ sha1 .Title }} {
-  background-color:#000;
-}
+  .cell-{{ sha1 .Title }} {
+    background:inherit;
+  }
+
 {{ else }}
-.cell-{{ sha1 .Title }} {
-  background-color:#{{ $bg | safeCSS }};
-}
+
+  .cell-{{ sha1 .Title }} {
+    background:#{{ $bg | safeCSS }};
+  }
+
 {{ end }}
 
 {{ end }}

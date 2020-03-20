@@ -3757,27 +3757,35 @@ code {
 
 /* .mobile-portrait */
 .bg-debug {
-  background-color: pink;
+  background-color: #fff1fe; /* pink */
+	/* background: url(bg-debug.jpg) repeat; */
+	background-size: 33%;
 }
 
 /* .mobile-landscape-ns */
 @media screen and (min-width: 30em) {
   .bg-debug {
-    background-color: firebrick;
+    background-color:#bada55; /* firebrick */
+    /* background: url(bg-debug-ns.jpg) repeat; */
+  	background-size: 50%;
   }
 }
 
 /* .tablet-portrait-m */
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .bg-debug {
-    background-color: orange;
+    background-color: #d7858e; /* orange */
+    /* background: url(bg-debug-m.jpg) repeat; */
+  	background-size: 50%;
   }
 }
 
 /* .tablet-landscape-l */
 @media screen and (min-width: 60em) {
   .bg-debug {
-    background-color: yellow;
+    background-color:#f1a5c0; /* yellow */
+    /* background: url(bg-debug-l.jpg) repeat; */
+  	background-size: 33%;
   }
 }
 

@@ -23,9 +23,9 @@
       {{ range . }}
 
       <img class="cell-{{ sha1 .Title }}
-            cover portfolio-cell ba bw1 b--transparent transition pointer h3 w3 h4-l w4-l"
+            cover portfolio-cell pointer h3 w3 h4-l w4-l"
         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
-        data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
+        data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}"><!-- ba bw1 b--transparent transition -->
       {{ end }}
       {{ end }}
       {{ end }}

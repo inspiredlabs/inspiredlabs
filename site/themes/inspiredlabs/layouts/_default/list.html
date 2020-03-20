@@ -1,8 +1,8 @@
 {{ partial "head" . }}
 {{ partial "nav.html" . }}
 
-<div id="content" >
-	<ul class="list "><!-- pl0 -->
+<main id="content" >
+	<ul class="list pl0"><!-- bg-debug -->
     
     {{ range .Data.Pages.ByDate.Reverse.ByWeight }}
     {{ if ne .Title "Contact" }}
@@ -19,6 +19,6 @@
     
     
 	</ul>
-</div>
+</main>
 {{ partial "portfolio" . }}
 {{ partial "footer" . }}

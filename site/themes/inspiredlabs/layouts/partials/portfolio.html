@@ -211,9 +211,13 @@ dialog::backdrop {
 {{/* if (isset .Params.bg "nil") | (not (isset .Params "bg")) */}}
 {{/* how to handle empty frontmatter params? */}}
 
+{{ if (isset .Params.bg "inherit") }}
+{{else}}
+
 .cell-{{ sha1 .Title }} {    
   background:#{{ $bg | safeCSS }};
 }
+{{ end }}
 
 {{ end }}
 {{ end }}

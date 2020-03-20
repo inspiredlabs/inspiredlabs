@@ -2,7 +2,7 @@
 draft:  
 date: 2011-12-13T09:00:00Z
 weight:
-bg: inherit  
+bg: false  
 title: M+H Awards Winner
 description: >
   Children’s Centre for Civilisation &&nbsp;Creativity

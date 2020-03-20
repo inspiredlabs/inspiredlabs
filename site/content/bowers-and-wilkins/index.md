@@ -2,7 +2,7 @@
 draft: 
 date: 2010-01-01T09:00:00Z
 weight:
-bg: inherit
+bg: false
 title: Bowers & Wilkins
 description: Remarkable simplicity
 assignment: Animator & Illustrator

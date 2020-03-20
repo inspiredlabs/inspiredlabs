@@ -2,7 +2,7 @@
 draft: 
 date: 2016-05-13T09:00:00Z
 weight:
-bg: inherit
+bg: false
 title: PeR, Il Parco dell Energia Rinnovabile
 description: Sustainability Research
 assignment: Designer & Content Writer

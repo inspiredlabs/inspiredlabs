@@ -200,10 +200,10 @@ dialog::backdrop {
   transition: 0.15s;
 }
 
-{{ range .Data.Pages.ByDate.Reverse }}
-{{ $bg := .Params.bg }}
-{{ with .Resources.ByType "image" }}
-{{ range . }}
+{{- range .Data.Pages.ByDate.Reverse -}}
+{{- $bg := .Params.bg -}}
+{{- with .Resources.ByType "image" -}}
+{{- range . -}}
 
 {{/* https://discourse.gohugo.io/t/stray-isset-error-since-0-57-1/20256/5 */}}
 {{/* if or (isset .Site.Params "bg") (isset .Params "bg") */}}
@@ -211,17 +211,13 @@ dialog::backdrop {
 {{/* if (isset .Params.bg "nil") | (not (isset .Params "bg")) */}}
 {{/* how to handle empty frontmatter params? */}}
 
-{{ if (isset .Params.bg "inherit") }}
-{{else}}
-
 .cell-{{ sha1 .Title }} {    
-  background:#{{ $bg | safeCSS }};
+  background:{{ if eq .Params.bg 0 }}{{ else }}#{{ $bg | safeCSS }}{{ end }};
 }
-{{ end }}
 
-{{ end }}
-{{ end }}
-{{ end }}
+{{- end -}}
+{{- end -}}
+{{- end -}}
 </style>
 
 <aside class="dialog relative z-9999 " id="my-accessible-dialog"><!-- fixed fadeInOut -->

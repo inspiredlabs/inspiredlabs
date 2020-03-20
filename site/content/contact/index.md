@@ -1,7 +1,7 @@
 ---
 draft:
 weight: 1
-bg: inherit
+bg: false
 date:
 title: Contact
 description: Scott Phillips

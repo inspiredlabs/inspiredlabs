@@ -2,7 +2,7 @@
 draft: 
 date: 2019-06-01T09:00:00Z
 weight:
-bg: inherit
+bg: false
 title: RVO.LT
 description: High Impact, Low Impediment, Low Energy R&amp;D
 assignment: Community Platform

@@ -99,6 +99,7 @@
   {{ end */}}
 
   <!-- regex101.com PCRE & backticks not quotes: https://discourse.gohugo.io/t/replacere-gives-syntax-error/22624/2 -->
+  <!-- `nil` resource handling: https://discourse.gohugo.io/t/custom-css-throws-type-nil-not-supported-in-resource-transformations/19942/2 -->
   {{/* $style := resources.Get "css/tachyonshower.css" | minify */}}
   <style>{{/* $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS */}}</style>
 

@@ -205,8 +205,11 @@ dialog::backdrop {
 {{ with .Resources.ByType "image" }}
 {{ range . }}
 
+{{/* https://discourse.gohugo.io/t/stray-isset-error-since-0-57-1/20256/5 */}}
+{{/* if or (isset .Site.Params "bg") (isset .Params "bg") */}}
+{{/* how to handle empty frontmatter params? */}}
 
-{{ if or (isset .Site.Params "bg") (isset .Params "bg") }}
+{{ if isset .Params "bg" }}
 
   .cell-{{ sha1 .Title }} {    
     background:#{{ $bg | safeCSS }};

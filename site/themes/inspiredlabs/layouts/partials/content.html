@@ -3,6 +3,19 @@
 {{- $content := $content | replaceRE "<ul" "<ul class='pl0'" -}}{{/* list */}}
 {{- $content := $content | replaceRE "<blockquote" "<blockquote class='f4 b db'" -}}{{/* f3 */}}
 {{- $content := $content | replaceRE "<cite" "<cite class='db o-50'" -}}
+
+
+{{- $content := $content | replaceRE "<hr" "<hr class='ba bw1 mb0 b--black-10 mv5'" -}}
+
+
+{{- $content := $content | replaceRE "<h2" "<h2 class='source_sans_prosemibold'" -}}
+{{- $content := $content | replaceRE "<h3" "<h3 class='source_sans_prosemibold'" -}}
+{{- $content := $content | replaceRE "<h4" "<h4 class='source_sans_prosemibold'" -}}
+{{- $content := $content | replaceRE "<h5" "<h5 class='source_sans_prosemibold'" -}}
+{{- $content := $content | replaceRE "<h6" "<h6 class='source_sans_prosemibold'" -}}
+
+
+
 {{/* - $content := $content | replaceRE "<p" "<p class='f4'" - */}}
 
 

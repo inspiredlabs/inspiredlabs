@@ -502,7 +502,7 @@
 		}
 		function drop(event) {
 		    var offset = event.dataTransfer.getData("text/plain").split(',');
-		    var dm = document.getElementById('sticky-inspect');
+		    var dm = document.getElementById('sticky-inspect'); 
 		    dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
 		    dm.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
 		    event.preventDefault();
@@ -511,5 +511,10 @@
 		var dm = document.getElementById('sticky-inspect');
 		dm.addEventListener('dragstart',drag_start,false);
 		document.body.addEventListener('dragover',drag_over,false);
-		document.body.addEventListener('drop',drop,false);
+    document.body.addEventListener('drop',drop,false);
+    
+    /*
+    Consider dragging multiple tables around:
+    https://stackoverflow.com/questions/14377590/queryselector-and-queryselectorall-vs-getelementsbyclassname-and-getelementbyid
+    */
 </script>

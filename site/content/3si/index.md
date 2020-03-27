@@ -1,5 +1,5 @@
 ---
-draft: 
+draft: false
 date: 2015-05-01T09:00:00Z
 weight:
 bg: false
@@ -7,7 +7,7 @@ title: CRM platform
 description: 'Jargon-busting champion for the end-user '
 assignment: UX Designer & Content Designer
 location: 3Si, Newcastle-Under-Lyme
-open:
+open: false
 ---
 
 <!--location: 3Si, Stoke-on-Trent-->

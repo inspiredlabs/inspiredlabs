@@ -1,5 +1,5 @@
 ---
-draft: 
+draft: false
 date: 2019-12-13T09:00:00Z
 weight:
 bg: false
@@ -11,31 +11,36 @@ open: false
 
 ---
 
-<!--{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
--->
+{{<flkty
+  color="blue"
+  src="images/iwa-alessandroronca-01.jpg"
+  title="AlessandRoronca.it"
+  selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
 
 <!--AlessandRoronca.it-->
 
-### JAMstack to improve health
+### Multilingual&nbsp;booking
 
 Written in HUGO and deployed to NetlifyCMS for speed and&nbsp;simplicity this site helps people understand the health&nbsp;benefits of cold&nbsp;exposure.
 
 Securing bookings as an Ice&nbsp;Coach and educator Alessandro&nbsp;Ronca vividly explains the benefits of The&nbsp;Wim&nbsp;Hof&nbsp;Method in Italian _and_ English.
 
-### Multiple Challenges Accepted!
+### Challenge Accepted!
 
 Forseen technical challenges included:
 
-- NetlifyCMS doesn't officially support multilingual sites<!--LINK-->.
-- high-quality templates for **Schema.org** are largely undocumented<!--LINK-->.
+- NetlifyCMS does not officially support multilingual sites<!--LINK-->.
+- high-quality templates for **Schema.org** poorly documented<!--LINK-->.
 
 Both solutions were possible by writing complex templates with nested&nbsp;data.
 
 ### Search Engine Whisperer
 
-HUGO templates automate JSON+LD capture people's imagination to improve thier health on SERP (Search Engine Results Pages).
+Technical SEO templates were written to helps capture people's imagination when looking for ways to improve thier&nbsp;health.
 
-This is generated to meet modern search engine requirements with techniques inspired by&nbsp;Yoast and tested on Google's [Structured Data Test Tool](https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Falessandroronca.netlify.com).
+The SERP (Search Engine Results Pages) now proved authors with granular control over how their pages look for the first time they are seen.
+
+JSON+LD was generated to meet modern search engine requirements with techniques inspired by&nbsp;Yoast and tested on Google's [Structured Data Test Tool](https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Falessandroronca.netlify.com).
 
 <!--
 ### Preview

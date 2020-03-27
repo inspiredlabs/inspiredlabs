@@ -1,6 +1,6 @@
 ---
-draft:  
-date:
+draft: false 
+date: 2010-01-01T09:00:00Z
 weight:
 bg: false 
 title: InstantWebapp
@@ -10,16 +10,9 @@ location: SME Boutiques
 open: false
 ---
 
-
-<!--
-{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}-->
-
-
-<!--date: 2019-02-03T15:51:47.060Z-->
-
 <!--From Summer&nbsp;2011-->
 
-{{<flickity src="instantwebapp/images/iwa-pablowoodward-01.jpg" title="PabloWoodward.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+<!--{{<flkty src="instantwebapp/images/iwa-pablowoodward-01.jpg" title="PabloWoodward.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}-->
 
 ## Philosophy
 
@@ -59,7 +52,7 @@ Designed to flow around different screen types, the layout adapts to client devi
 
 Designed to be flexible, the template can handle poor network connections. Without extraneous widgets content delivery is as fast as possible over cellular networks.
 
-{{<flickity src="instantwebapp/images/iwa-tdb-01.jpg" title="TheDiscoBunny.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+<!--{{<flkty src="instantwebapp/images/iwa-tdb-01.jpg" title="TheDiscoBunny.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}-->
 
 ### My small business? – There's an app for that!
 
@@ -77,7 +70,7 @@ The bottom line is – services must save time and deliver income.
 
 Business owners looking for systems they don't have to learn need to find a capable provider. CMS software increases project complexity and understanding the inner workings of these approaches can be costly. Therefor, a developer can be superior to the abilities bestowed upon a CMS through plugins.
 
-#### A fixed price or a monthly retainer
+#### Fixed price or Monthly Retainer
 
 Business owners that choose a system they don't need to learn require transparent pricing. They also stay in control of costs by making changes as their requirements grow.
 
@@ -91,4 +84,4 @@ By combining content and graphics into fewer server requests we improve time to 
 
 The design has undergone many iterations to achieve a GTMetrix UX score: 100%.
 
-{{<flickity src="instantwebapp/images/iwa-multitool-01.jpg" title="An early jQuery implementation" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+<!--{{<flkty src="instantwebapp/images/iwa-multitool-01.jpg" title="An early jQuery implementation" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}-->

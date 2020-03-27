@@ -3,7 +3,7 @@
 /* .portfolio img { background-color: yellow; } */
 
 /* fade in image when loaded */
-.portfolio-cell {  
+.portfolio-cell {
   /*margin-right: 10px */;
   /* background: var(--charcoal); */
   /* counter-increment: portfolio-cell; */
@@ -15,11 +15,11 @@
 .portfolio-cell.flickity-lazyerror {
   opacity: 1;
 }
- 
+
 button[aria-expanded="true"] {
   /* https://codepen.io/inspiredlabs/pen/ydadxB
   box-shadow: inset 5px 5px #999;
-  background: #ddd; 
+  background: #ddd;
   color: white;
   */
 }
@@ -40,7 +40,7 @@ button[aria-expanded="true"] {
 @keyframes fadeInOut {
    0% {opacity: 0;}
    100% {opacity: 1;}
-} 
+}
 
 @-webkit-keyframes fadeInOut {
   0% {opacity: 0;}
@@ -67,7 +67,7 @@ button[aria-expanded="true"] {
   .portfolio-cell {
     opacity: 0;
   }
-  
+
   .portfolio img {
     /* padding-left: 0rem;
     padding-right: 0rem; */
@@ -155,7 +155,7 @@ dialog::backdrop {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
   margin: 0;
-  
+
 }
 
 /* -------------------------------------------------------------------------- *\
@@ -211,7 +211,7 @@ dialog::backdrop {
 {{/* if (isset .Params.bg "nil") | (not (isset .Params "bg")) */}}
 {{/* how to handle empty frontmatter params? */}}
 
-.cell-{{ sha1 .Title }} {    
+.cell-{{ sha1 .Title }} {
   background:{{ if eq .Params.bg 0 }}{{ else }}#{{ $bg | safeCSS }}{{ end }};
 }
 
@@ -227,17 +227,14 @@ dialog::backdrop {
     class="dialog-close
     bn bg-transparent button-reset charcoal dim fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l pointer"
     >&times;</button><!-- near-white ts1-dark-gray https://codepen.io/inspiredlabs/pen/ydadxB -->
-    
+
       {{ partial "flickity" . }}
-    
+
   </dialog>
 </aside>
 
 
-{{ if .IsHome }}
-<link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/flickity.css"><!-- flickity.min.css -->
-<script src="{{ .Site.BaseURL | absURL }}js/flickity.js"></script>
-{{ end }}
+
 
 <style>
   .static {
@@ -254,7 +251,7 @@ dialog::backdrop {
     };
     document.documentElement.className += 'static';
   };
-  
+
   const scrolling = function () {
     document.ontouchmove = function (e) {
       e.enableDefault()
@@ -730,6 +727,11 @@ dialog::backdrop {
         console.log(dialogEl);
         console.log(triggerEl);
         portfolio();
+        static();
+      });
+
+      dialog.on('hide', function (dialogEl, triggerEl) {
+        scrolling();
       });
 
       // To manually control the dialog:
@@ -793,12 +795,12 @@ dialog::backdrop {
 
 <!--script>
   // Store toggle and menu elements
-  
+
   const menuClose = document.getElementById('menuClose');
   // Attach click handler to toggle
   menuClose.addEventListener('click', (e) => {
     toggleMenu();
-  });  
+  });
 </script-->
 
 <!--script>
@@ -816,18 +818,18 @@ document.onkeydown = function(e) {
     scrolling();
     closeMenu();
   }
-};  
+};
 </script-->
 
 
 
 <!--script>
-  
+
   /* var flkty = new Flickity('.portfolio', {
     wrapAround: true,
     pageDots: true
   });
-  
+
   var buttonGroup = document.querySelector('.portfolio-btn');
   buttonGroup.addEventListener('click', function (event) {
     if (!matchesSelector(event.target, 'a')) {
@@ -843,7 +845,7 @@ document.onkeydown = function(e) {
     switchCell(450);
   }); */
 
-  
+
   //stackoverflow.com/questions/12119107/prevent-javascript-function-from-firing-multiple-times add mouseover.
 
 /* document.addEventListener('DOMContentLoaded', function (event) {
@@ -856,7 +858,7 @@ document.onkeydown = function(e) {
       }
     });
   }); */
-  
+
 
 </script-->
 
@@ -887,15 +889,15 @@ document.onkeydown = function(e) {
     }, 10);//setTimeout
 
   };//portfolio();
-  
+
 
   (function () {
     // IIFE
     window.addEventListener('orientationchange', function () {
-      
+
       var originalBodyStyle = getComputedStyle(document.body).getPropertyValue('display');
       document.body.style.display = 'none';
-      
+
       setTimeout(function () {
         document.body.style.display = originalBodyStyle;
       }, 10);//setTimeout
@@ -922,7 +924,7 @@ document.onkeydown = function(e) {
 <!--script>
   if (navigator.vendor != null && navigator.vendor.match(/Apple Computer, Inc./) && navigator.userAgent.match(/iPhone/i) || (navigator.userAgent.match(/iPod/i))) {
 
-    //alert("Ipod or Iphone");             
+    //alert("Ipod or Iphone");
     document.getElementById("facetime").classList.add("visible");			//add
     document.getElementById("facetime").classList.remove("hidden");	//remove
 

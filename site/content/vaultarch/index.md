@@ -1,5 +1,5 @@
 ---
-draft: 
+draft: false
 date: 2017-12-13T09:00:00Z
 weight:
 bg: false
@@ -42,18 +42,18 @@ Validating the project's scalability it is clear there is a need for a robust te
 
 ### Visit
 
-- test. [Vaultarch.com](https://vaultarch.com)
+- [Vaultarch.com](https://vaultarch.com)
 - [Startup Weekend](https://www.facebook.com/StartupWeekendHK/photos/a.934215303322582.1073741830.187953947948725/934223966655049/?type=3&theater)
 - [Startup Next](http://startupweekend.org/events?utf8=%E2%9C%93&date_range=past&q=hong+kong&button=)
 - [Facebook](https://www.facebook.com/vaultarch/)
 - [Twitter](https://twitter.com/vaultarch/)
 - [Cyberport2, Hong Kong](https://wego.here.com/directions/mix//Vaultarch,-Cyberport-2,-Hong-Kong:e-eyJuYW1lIjoiVmF1bHRhcmNoIiwiYWRkcmVzcyI6IkN5YmVycG9ydCAyLCBIb25nIEtvbmciLCJsYXRpdHVkZSI6MjIuMjYyMDcxOTc0Nzc2LCJsb25naXR1ZGUiOjExNC4xMzA2NTQzMzUwMiwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjoxNTA5NzMxNTg5MzMwNDE5fQ==?map=22.26207,114.13065,15,normal&fb_locale=en_GB)
 
-----------------------------------------------------
+* * *
 
-## The project in detail
+## Project in detail
 
-## Why is Vaultarch important?
+### Why is Vaultarch important?
 
 **Magic The Gathering** playing cards can be valuable – some are [£30,000 each](http://www.ebay.com/itm/Black-Lotus-Beta-Edition-1993-Magic-The-Gathering-SGC-Graded-92-/322376065501). This makes them attractive to counterfeit, theft and fraud. Motivated through having early edition cards stolen – **Vaultarch** fill an important niche.
 
@@ -81,7 +81,7 @@ Attended events and working from campus to develop strategies for further seed f
 
 ### Content and copywriting
 
-Vaultarch's “Preventing counterfeit, thef & fraud” acts as a foot-in-the-door when fund raising, where attention is scarse. And helps design interactions for consistency.
+Vaultarch's “Preventing counterfeit, theft & fraud” proved to work when attention is scarse and helps maintain design consistency.
 
 <!--
 ###  Documentation & Research

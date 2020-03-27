@@ -1,5 +1,5 @@
 ---
-draft:
+draft: false
 date: 2018-05-01T09:00:00Z
 weight:
 bg: f8f8f8
@@ -42,7 +42,7 @@ This webapp helps people in the luxury rental market organise and filter rooms t
 
 The filter takes JSON data and renders it client-side keeping the information up-to-date without having any other build process.
 
-Terse code output from HUGO templates, catches dat-entry errors. This investment makes maintaining nuaces in the properties as simple as possible.
+Terse code output from HUGO templates, catches data entry errors. This investment makes maintaining nuances in the properties as simple as possible.
 
 <!--
 ## Preview

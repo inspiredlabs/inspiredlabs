@@ -1,4 +1,4 @@
-baseurl = "https://hungry-wozniak-e915f8.netlify.com/"  #local only "./"
+baseurl = "https://hungry-wozniak-e915f8.netlify.com/"  #local only "./" "https://inspiredlabs.co.uk/"
 #{{ .Site.BaseURL }} "/" && netlify
 #relativeURLs = "true"
 
@@ -10,7 +10,6 @@ theme = "inspiredlabs" #ga-hugo-theme
 #theme = "ga-hugo-theme"
 ## As of v0.20, all content files include a default "categories" value that's the same as the section. This was a cheap future-proofing method and should/could be changed accordingly.
 [taxonomies]
-  key = "value"
 
 [Params]
   [[Params.description]]

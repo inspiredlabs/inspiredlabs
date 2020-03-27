@@ -1,0 +1,51 @@
+<style>
+  .carousel {
+    /*aqua*/
+  }
+
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-cell-image {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+</style>
+
+<div class='carousel'>
+  <div class='carousel-cell'>
+    <img class='carousel-cell-image' data-flickity-lazyload='https://inspiredlabs.co.uk/alessandroronca/images/iwa-alessandroronca-01.jpg'
+      alt='{{/**/}}' />
+  </div>
+</div>
+
+<script>
+  // external js: flickity.pkgd.js
+
+    var flkty = new Flickity('.carousel', {
+      lazyLoad: true
+    , pageDots: false
+    , prevNextButtons: false
+    , dragable: false
+    });
+
+    flkty.on('lazyLoad', function (event) {
+      var img = event.target;
+      console.log(event.type, img.src);
+    });
+
+</script>

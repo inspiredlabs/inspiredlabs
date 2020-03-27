@@ -6,9 +6,14 @@
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <!-- Enable responsiveness on mobile devices-->
+
   <title> {{ .Title }} | {{ .Site.Title }} </title>
+
+  <!-- Enable responsiveness on mobile devices-->
   <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
   <!--<meta name="MobileOptimized" content="320" />-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -26,7 +31,7 @@
         "@type": "PostalAddress",
         "streetAddress": "Littlegate Street",
         "addressLocality": "Oxford",
-        "addressRegion": "Oxfordshire",    
+        "addressRegion": "Oxfordshire",
         "postalCode": "OX11RL",
         "addressCountry": "GB"
       },
@@ -71,7 +76,7 @@
     content="Scott is a particularly talented designer, Tanguy Fautré. An outstanding work ethic, Nina Brown. Fearless Creative." />
   <meta name="twitter:image" content="https://inspiredlabs.co.uk/images/profile.png" />
   <meta name="twitter:image:src" content="https://inspiredlabs.co.uk/images/profile.png" />
-  
+
   <meta property="og:author" content="Scott Phillips" />
   <meta property="og:type" content="company" />
   <meta property="og:site_name" content="Inspired Labs" />
@@ -87,11 +92,11 @@
   <!-- link rel="stylesheet" href="https://instantwebapp.netlify.com/css/tachyon.shower.css" /-->
 
   <!-- https://discourse.gohugo.io/t/glob-directory-and-minify-all-to-css/21154 -->
-  
+
   <base href="{{ .Site.BaseURL }}" />
   <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/sourcesans.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/tachyonshower.css">
-  
+
   {{/* if .IsHome }}
   <!-- <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/flickity.css"> --><!-- flickity.min.css -->
   <!--link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/sourcesans.css"-->
@@ -335,12 +340,16 @@ opacity: 0;
       opacity: .8;
     }
   </style>
-  
+  {{ if .IsHome }}{{ end }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/flickity.css"><!-- flickity.min.css -->
+  <script src="{{ .Site.BaseURL | absURL }}js/flickity.js"></script>
 </head>
 
 <body class="w-100 source_sans_proregular black-70 highlight bg-near-white lh-copy " id="top"><!-- debug -->
   <b class="w-10 fixed z-max mt0 pa1 top-0 moon-gray o-30" id="debugInfo">0</b>
-  {{ partial "svg.html" . }}  
+  {{ partial "svg.html" . }}
+
+  {{/* partial "debugprint" . */}}
 
   {{/* partial "sticky" . */}}
 

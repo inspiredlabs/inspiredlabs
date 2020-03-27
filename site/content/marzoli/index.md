@@ -1,10 +1,10 @@
 ---
-draft:
+draft: false
 date: 2018-12-13T09:00:00Z
 weight:
 bg: 383838
 title: Marzò
-description: Traditional farming from The Marzoli Family
+description: Traditional farming, The Marzoli way
 assignment: Graphic Designer & Developer
 location: Italy
 open: false
@@ -34,10 +34,17 @@ These work with Javascript for accessibility and for image handling blazy.js.
 
 This combination places content in the hands of the author. Resulting in lightweight, rich, multilingual content – without bloat.
 
-#### Intelligent systems
+#### Empirically tested
+
+Marzo.li scores 100% on [Google PageSpeed insights](https://developers.google.com/speed/pagespeed/insights/?url=https://marzo.li/). Learn more on the [GTMetrix report](https://inspiredlabs.co.uk/gtmetrix.com/reports/may-2019-marzo.li.pdf).
+
+
+
+
+<!--#### Intelligent systems
 
 With OpenCV we aim to solve common problems during harvest. Machine learning and artificial intelligence should resolve challenges of abundance.
-
+-->
 
 <!--Design & Development. Winter&nbsp;2017 - Spring&nbsp;2019
   Marzò-->

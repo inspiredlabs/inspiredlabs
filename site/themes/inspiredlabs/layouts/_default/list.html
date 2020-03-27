@@ -1,23 +1,22 @@
 {{ partial "head" . }}
 {{ partial "nav.html" . }}
-
 <main id="content" >
 	<ul class="list pl0"><!-- bg-debug -->
-    
+
     {{ range .Data.Pages.ByDate.Reverse.ByWeight }}
     {{ if ne .Title "Contact" }}
     {{ .Render "li" }}
-    {{ end }}    
     {{ end }}
-    
+    {{ end }}
+
 
     {{ range .Data.Pages.ByDate.Reverse.ByWeight }}
     {{ if eq .Title "Contact" }}
     {{ .Render "li" }}
     {{ end }}
     {{ end }}
-    
-    
+
+
 	</ul>
 </main>
 {{ partial "portfolio" . }}

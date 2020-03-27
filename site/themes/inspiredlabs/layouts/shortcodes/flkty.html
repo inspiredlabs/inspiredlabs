@@ -28,7 +28,9 @@
   data-flickity='{"lazyLoad": true, "pageDots": false, "prevNextButtons": false, "draggable": false }'>
   <div class='carousel-cell aspect-ratio--object cover'>
     <!-- cell-{{/* sha1 .Title */}}{{/* .RelPermalink | absURL */}} {{/* with .Page.Resources.GetMatch "images" */}} -->
-    <img class='carousel-cell-image' data-flickity-lazyload='{{- .Get "path" -}}' alt='{{/**/}}' />
+    <a data-hash href="#{{- .Get "hash" -}}">
+      <img class='carousel-cell-image' data-flickity-lazyload='{{- .Get "path" -}}' alt='{{/**/}}' />
+    </a>
     <!--img class='carousel-cell-image'
       src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4='
       data-flickity-bg-lazyload='' alt='{{/**/}}'-->

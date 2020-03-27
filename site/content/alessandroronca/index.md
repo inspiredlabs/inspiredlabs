@@ -9,17 +9,11 @@ assignment: Design &amp; Development
 location: Umbria, Italy
 open: true
 ---
-
+<!--
 {{< flkty
 	path="https://inspiredlabs.co.uk/alessandroronca/images/iwa-alessandroronca-01.jpg"
-	cell="cell"
+	hash="cell-b2eb54a8876969fa4077770658518dd928c0ec65"
 >}}
-
-<!--
-  
-  src="images/iwa-alessandroronca-01.jpg"
-  title="AlessandRoronca.it"
-  selectCell="flkty.selectCell( value, isWrapped, isInstant )"
 -->
 
 <!--AlessandRoronca.it-->

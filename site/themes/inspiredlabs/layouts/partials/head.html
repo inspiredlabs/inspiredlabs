@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
   <!-- Document Settings -->
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
@@ -340,6 +339,40 @@ opacity: 0;
       opacity: .8;
     }
   </style>
+
+
+
+  <style>
+  .carousel {
+    /*aqua*/
+  }
+
+  .carousel-cell {
+    /* https://tachyons.io/components/layout/horizontal-aspect-ratios/index.html */
+  }
+
+  .carousel-cell-image {
+    display: block;
+    /* max-height: 100%;
+    margin: 0 auto;
+    max-width: 100%; */
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+
+  /* fade in lazy loaded image */
+  .carousel-cell-image.flickity-lazyloaded,
+  .carousel-cell-image.flickity-lazyerror {
+    opacity: 0.8;
+  }
+  .carousel-cell-image:hover {
+    opacity: 1;
+  }
+</style>
+
+
+
   {{ if .IsHome }}{{ end }}
   <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/flickity.css"><!-- flickity.min.css -->
   <script src="{{ .Site.BaseURL | absURL }}js/flickity.js"></script>

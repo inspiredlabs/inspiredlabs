@@ -1,5 +1,4 @@
 <li class="post-holder" id='{{ .Title | urlize | safeHTML }}'>
-
   <data class="meta dn">
     {{ .Title }}{{/* What sanitisation formatting needs to be done? */}}
     {{ .Description }}
@@ -43,7 +42,27 @@
               </p>
               {{ partial "date" . }}
             </summary>
-            {{ partial "content.html" . }}
+
+            <div data-hide class="w-100"><!-- w-50 fixed z-2 mt0 pa1 top-0 z-2 -->
+              {{ $bg := .Params.bg }}
+              {{ range first 1 (.Resources.ByType "image") }}
+              <div class='carousel aspect-ratio aspect-ratio--1x1'
+                data-flickity='{"lazyLoad": true, "pageDots": false, "prevNextButtons": false, "draggable": false }'>
+                <div class='carousel-cell aspect-ratio--object cover'>
+                  <!-- cell-{{/* sha1 .Title */}}{{/* .RelPermalink | absURL */}} {{/* with .Page.Resources.GetMatch "images" */}} -->
+                  <a
+                    data-a11y-dialog-show="my-accessible-dialog"
+                    title="{{ .RelPermalink | absURL }}"
+                    href="#cell-{{ sha1 .Title }}">
+                    <img class='carousel-cell-image' data-flickity-lazyload='{{ .RelPermalink | absURL }}' alt='Portfolio Image' />
+                  </a>
+                </div>
+                {{ end }}
+              </div>
+
+              {{ partial "content.html" . }}
+
+            </div>
           </details>
 
 

@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2019-06-01T09:00:00Z
 weight:
 bg: false
@@ -18,7 +18,7 @@ open: false
 ---
 title: "Default_date"
 date: 2020-03-04T15:54:51Z
-draft: true
+draft: false
 ---
 -->
 

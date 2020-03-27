@@ -43,10 +43,11 @@
               {{ partial "date" . }}
             </summary>
 
+            <!-- Feature image: https://discourse.gohugo.io/t/get-first-image-in-a-bundle/11258 -->
             <div data-hide class="w-100"><!-- w-50 fixed z-2 mt0 pa1 top-0 z-2 -->
               {{ $bg := .Params.bg }}
               {{ range first 1 (.Resources.ByType "image") }}
-              <div class='carousel aspect-ratio aspect-ratio--1x1'
+              <div class='carousel aspect-ratio aspect-ratio--1x1 cell-{{ sha1 .Title }}'
                 data-flickity='{"lazyLoad": true, "pageDots": false, "prevNextButtons": false, "draggable": false }'>
                 <div class='carousel-cell aspect-ratio--object cover'>
                   <!-- cell-{{/* sha1 .Title */}}{{/* .RelPermalink | absURL */}} {{/* with .Page.Resources.GetMatch "images" */}} -->

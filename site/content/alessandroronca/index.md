@@ -7,15 +7,20 @@ title: Ice Coach
 description: Search Engine Whisperer
 assignment: Design &amp; Development
 location: Umbria, Italy
-open: false
-
+open: true
 ---
 
-{{<flkty
-  color="blue"
+{{< flkty
+	path="https://inspiredlabs.co.uk/alessandroronca/images/iwa-alessandroronca-01.jpg"
+	cell="cell"
+>}}
+
+<!--
+  
   src="images/iwa-alessandroronca-01.jpg"
   title="AlessandRoronca.it"
-  selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}
+  selectCell="flkty.selectCell( value, isWrapped, isInstant )"
+-->
 
 <!--AlessandRoronca.it-->
 

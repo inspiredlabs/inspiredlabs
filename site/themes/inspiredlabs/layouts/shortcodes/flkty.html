@@ -3,49 +3,58 @@
     /*aqua*/
   }
 
-.carousel-cell {
-  width: 100%;
-  height: 100%;
-}
+  .carousel-cell {
+    /* https://tachyons.io/components/layout/horizontal-aspect-ratios/index.html */
+  }
 
-.carousel-cell-image {
-  display: block;
-  max-height: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
-}
+  .carousel-cell-image {
+    display: block;
+    /* max-height: 100%;
+    margin: 0 auto;
+    max-width: 100%; */
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
 
-/* fade in lazy loaded image */
-.carousel-cell-image.flickity-lazyloaded,
-.carousel-cell-image.flickity-lazyerror {
-  opacity: 1;
-}
-
+  /* fade in lazy loaded image */
+  .carousel-cell-image.flickity-lazyloaded,
+  .carousel-cell-image.flickity-lazyerror {
+    opacity: 1;
+  }
 </style>
 
-<div class='carousel'>
-  <div class='carousel-cell'>
-    <img class='carousel-cell-image' data-flickity-lazyload='https://inspiredlabs.co.uk/alessandroronca/images/iwa-alessandroronca-01.jpg'
-      alt='{{/**/}}' />
+<div class='carousel aspect-ratio aspect-ratio--1x1'
+  data-flickity='{"lazyLoad": true, "pageDots": false, "prevNextButtons": false, "draggable": false }'>
+  <div class='carousel-cell aspect-ratio--object cover'>
+    <!-- cell-{{/* sha1 .Title */}}{{/* .RelPermalink | absURL */}} {{/* with .Page.Resources.GetMatch "images" */}} -->
+    <img class='carousel-cell-image' data-flickity-lazyload='{{- .Get "path" -}}' alt='{{/**/}}' />
+    <!--img class='carousel-cell-image'
+      src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4='
+      data-flickity-bg-lazyload='' alt='{{/**/}}'-->
+    <!-- ba bw1 b--transparent transition -->
   </div>
 </div>
 
-<script>
+<!--
+<span class="f7">
+  {{/* partial "debugprint" . */}}
+</span>
+-->
+
+<!--script>
   // external js: flickity.pkgd.js
 
-    var flkty = new Flickity('.carousel', {
-      lazyLoad: true
+  var flkty = new Flickity('.carousel', {
+    lazyLoad: true
     , pageDots: false
     , prevNextButtons: false
     , dragable: false
-    });
+  });
 
-    flkty.on('lazyLoad', function (event) {
-      var img = event.target;
-      console.log(event.type, img.src);
-    });
+  flkty.on('lazyLoad', function (event) {
+    var img = event.target;
+    console.log(event.type, img.src);
+  });
 
-</script>
+</script-->

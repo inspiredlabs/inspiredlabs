@@ -27,7 +27,7 @@ open: false
 
 Aris Technologies develop their own online gaming platform for a niche market. The company is organised to follow the sun, writing code <!-- for the browser and desktop client  -->during GMT, tested in China and constantly deployed to the US market.
 
-### Legacy of the project
+### Project Legacy
 
 Templates designed remain in use for this “development A-Team”, providing a decent return on investment tp meets Aris' business demands.
 

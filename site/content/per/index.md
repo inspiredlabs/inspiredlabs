@@ -31,7 +31,7 @@ With limited resources, such as no water, lead by engineer and entrepreneur [Ale
 
 > …the tools exist to design better communities.<cite>– Alessandro Ranco, [PER](https://inspiredlabs.co.uk/per.umbria.it/en/index.html#philosophy)</cite>
 
-## Legacy of the project
+## Project Legacy
 
 ### An increase in English visitors
 
@@ -49,7 +49,7 @@ Since 2016 there has been a rise in interest in the project. Providing PeR with 
 
 ### Visit
 
-[English website](https://umbria.netlify.com/) <!-- [Italiano](https://per.umbria.it/) -->
+[PeR's Website "PeR's Website in English"](https://umbria.netlify.com/) <!-- [Italiano](https://per.umbria.it/) -->
 
 ------
 
@@ -79,7 +79,7 @@ The site summarises the impact of the project, broadens their audience and optim
 
 *   Produced uncomplicated, alternative language documents and functional webapp without extraneous code, painfully slow feed widgets or a clunky CMS.
 *   Meticulous proofreading to reduce complexity and broaden appeal using a "linting" tool: [HemmingwayApp](http://hemingwayapp.com). This gives the original Italian authors a sense of security by assisting translation tools (like Google translate), thus making English easier to grasp. This confidence in a foreign language helps them interpret the new English site – then get stuck into the details.
-*   Help people quickly grasp the level of [accessibility on-site](http://inspiredlabs.co.uk/per.umbria.it/en/#accessibility) for those with disabilities. This information shouldn't be vague, so illustrating and annotating the accommodation and course information seemed a natural comprehension aid.
+*   Help people quickly grasp the level of [accessibility on-site](https://umbria.netlify.com/#accessibility) for those with disabilities. This information shouldn't be vague, so illustrating and annotating the accommodation and course information seemed a natural comprehension aid.
 *   Bootstrap v4-alpha [helps screen-readers](https://v4-alpha.getbootstrap.com/utilities/screenreaders/), this navigation aid skips footer content improving the likelihood of users being able to readily delve into the content.
 
 ### In-depth visual acuity study
@@ -124,7 +124,7 @@ To improve the site's user experience several key steps were taken. Semantic HTM
 *   Multiple, highly optimised graphics were nested in JS for [resolution detection](http://scottjehl.github.io/picturefill/) and tested empirically on different devices and connections.
 *   Extraneous data is stripped from SVG files offline using [svgo-gui v0.0.9](https://github.com/svg/svgo-gui). For lazy-loading photos [Flickity](https://twitter.com/metafizzyco/timelines/657278156794109953), from Metafizzy proved reliable without the dragging functionality or additional JS.
 *   Icons are applied sparingly with bandwidth friendly [Unicode](http://unicode-table.com/en). Tests were performed with a broad cross-section of devices to ensure that all characters rendered similarly and predictably. Whilst Unicode isn't perfect it improves performance by diminishing download size and gives the webapp a native-feel from device to device.
-*   The outcome of these optimisations combined is: Performance rated “A” via [tools.pingdom.com](https://tools.pingdom.com/#!/dm8jAX/http://inspiredlabs.co.uk/per.umbria.it/en/index.html) and a [PageSpeed rating: 99%](http://inspiredlabs.co.uk/gtmetrix.com/reports/per.umbria.it.pdf).
+*   The outcome of these optimisations combined is: Performance rated “A” via [tools.pingdom.com](https://tools.pingdom.com/#5c41a23670c00000) and a [PageSpeed rating: 99%](http://inspiredlabs.co.uk/gtmetrix.com/reports/per.umbria.it.pdf).
 
 <!--
 > What is information architecture?

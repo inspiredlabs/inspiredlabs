@@ -29,7 +29,7 @@ Derived from their surname Chris Sinclair, Pete Sinclair, and their Father – a
 ### Client work
 The [OM.Net](http://inspiredlabs.co.uk/3-si.com/#clients) platform is for Nonprofit Organisations such as **Mensa**, **The National Farmer's Union** and **Trading Standards**. I was also concerned with the web platform for **The Pathological Society**.
 
-### Legacy of the project
+### Project Legacy
 
 A high performance static site was written for a fresh perspective on their design, whilst honouring branding already in use.
 

@@ -29,7 +29,7 @@ Cambridge University's [Andrew Buchanan](https://vaultarch.com), set out to make
 
 <!--
 
-### Legacy of the project
+### Project Legacy
 
 Validating the project's scalability it is clear there is a need for a robust technical solution to protect valuable collectables. The idea has lead to positive feedback from risk averse investors, such as insurance companies and **Vaultarch** has the potential of an innovative investment.
 -->

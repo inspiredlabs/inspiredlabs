@@ -43,20 +43,11 @@
               {{ partial "date" . }}
             </summary>
 
-            <style>
-            [data-hide] .flickity-viewport, [data-hide] .portfolio  {
-              height: 44vh!important
-            }
-            [data-hide] .portfolio-cell {
-              background-position: center 55%;
-            }
-            </style>
-
             <!-- Feature image: https://discourse.gohugo.io/t/get-first-image-in-a-bundle/11258 -->
             {{ $bg := .Params.bg }}
             {{ range first 1 (.Resources.ByType "image") }}
-            <a
-            {{ if eq $bg false }} data-hide {{ if gt $bg 0 }} data-hide {{ else }} data-svg {{ end }}{{ end }}
+            <a 
+            {{ if eq $bg false }} data-hide {{ else }} data-svg {{ end }}
             data-a11y-dialog-show="my-accessible-dialog"
             title="{{ .RelPermalink | absURL }}"
             href="#cell-{{ sha1 .Title }}"
@@ -72,7 +63,8 @@
               </a>
               {{ end }}
 
-              
+
+
               {{ partial "content.html" . }}
 
             </div>

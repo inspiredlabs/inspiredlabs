@@ -627,11 +627,7 @@ document.onkeydown = function(e) {
 
 </script-->
 
-<script>
 
-  
-
-</script>
 
 
 
@@ -693,8 +689,8 @@ document.onkeydown = function(e) {
 <script src="{{ .Site.BaseURL | absURL }}js/flickity.js"></script>
 <script>
 
-
   function portfolio() {
+    
     setTimeout(function () {
       // better dissolve: https://stackoverflow.com/questions/6121203/how-to-do-fade-in-and-fade-out-with-javascript-and-css
       // custom navigation: https://codepen.io/desandro/pen/emVRjv
@@ -709,13 +705,24 @@ document.onkeydown = function(e) {
         bgLazyLoad: 12
       });
       var flickity = new Flickity('.portfolio-main', {
-        hash: true,
         contain: true,
         pageDots: false,
         wrapAround: true,
         bgLazyLoad: true,
-        prevNextButtons: false
-      });
+        prevNextButtons: false, 
+        hash: true,
+        on: {
+          ready: function () {
+            let uri = window.location.hash.substr(1);
+            if (uri == '') {
+              return;
+              } else {
+                history.pushState("", document.title, window.location.pathname + window.location.search);
+              }
+            }
+          }
+        })
+      
 
       /* window.addEventListener('online', function () {
         flickity.reloadCells()
@@ -980,47 +987,47 @@ document.onkeydown = function(e) {
 
 
 
-	function inputUpdate(value) {
-	  var searchString = document.getElementById('searchEntry').value;
-	  articleSearch.search(searchString);
-	}
+    function inputUpdate(value) {
+      var searchString = document.getElementById('searchEntry').value;
+      articleSearch.search(searchString);
+    }
 
-	var articleSearch = new List('content', {
-	  valueNames: ['meta']
-	});
+    var articleSearch = new List('content', {
+      valueNames: ['meta']
+    });
 
-	function searchEntryZero() {
-	    document.getElementById('searchEntry').value = '';
-	};
+    function searchEntryZero() {
+        document.getElementById('searchEntry').value = '';
+    };
 
-	function resetArticleSearch() {
-	    articleSearch.search(searchString = '');
-	};
+    function resetArticleSearch() {
+        articleSearch.search(searchString = '');
+    };
 
 
-	function resetItemsOutput() {
-		var timeLimit = 30000;//5s	== 5000
+    function resetItemsOutput() {
+      var timeLimit = 30000;//5s	== 5000
 
-		setTimeout(function() {
-		    document.getElementById('matchingItemsOutput').innerHTML = 'Simplicity is the ultimate';
-		}, timeLimit);
+      setTimeout(function() {
+          document.getElementById('matchingItemsOutput').innerHTML = 'Simplicity is the ultimate';
+      }, timeLimit);
 
-	};
+    };
 
-	articleSearch.on('searchComplete', function (e) {
+    articleSearch.on('searchComplete', function (e) {
 
-		if (e.matchingItems.length == 0) {
-			document.getElementById('matchingItemsOutput').innerHTML = 'No matching articles';
-			resetItemsOutput();
+      if (e.matchingItems.length == 0) {
+        document.getElementById('matchingItemsOutput').innerHTML = 'No matching articles';
+        resetItemsOutput();
 
-		} else {
-			document.getElementById('matchingItemsOutput').innerHTML = e.matchingItems.length + ' matching articles';
-			resetItemsOutput();
-		}
+      } else {
+        document.getElementById('matchingItemsOutput').innerHTML = e.matchingItems.length + ' matching articles';
+        resetItemsOutput();
+      }
 
-  });
+    });
   
-  document.getElementById('searchEntry').onkeydown = function (e) {
+    document.getElementById('searchEntry').onkeydown = function (e) {
       if (e.which == 13 || e.key == 13 || e.key == 13 || e.keyCode == 13) {
         e.preventDefault();
         return false;

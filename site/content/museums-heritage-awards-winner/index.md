@@ -9,7 +9,7 @@ description: >
   <br/>by&nbsp;Mallinson's Architects &&nbsp;Engineers
 assignment: Designer, Animator &&nbsp;Mentor
 location: Atacama Ltd, Oxford
-open: flase
+open: false
 
 ---
 

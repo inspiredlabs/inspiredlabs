@@ -81,9 +81,7 @@ My content development work focuses on performant code. Rarely relying on comple
 ## [Scott Phillips' CV](https://inspiredlabs.co.uk/cv/design-and-code-scott-phillips-cv-2020.pdf)
 Feel free to share, [read](https://inspiredlabs.co.uk/cv/design-and-code-scott-phillips-cv-2020.pdf) and get in&nbsp;touch.
 
-
-**Would you like to [send me an email](#contact)?**
-
+{{< sendemail >}}
 
 
 

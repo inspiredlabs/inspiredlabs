@@ -5,27 +5,35 @@
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-
-  <title> {{ .Title }} | {{ .Site.Title }} </title>
-
+  <title>{{- if .IsHome }}{{ .Site.Title }}{{else}}{{ .Title }} | {{ .Site.Title }}{{ end -}}</title>
   <!-- Enable responsiveness on mobile devices-->
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
+  <meta name='HandheldFriendly' content='True' />
+  <meta name='mobile-web-app-capable' content='yes'>
+  <meta name='apple-mobile-web-app-capable' content='yes'>
+  <meta name="apple-mobile-web-app-status-bar-style" content="translucent"><!-- black-translucent -->
+  <!--script>if (window.navigator.standalone) { // The app is running in standalone mode. }</script-->
 
+  <!--link rel='mask-icon' href='favicon.svg' color='white'-->
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+  <link rel='apple-touch-icon' href='favicon.png'>
+  <link rel='icon' type='image/png' href='favicon.png'>
+  <link rel='icon' type='image/icon' href='favicon.ico'>
+  
   <!--<meta name="MobileOptimized" content="320" />-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta name="apple-mobile-web-app-title" content='▶{{- if .IsHome }}{{ .Site.Title }}{{else}}{{ .Title }}{{ end -}}'>
+  <!--link rel="apple-touch-startup-image" href="https://inspiredlabs.co.uk/images/startup.png" from: https://blog.teamtreehouse.com/optimizing-mobile-web-apps-ios-->
+  
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Inspired Labs",
       "image": "https://inspiredlabs.co.uk/images/profile.png",
-      "@id": "https://inspiredlabs.co.uk/design-generalist.html",
-      "url": "https://inspiredlabs.co.uk/design-generalist.html",
+      "@id": "https://inspiredlabs.co.uk/",
+      "url": {{ .Permalink }},
       "telephone": "+39 340 893 1544",
-      "priceRange": "£3000 - £30000",
+      "priceRange": "£3000 - £128000",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Littlegate Street",
@@ -66,7 +74,7 @@
       ]
     }
   </script>
-  <meta name="twitter:url" content="https://inspiredlabs.co.uk/design-generalist.html" />
+  <meta name="twitter:url" content="{{ .Permalink }}" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@inspiredlabs" />
   <meta name="twitter:title" content="Scott Phillips. Frontend Developer, Content Writer and Designer." />
@@ -82,7 +90,7 @@
   <meta property="og:title" content="Scott Phillips. Frontend Developer, Content Writer and Designer." />
   <meta property="og:description"
     content="Scott is a particularly talented designer, Tanguy Fautré. An outstanding work ethic, Nina Brown. A Fearless creative." />
-  <meta property="og:url" content="https://inspiredlabs.co.uk/design-generalist.html" />
+  <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:locale" content="en" />
   <meta property="og:image" content="https://inspiredlabs.co.uk/images/profile.png" />
   <meta property="og:image:secure_url" content="https://inspiredlabs.co.uk/images/profile.png" />
@@ -112,32 +120,35 @@
 
   <!--TODO: TEMPLATE CSS -->
   <style>
-    /* .carousel {
-background: #FAFAFA;
-}
-.carousel-cell {
-width: 100%;
-height: auto;
-margin-right: 10px;
-
-background: #333;
-}
-.carousel-cell-image {
-display: block;
-max-height: 100%;
-margin: 0 auto;
-max-width: 100%;
-opacity: 0;
--webkit-transition: opacity 0.4s;
-      transition: opacity 0.4s;
-} */
-
     /* fade in lazy loaded image: https://codepen.io/desandro/pen/vOeGzL */
+    .carousel {
+      /*aqua*/
+    }
+  
+    .carousel-cell {
+      /* https://tachyons.io/components/layout/horizontal-aspect-ratios/index.html */
+    }
+  
+    .carousel-cell-image {
+      display: block;
+      /* max-height: 100%;
+      margin: 0 auto;
+      max-width: 100%; */
+      opacity: 0;
+      -webkit-transition: opacity 0.4s;
+      transition: opacity 0.4s;
+    }
+  
+  
+    /* fade in lazy loaded image */
     .carousel-cell-image.flickity-lazyloaded,
     .carousel-cell-image.flickity-lazyerror {
+      opacity: 0.8;
+    }
+  
+    .carousel-cell-image:hover {
       opacity: 1;
     }
-
     .near-white {
       color: #f8f8f8;
     }
@@ -366,48 +377,12 @@ opacity: 0;
     }
   </style>
 
-
-
-  <style>
-  .carousel {
-    /*aqua*/
-  }
-
-  .carousel-cell {
-    /* https://tachyons.io/components/layout/horizontal-aspect-ratios/index.html */
-  }
-
-  .carousel-cell-image {
-    display: block;
-    /* max-height: 100%;
-    margin: 0 auto;
-    max-width: 100%; */
-    opacity: 0;
-    -webkit-transition: opacity 0.4s;
-    transition: opacity 0.4s;
-  }
-
-
-  /* fade in lazy loaded image */
-  .carousel-cell-image.flickity-lazyloaded,
-  .carousel-cell-image.flickity-lazyerror {
-    opacity: 0.8;
-  }
-  .carousel-cell-image:hover {
-    opacity: 1;
-  }
-</style>
-
-
-
-  {{ if .IsHome }}{{ end }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/flickity.css"><!-- flickity.min.css -->
-  <script src="{{ .Site.BaseURL | absURL }}js/flickity.js"></script>
+  
 </head>
 
 <body class="w-100 source_sans_proregular black-70 highlight bg-near-white lh-copy " id="top"><!-- debug -->
-  <b class="w-10 fixed z-max mt0 pa1 top-0 moon-gray o-30" id="debugInfo">0</b>
-  {{ partial "svg.html" . }}
+  <!-- <b class="w-10 fixed z-max mt0 pa1 top-0 moon-gray o-30" id="debugInfo">0</b> -->
+  {{- partial "svg.html" . | safeHTML -}}
 
   {{/* partial "debugprint" . */}}
 

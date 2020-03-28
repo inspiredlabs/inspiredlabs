@@ -12,7 +12,7 @@
       {{ with .Resources.ByType "image" }}
       {{ range . }}
 
-      <img class="cell-{{ sha1 .Title }}
+      <img {{ if eq $bg false }} data-hide {{ if gt $bg 0 }} data-hide {{ else }} data-svg {{ end }}{{ end }} class="cell-{{ sha1 .Title }}
             cover portfolio-cell pointer h3 w3 h4-l w4-l"
         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
         data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}"><!-- ba bw1 b--transparent transition -->
@@ -22,6 +22,7 @@
     </nav>
   </div>
 
+
   <!-- Flickity HTML -->
   <div class="portfolio portfolio-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1 ">
 
@@ -30,8 +31,9 @@
     {{ with .Resources.ByType "image" }}
     {{ range . }}
 
+
     {{/* NOTE: sha1 .Title https://discourse.gohugo.io/t/looking-for-a-futureproof-uniqueid/18936/4 */}}
-    <img id="cell-{{ sha1 .Title }}" class='cell-{{ sha1 .Title }}
+    <img {{ if eq $bg false }} data-hide {{ if gt $bg 0 }} data-hide {{ else }} data-svg {{ end }}{{ end }} id="cell-{{ sha1 .Title }}" class='cell-{{ sha1 .Title }}
       portfolio-cell no-select  w-100 vw-100 h-100 vh-100'
       src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
       data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">

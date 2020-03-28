@@ -56,7 +56,7 @@
             {{ $bg := .Params.bg }}
             {{ range first 1 (.Resources.ByType "image") }}
             <a
-            data-hide
+            {{ if eq $bg false }} data-hide {{ if gt $bg 0 }} data-hide {{ else }} data-svg {{ end }}{{ end }}
             data-a11y-dialog-show="my-accessible-dialog"
             title="{{ .RelPermalink | absURL }}"
             href="#cell-{{ sha1 .Title }}"

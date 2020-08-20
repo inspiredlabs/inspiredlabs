@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2018-12-13T09:00:00Z
 weight:
 bg: 383838
@@ -9,7 +9,7 @@ assignment: Graphic Designer & Developer
 location: Italy
 open: false
 ---
-
+{{< feature 0 >}}
 <!--date: 2019-02-03T15:49:50.219Z-->
 
 <!--

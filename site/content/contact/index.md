@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 weight: 888
 bg: false
 date:
@@ -8,6 +8,8 @@ description: Senior Interaction Designer
 assignment: The conscientious champion of user needs
 open: true
 ---
+
+{{< feature 0 >}}
 
 A pioneer of transformative business models, I have a proven ability to initiate long-lasting, profitable, organisational&nbsp;change. This is generally achieved by systematising niche-insight, fused with new technology. The result is long-term, reproducable&nbsp;value. But, I can not do this work&nbsp;alone. My work relies on being in an environment, determined to uncover problems, question the norm and forge a new&nbsp;direction.
 

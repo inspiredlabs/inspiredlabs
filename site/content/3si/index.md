@@ -9,7 +9,7 @@ assignment: UX Designer, Frontend Developer, Graphic Designer & Technical Copywr
 location: 3Si, Newcastle-Under-Lyme
 open: false
 ---
-
+{{< feature 0 >}}
 <!--location: 3Si, Stoke-on-Trent-->
 <!--Summer2015 – Winter 2015-->
 <!--Copywriting & designing marketing material templates for a data-driven, multi-platform CRM.-->

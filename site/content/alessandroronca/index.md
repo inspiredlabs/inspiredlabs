@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2019-12-13T09:00:00Z
 weight:
 bg: false
@@ -9,6 +9,8 @@ assignment: Design &amp; Development
 location: Umbria, Italy
 open: false
 ---
+{{< feature 0 >}}
+
 <!--
 {{< flkty
 	path="https://inspiredlabs.co.uk/alessandroronca/images/iwa-alessandroronca-01.jpg"

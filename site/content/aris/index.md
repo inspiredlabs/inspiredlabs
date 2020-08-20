@@ -18,7 +18,7 @@ skills:
   - junior coder (AS3, HTML and CSS)
 open: false
 ---
-
+{{< feature 0 >}}
 <!-- 2007 - 2010
 {{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
 -->

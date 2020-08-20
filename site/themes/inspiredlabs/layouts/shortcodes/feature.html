@@ -1,0 +1,29 @@
+{{ $index := int ( .Get 0 ) }}
+
+{{ range .Site.RegularPages }}
+{{ if eq $.Page.Title .Title }}
+
+
+<!-- Feature image: https://discourse.gohugo.io/t/get-first-image-in-a-bundle/11258 -->
+{{ $bg := .Params.bg }}
+{{ with (index (.Resources.ByType "image") $index) }}
+<a 
+{{ if eq $bg false }} data-hide {{ else }} data-svg {{ end }}
+data-a11y-dialog-show="my-accessible-dialog"
+title="{{ .RelPermalink | absURL }}"
+href="#cell-{{ sha1 .Title }}"
+class="w-100 transition"><!-- w-50 fixed z-2 mt0 pa1 top-0 z-2 -->
+  <div class='portfolio cell-{{ sha1 .Title }} aspect-ratio aspect-ratio--3x1'
+    data-flickity='{"bgLazyLoad": true, "bgLazyLoad": 1, "pageDots": false, "prevNextButtons": false, "draggable": false }' 
+    style="overflow: hidden">
+      <!-- cell-{{/* sha1 .Title */}}{{/* .RelPermalink | absURL */}} {{/* with .Page.Resources.GetMatch "images" */}} -->
+    <img
+    class='aspect-ratio--object cover'
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+    data-flickity-bg-lazyload='{{ .RelPermalink | absURL }}' alt='Portfolio Image' />
+  </div><!-- cover portfolio-cell w-100 aspect-ratio--3x1 `SVG, background-position: 0 88%;`-->
+  </a>
+  {{ end }}
+
+{{ end }}
+{{ end }}

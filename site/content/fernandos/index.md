@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2012-01-01T09:00:00Z
 weight:
 bg: fffdf1
@@ -13,7 +13,7 @@ skills:
   - Graphic Communication
 open: false
 ---
-
+{{< feature 0 >}}
 ### Carfax Cafe, Oxford
 
 In 2012 entrepreneur, **Fernando Kindermann** opened _Smiley&nbsp;Cafe_. Friendly hospitality and Brazilian and Italian dishes are served from the shadowy site – although, that formula wasn't enough. The venue struggled to attract passing trade and consistent regulars. To help the Carfax Tower  stand-out, we used design to attract people and boost&nbsp;sales…

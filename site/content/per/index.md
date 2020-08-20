@@ -18,10 +18,13 @@ skills:
   - Bootstrap, CSS & JS
 open: false
 ---
-
+{{< feature 0 >}}
 <!--May 2016
 {{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
 -->
+
+
+
 
 ## The largest independent, sustainability research center in Italy
 
@@ -58,6 +61,7 @@ Service improvements have increase profit from overseas, agrotourism&nbsp;visito
 Originally visiting this off-grid eco-village with the intention of learning about self-sufficiency and permaculture, I was enthusiastically invited to join the team. The goal: share their message to an English speaking audience, build the best online experience and ultimately, improve the Service&nbsp;Design offering.
 
 > …the tools exist to design better communities.<cite>– Alessandro Ranco on resilience, [PER](https://inspiredlabs.co.uk/per.umbria.it/en/index.html#philosophy)</cite>
+
 
 
 ### Appeal to a broader audience

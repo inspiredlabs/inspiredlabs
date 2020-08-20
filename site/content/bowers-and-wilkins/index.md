@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2010-01-01T09:00:00Z
 weight:
 bg: false
@@ -14,7 +14,7 @@ skills:
 open: false
 
 ---
-
+{{< feature 0 >}}
 ### Conference opener
 
 **Bowers & Wilkins** make the worlds most advanced hi-fi products. Partnering with Apple, Jaguar and Lucasfilm, I was brought onboard by [Thomas Manss](http://www.manss.com/en/Project/Vintage-at-Goodwood), to celebrate their “true sound” in-car audio products for the **Vintage at Goodwood**&nbsp;conference.

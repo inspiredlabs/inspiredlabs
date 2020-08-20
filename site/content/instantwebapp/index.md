@@ -1,15 +1,15 @@
 ---
-draft: true 
+draft: false
 date: 2010-01-01T09:00:00Z
 weight:
-bg: false 
+bg: false
 title: InstantWebapp
 description: Web design for a world of apps
 assignment: Frontend Developer
 location: SME Boutiques
 open: false
 ---
-
+{{< feature 0 >}}
 <!--From Summer&nbsp;2011-->
 
 <!--{{<flkty src="instantwebapp/images/iwa-pablowoodward-01.jpg" title="PabloWoodward.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}-->

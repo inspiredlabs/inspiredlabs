@@ -1,28 +1,35 @@
 ---
-draft: false
+draft: true
 weight: 888
 bg: false
 date:
 title: Scott Phillips
-description: Design Generalist
-assignment: Conscientious champion of user needs
+description: Senior Interaction Designer
+assignment: The conscientious champion of user needs
 open: true
 ---
 
+A pioneer of transformative business models, I have a proven ability to initiate long-lasting, profitable, organisational&nbsp;change. This is generally achieved by systematising niche-insight, fused with new technology. The result is long-term, reproducable&nbsp;value. But, I can not do this work&nbsp;alone. My work relies on being in an environment, determined to uncover problems, question the norm and forge a new&nbsp;direction.
+
+Previous&nbsp;sucesses include deployment of systems mitigating preventable&nbsp;losses<!-- M3Pub, Vaultarch, custom GA analytics, etc -->, first-to-market with 64bit&nbsp;technology <!-- Advanced Animation & Autodesk, etc --> and streamlining applications by interpreting user&nbsp;behaviour.<!-- National Geographic, PeR, 3-si.com, InstantWebapp, Aris -->
+
+Comfortable formulating research, user-journeys, delivering graphic design, prototying&nbsp;or writing robust&nbsp;frontend code – I act as a power-multiplier on behalf of disparate&nbsp;teams. I&nbsp;produce work for startups with a few million in funding and have been a consultant to a client with a market capitalisation of&nbsp;£30bn.
+
+
+Don't worry if you're not there yet – if there's potential for entrepreneurial, design-thinking, I am keen to make my&nbsp;contribution.
+
+
+<!--
 I design and deliver projects for organisations such as [National Geographic](https://inspiredlabs.co.uk/j/), [Siemens](https://vimeo.com/124142652), [Bowers & Wilkins](https://vimeo.com/124144694), and ambitious&nbsp;startups.
 
 My work applies thorough, user-friendly design that moves projects forward. These can be greenfield projects like attention engineering for [Aris&nbsp;Technologies](https://www.linkedin.com/company/aris-technologies-ltd.). Or a communication strategy for [Vaultarch](https://vaultarch.com/), an award‑winning deep‑tech&nbsp;company.
-
-Currently, my focus is content design for the mobile web. This includes graphic design, rapid prototyping and writing&nbsp;templates. I'm enthusiastic about combining performant code, aesthetics and&nbsp;accessibility.
-
-Turning a brief into assets, I'm comfortable in organisations of different sizes. I have produced resilient templates for startups with a few million in funding. And consulting services to a company with a market capitalisation of over £30b.
-But, don't worry if you're not there yet – there is potential to contribute to smaller projects that need help getting off the&nbsp;ground!
+-->
 
 * * *
 
-Proud to be a fearless creative that can embrace practical&nbsp;constraints – I&nbsp;work best with talented individuals who&nbsp;innovate.
+Proud to be a fearless creative that embraces practical&nbsp;constraints – I&nbsp;work best with talented teams that need to&nbsp;innovate.
 
-**Would you like to send me an email?**
+**So, what's your business&nbsp;challenge?**
 
 {{< contact >}}
 

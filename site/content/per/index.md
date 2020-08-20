@@ -5,7 +5,7 @@ weight:
 bg: false
 title: PeR, Il Parco dell Energia Rinnovabile
 description: Sustainability Research
-assignment: Designer & Content Writer
+assignment: Content Designer & UI/UX Frontend Developer
 location: Umbria, Italy
 skills:
   - Information architecture
@@ -29,18 +29,15 @@ open: false
 
 With limited resources, such as no water, lead by engineer and entrepreneur [Alessandro Ranco](https://inspiredlabs.co.uk/per.umbria.it/en/index.html#philosophy) a small team has built on an ancient site. Adding power, irrigation, and a teaching block on top of where they live [PeR](https://inspiredlabs.co.uk/per.umbria.it/en/) has become the largest facility of it's kind in Italy.
 
-> …the tools exist to design better communities.<cite>– Alessandro Ranco, [PER](https://inspiredlabs.co.uk/per.umbria.it/en/index.html#philosophy)</cite>
-
 ## Project Legacy
 
-### An increase in English visitors
+### Improved Service Delivery
 
 <!--Presently, we are in the process of assessing the impact of updating their content -->
 
-Since 2016 there has been a rise in interest in the project. Providing PeR with well written content, automated back-translation and delivering a maintainable website, SEO helps spread their message.
+Service improvements have increase profit from overseas, agrotourism&nbsp;visitors. Possessing maintainable learning material in English has given them an opportunity to connect with other centres of&nbsp;learning. Automated back-translation has opened the door to new opportunities to spread their&nbsp;message.
 
 <!-- The web platform is developed to be modular, able to adapt to their future needs. -->
-
 
 <!--
 ### Preview
@@ -49,15 +46,19 @@ Since 2016 there has been a rise in interest in the project. Providing PeR with 
 
 ### Visit
 
-[PeR's Website "PeR's Website in English"](https://umbria.netlify.com/) <!-- [Italiano](https://per.umbria.it/) -->
+[PER in English](https://umbria.netlify.com/) <!-- [Italiano](https://per.umbria.it/) -->
 
-------
+
+* * *
 
 ## The project in detail
 
 ### Their message, transcreated
 
-Originally visiting this off-grid eco-village with the intention of learning about self-sufficiency and permaculture, I was enthusiastically invited to join the team. The goal: share their message to an English speaking audience, build the best online experience and ultimately, improve sales.
+Originally visiting this off-grid eco-village with the intention of learning about self-sufficiency and permaculture, I was enthusiastically invited to join the team. The goal: share their message to an English speaking audience, build the best online experience and ultimately, improve the Service&nbsp;Design offering.
+
+> …the tools exist to design better communities.<cite>– Alessandro Ranco on resilience, [PER](https://inspiredlabs.co.uk/per.umbria.it/en/index.html#philosophy)</cite>
+
 
 ### Appeal to a broader audience
 
@@ -71,30 +72,23 @@ The discovery phase began by understanding the present communication plan in Ita
 *   Curate photos from their archive and shoot new activities.
 *   Participate as a teacher, to understand student needs.
 
-### Building the best online web experience possible
 
-The site summarises the impact of the project, broadens their audience and optimises the experience for mobile<!--, offline-first-->. With an emphasis on being understood by people with limited English, the text was repeatedly simplified, rewritten to be parsed online for back-translation.
 
-### Accessibility, for visitors and staff
 
-*   Produced uncomplicated, alternative language documents and functional webapp without extraneous code, painfully slow feed widgets or a clunky CMS.
-*   Meticulous proofreading to reduce complexity and broaden appeal using a "linting" tool: [HemmingwayApp](http://hemingwayapp.com). This gives the original Italian authors a sense of security by assisting translation tools (like Google translate), thus making English easier to grasp. This confidence in a foreign language helps them interpret the new English site – then get stuck into the details.
-*   Help people quickly grasp the level of [accessibility on-site](https://umbria.netlify.com/#accessibility) for those with disabilities. This information shouldn't be vague, so illustrating and annotating the accommodation and course information seemed a natural comprehension aid.
-*   Bootstrap v4-alpha [helps screen-readers](https://v4-alpha.getbootstrap.com/utilities/screenreaders/), this navigation aid skips footer content improving the likelihood of users being able to readily delve into the content.
 
-### In-depth visual acuity study
 
-*   Colour Blindness (Daltonism), affects ~10% of people. Testing with affected people, we developed this [clear palette](https://color.adobe.com/create/color-wheel/?base=2&rule=Custom&selected=1&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.4549019607843137%2C0.0784313725490196%2C0.4470588235294118%2C0.5411764705882353%2C0.21568627450980393%2C0%2C0%2C0.43529411764705883%2C0.27058823529411763%2C0%2C0.12941176470588237%2C0.2784313725490196%2C0%2C0%2C0&swatchOrder=0%2C1%2C2%2C3%2C4) that all participants could decipher – even though they have different kinds of colourblindness.
-*   Designers can overlook visual acuity, incorrectly considering it a non-issue. Fortunately, there are [excellent tools](http://leaverou.github.io/contrast-ratio/#white-on-black) to support decision making on behalf of this part of the population.
-*   Supporting the palette with consistent layout rules, appropriate text size make the process of meeting [contrast guidelines](https://www.w3.org/TR/WCAG/#visual-audio-contrast) straightforward.
-*   Sound conclusions from Brian Suda’s research became the kernel of the [PER palette](http://optional.is/required/2011/06/20/accessible-color-swatches), highlighting the importance of deliberately designing with colour.
-*   Further delving into tools like [SimDaltonism](https://michelf.ca/projects/sim-daltonism/), by Laurent Fortin might be shocking, but another good tool to assist any focus on accessibility.
 
-### Simple mental mapping
 
-Usability is vital for visitors to succeed in their goals. Sites using elaborate navigation confuse people, they get lost in too many options, unclear language or poor interface decisions. Thoughtful consideration has been paid to the hierarchy of information and how this is visually interpreted in the design.
 
-### Better information architecture
+
+
+
+
+
+
+
+
+### Better Information Architecture (IA)
 
 The project is a teaching facility, where on-site subject leaders each have their own specialisation. Affecting understanding began by reviewing and streamlining all their content and ordered by topic, in thoughtful goal-driven tasks. Each topic has consistent colour, language and layout, these were then tested by new English visitors, experienced practitioners and non-native English speakers.
 
@@ -102,7 +96,7 @@ The project is a teaching facility, where on-site subject leaders each have thei
 *   Scale and hierarchy are embedded into well written HTML and CSS, both visually and semantically. Written to aid readability the interface and the content needed to have a high level of learnability helping people overcome unfamiliar terms and grasp new ideas.
 *   Colour, and tonal cues make separate sections congruent, and off-site content distinctive from the rest of the content. Users may become subconsciously aware of what's on _this_ site, and what is separate on a social network by seeing the background colour change – subtle, yet useful.
 
-### Information architecture should inform UI design
+### Organised information that informs the UI
 
 Better information architecture deserves good visual feedback. The interface prioritises clarity, where information is organised for discoverability, being both obvious and subtle.
 
@@ -113,6 +107,50 @@ Better information architecture deserves good visual feedback. The interface pri
 *   Photographic hints help visitors find their way in the car, showing roads leading to the site.
 *   To assist routing, the embedded link passes the users current location to Google Maps displaying both where they are, and the final destination. A thoughtful user experience goes beyond simplification: completing user-goals on their journey.
 *   The interface is clean, without distraction. Behind the interface the content is written semantically, adding meaning to each item, such as: language specificity, addresses, description lists and figure captioned images.
+
+### Simple mental mapping
+
+Usability is vital for visitors to succeed in their goals. Sites using elaborate navigation confuse people, they get lost in too many options, unclear language or poor interface decisions. Thoughtful consideration has been paid to the hierarchy of information and how this is visually interpreted in the design.
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+
+## Accessibility focus-groups
+
+### Accessibility for visitors and staff
+
+*   Produced uncomplicated, alternative language documents and functional webapp without extraneous code, painfully slow feed widgets or a clunky CMS.
+*   Meticulous proofreading to reduce complexity and broaden appeal using a "linting" tool: [HemmingwayApp](http://hemingwayapp.com). This gives the original Italian authors a sense of security by assisting translation tools (like Google translate), thus making English easier to grasp. This confidence in a foreign language helps them interpret the new English site – then get stuck into the details.
+*   Help people quickly grasp the level of [accessibility on-site](https://umbria.netlify.com/#accessibility) for those with disabilities. This information shouldn't be vague, so illustrating and annotating the accommodation and course information seemed a natural comprehension aid.
+<!--*   Bootstrap v4-alpha [helps screen-readers](https://v4-alpha.getbootstrap.com/utilities/screenreaders/), this navigation aid skips footer content improving the likelihood of users being able to readily delve into the content.-->
+
+### Accessibility for visual acuity
+
+*   Colour Blindness (Daltonism), affects ~10% of people. Testing with affected people, I developed a clean [palette](https://umbria.netlify.com/) that all participants could decipher – even though they have different kinds of colourblindness.
+*   Designers can overlook visual acuity, incorrectly considering it a non-issue. Fortunately, there are [excellent tools](http://leaverou.github.io/contrast-ratio/#white-on-black) to support decision making on behalf of this part of the population.
+*   Supporting the palette with consistent layout rules, appropriate text size make the process of meeting [contrast guidelines](https://www.w3.org/TR/WCAG/#visual-audio-contrast) straightforward.
+*   Sound conclusions from Brian Suda’s research became the kernel of the [PER palette](http://optional.is/required/2011/06/20/accessible-color-swatches), highlighting the importance of deliberately designing with colour.
+*   Further delving into tools like [SimDaltonism](https://michelf.ca/projects/sim-daltonism/), by Laurent Fortin might be shocking, but another good tool to assist any focus on accessibility.
+
+* * *
+
+## Frontend Development
+
+### Building the best online web experience possible
+
+The site summarises the impact of the project, broadens their audience and optimises the experience for mobile<!--, offline-first-->. With an emphasis on being understood by people with limited English, the text was repeatedly simplified, rewritten to be parsed online for back-translation.
+
 
 ### Optimisation
 
@@ -125,6 +163,10 @@ To improve the site's user experience several key steps were taken. Semantic HTM
 *   Extraneous data is stripped from SVG files offline using [svgo-gui v0.0.9](https://github.com/svg/svgo-gui). For lazy-loading photos [Flickity](https://twitter.com/metafizzyco/timelines/657278156794109953), from Metafizzy proved reliable without the dragging functionality or additional JS.
 *   Icons are applied sparingly with bandwidth friendly [Unicode](http://unicode-table.com/en). Tests were performed with a broad cross-section of devices to ensure that all characters rendered similarly and predictably. Whilst Unicode isn't perfect it improves performance by diminishing download size and gives the webapp a native-feel from device to device.
 *   The outcome of these optimisations combined is: Performance rated “A” via [tools.pingdom.com](https://tools.pingdom.com/#5c41a23670c00000) and a [PageSpeed rating: 99%](http://inspiredlabs.co.uk/gtmetrix.com/reports/per.umbria.it.pdf).
+
+
+
+
 
 <!--
 > What is information architecture?

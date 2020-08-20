@@ -1,5 +1,6 @@
-baseurl = "https://hungry-wozniak-e915f8.netlify.com/"  #local only "./" "https://inspiredlabs.co.uk/"
-#{{ .Site.BaseURL }} "/" && netlify
+#baseurl = "https://inspiredlabs.co.uk/"
+baseurl = "https://hungry-wozniak-e915f8.netlify.com/"
+#local only "./" #{{ .Site.BaseURL }} "/" && netlify
 #relativeURLs = "true"
 
 languageCode = "en-gb" #Initial configuration reset
@@ -13,14 +14,13 @@ theme = "inspiredlabs" #ga-hugo-theme
 
 [Params]
   [[Params.description]]
-    description = "Scott Phillips is a Designer & Frontend Developer"
+    description = "Scott Phillips, Senior Interaction Designer"
 
   [[Params.assignment]]
-    assignment = "Designer & Frontend Developer"
+    assignment = "Senior Interaction Designer"
 
   [[Params.location]]
     location = "Oxford"
-
 
   [[Params.links]]
     title = "Email"

@@ -5,8 +5,8 @@ end: 2010-01-01T09:00:00Z
 weight:
 bg: false
 title: Aris Technologies
-description: Design for a development A-Team
-assignment: UI Designer, Typographer, Animator & Graphic Designer
+description: Delivering assets in a “Development A-Team”
+assignment: Lead UI Designer, Graphic Designer, Illustrator & Animator
 location: Oxford&nbsp;Science&nbsp;Park
 skills:
   - Lead UI Designer
@@ -23,18 +23,15 @@ open: false
 {{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}
 -->
 
-### Secure, sophisticated software
+### Software that follows the sun
 
-Aris Technologies develop their own online gaming platform for a niche market. The company is organised to follow the sun, writing code <!-- for the browser and desktop client  -->during GMT, tested in China and constantly deployed to the US market.
+[Aris&nbsp;Technologies](https://www.linkedin.com/company/aris-technologies-ltd.) develop online gaming platforms in niche&nbsp;markets. Established to follow the sun, Aris produces secure code during GMT, testing in China and constantly deployed within the&nbsp;USA.
 
 ### Project Legacy
 
-Templates designed remain in use for this “development A-Team”, providing a decent return on investment tp meets Aris' business demands.
+I delivered high performance assets that remain in use: earning millions of impressions, across thousands of games, delivering a solid return on investment for Aris' most demanding private&nbsp;operators.
 
-<!-- ### Preview
-
-<a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell19" onclick="static();document.getElementById('togglebox').checked = true;">Table Games UI</a> <a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell20" onclick="static();document.getElementById('togglebox').checked = true;">Flagship product</a> <a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell21" onclick="static();document.getElementById('togglebox').checked = true;">Skeuomorphic UI</a> <a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell22" onclick="static();document.getElementById('togglebox').checked = true;">Video Poker Branding</a> <a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell23" onclick="static();document.getElementById('togglebox').checked = true;">3 Reel Video-slot</a> [Desktop Client, download](http://mandarinpalace.com) [Aris website](http://aristechnologies.com) [Aris on LinkedIn](https://www.linkedin.com/company/aris-technologies-ltd.) -->
-
+The sophisticated user&nbsp;interface – copied by competitors, continues to underpin the every product the [Development A-Team](https://www.linkedin.com/company/aris-technologies-ltd.)&nbsp;create.
 * * *
 
 ## The project in detail
@@ -54,6 +51,13 @@ Co-producing a range of branded game titles and wrote specification documents fo
 ### Investor related content
 
 Produced presentations on spec. for managerial/ investor relations to steer business decisions.
+
+
+<!-- ### Preview
+
+<a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell19" onclick="static();document.getElementById('togglebox').checked = true;">Table Games UI</a> <a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell20" onclick="static();document.getElementById('togglebox').checked = true;">Flagship product</a> <a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell21" onclick="static();document.getElementById('togglebox').checked = true;">Skeuomorphic UI</a> <a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell22" onclick="static();document.getElementById('togglebox').checked = true;">Video Poker Branding</a> <a ondragstart="return false" style="visibility: visible;" class="btn portfolioVisibility" data-selector=".cell23" onclick="static();document.getElementById('togglebox').checked = true;">3 Reel Video-slot</a> [Desktop Client, download](http://mandarinpalace.com) [Aris website](http://aristechnologies.com) [Aris on LinkedIn](https://www.linkedin.com/company/aris-technologies-ltd.) -->
+
+
 
 <!--
 * * *

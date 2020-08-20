@@ -2,14 +2,14 @@
 draft: false
 date: 2011-12-13T09:00:00Z
 weight:
-bg: false  
+bg: false
 title: M+H Awards Winner
 description: >
   Children’s Centre for Civilisation &&nbsp;Creativity
   <br/>by&nbsp;Mallinson's Architects &&nbsp;Engineers
 assignment: Designer, Animator &&nbsp;Mentor
 location: Atacama Ltd, Oxford
-open: false
+open: true
 
 ---
 
@@ -22,7 +22,7 @@ open: false
 The Children’s Centre for Civilisation & Creativity, Heliopolis, Egypt endured the usual construction challenges. In 2011, the timing of the Arab-spring and Egyptian revolution further complicated things for Mallinson's Architects & Engineers' team.
 
 Mallinson's winning the Museum + Heritage award in 2012 because of well organised design. Together, collaborators solved problems outside Egypt so the holistic design became a reality.
-	      		
+
 <!--{{<flkty src="museums-heritage-awards-winner/images/mallinson-01.jpg" title="30m LED wall interior" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}	-->
 
 <!-- {{<figure src="museums-heritage-awards-winner/images/mallinson-01.jpg" title="30m LED wall interior">}}

@@ -14,7 +14,7 @@ skills:
   - Git
   - Branding
   - Graphic Communication
-open: false
+open: true
 ---
 {{< feature 0 >}}
 <!--
@@ -40,18 +40,15 @@ This webapp helps people in the luxury rental market organise and filter rooms t
 
 ### JSON sanitisation in NetlifyCMS
 
-The filter takes JSON data and renders it client-side keeping the information up-to-date without having any other build process.
+The filter takes JSON data and renders it client-side keeping the information up-to-date without having complicated processes likely to fail.
 
-Terse code output from HUGO templates, catches data entry errors. This investment makes maintaining nuances in the properties as simple as possible.
+Terse output from data templates, will catch data-entry mistakes. This investment makes maintaining the properties as simple as possible – even when tiny nuances in content are&nbsp;required.
 
 <!--
-## Preview
-flickity .select-cell -->
-
-
+## Preview Image
 ## Visit
-
-[Locality.site](https://locality.site/) <!-- Update Marzò -->
+[Locality.site](https://locality.site/)
+-->
 
 <!-- * * * -->
 

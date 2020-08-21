@@ -16,7 +16,7 @@ skills:
   - Brand Designer
   - 2D/3D Animator
   - junior coder (AS3, HTML and CSS)
-open: false
+open: true
 ---
 {{< feature 0 >}}
 <!-- 2007 - 2010

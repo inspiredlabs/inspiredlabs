@@ -7,9 +7,11 @@ title: Marzò
 description: Traditional farming, The Marzoli way
 assignment: Graphic Designer & Developer
 location: Italy
-open: false
+open: true
 ---
-{{< feature 0 >}}
+
+
+
 <!--date: 2019-02-03T15:49:50.219Z-->
 
 <!--
@@ -18,19 +20,28 @@ open: false
 
 #### Communicating family values
 
-A warm, welcoming website clear for local people looking for fresh, organic produce. Yet appealing to food connoisseurs, even overseas.
+A warm, welcoming brand – clear for local people looking for fresh, organic produce. Yet appealing to food connoisseurs, even overseas.
 
-#### Powerful tools for nimble pages
+#### Traditional Graphic Design
 
-This mobile first eCommerce site runs via NetlifyCMS, a web interface for writers. A static site generator called HUGO produces flat files without a database. This combination scores highly with Google PageSpeedInsights.
+Devoured by&nbsp;hype: _fresh, organic produce_ is mis-sold. Marzo, on the other-hand tell the real&nbsp;story, embracing lo-fidelity materials to create an informal, intimidation-free aesthetic (but can you spot the intentional&nbps;mistake?).
 
-#### Manageable styling
+{{< feature 0 >}}
 
-Tachyons adapts to design needs. By patching existing classes fixes limitations in the library. Consciously adding utility classes keeps things manageable, while extending default behavior.
+#### Powerful, nimble pages
 
-These work with Javascript for accessibility and for image handling blazy.js.
+The website is mobile-first, developed on [NetlifyCMS](https://www.netlifycms.org/), an interface for zero-compromise&nbsp;authours integrating with&nbsp;GitHub. A static site generator called [HUGO](https://gohugo.io/) produces flat files without a database. This combination scores highly with Google PageSpeedInsights.
 
-<!--list.js handles client-side search. And the gallery is handled by Flickity.-->
+#### Component Library
+
+[Tachyons](tachyons.io/)&nbsp;adapts to design needs. By creating a modular visual library, it is possible to consciously add components, without too-much complexity. This keeps things manageable, while extending default behavior and serves as a spring-board for future&nbsp;projects.
+
+I have patched existing classes to fix limitations in the library. Everything works with from static HTML. Javascript enhances accessibility and improves download handling for heavy, full-screen images.
+
+<!--
+with _blazy.js_.
+list.js handles client-side search. And the gallery is handled by Flickity.
+-->
 
 This combination places content in the hands of the author. Resulting in lightweight, rich, multilingual content – without bloat.
 

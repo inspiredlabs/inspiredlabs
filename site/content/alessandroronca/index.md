@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 date: 2019-12-13T09:00:00Z
 weight:
 bg: false
@@ -7,7 +7,7 @@ title: Ice Coach
 description: Search Engine Whisperer
 assignment: Design &amp; Development
 location: Umbria, Italy
-open: false
+open: true
 ---
 {{< feature 0 >}}
 

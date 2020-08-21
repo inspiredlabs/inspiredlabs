@@ -7,9 +7,11 @@ title: RVO.LT
 description: High Impact, Low Impediment, Low Energy R&amp;D
 assignment: Community Platform
 location: Umbria, Italy
-open: false
+open: true
 
 ---
+
+{{< feature 0 >}}
 
 <!-- 13 Dec 19 09:00 GMT -->
 
@@ -35,13 +37,15 @@ The aim is to connect other design sucesses with people across&nbsp;disciplines.
 
 ### Areas of focus
 
-Designed with Generalists in mind, the project brings attention to key areas of change: Health, Education, Food, Transport and Shelter.
+The&nbsp;project aims to bring attention to key areas of change: Health, Education, Food, Transport and&nbsp;Shelter, for&nbsp;billions.
 
-This isn't focused on countries finding ways to justify the costs of managing the Climate Crisis – but how design should raise life quality for billions.
+
 
 ## Visit
 
-[RVO.LT](https://rvo.lt/) <!-- Needs updating -->
+[RVO.LT](https://rvo.lt/) <!-- Needs updating:
+ and how design should raise life quality
+  This isn't focused on countries finding ways to justify the costs of managing the Climate Crisis – but  -->
 
 <!--
 ## Project in detail-->

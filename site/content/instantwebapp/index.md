@@ -7,7 +7,7 @@ title: InstantWebapp
 description: Web design for a world of apps
 assignment: Frontend Developer
 location: SME Boutiques
-open: false
+open: true
 ---
 {{< feature 0 >}}
 <!--From Summer&nbsp;2011-->

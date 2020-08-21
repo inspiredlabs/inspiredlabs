@@ -7,9 +7,10 @@ title: CRM platform
 description: 'Jargon-busting champion for the end-user '
 assignment: UX Designer, Frontend Developer, Graphic Designer & Technical Copywriter
 location: 3Si, Newcastle-Under-Lyme
-open: false
+open: true
 ---
-{{< feature 0 >}}
+{{< feature 1 >}}
+
 <!--location: 3Si, Stoke-on-Trent-->
 <!--Summer2015 – Winter 2015-->
 <!--Copywriting & designing marketing material templates for a data-driven, multi-platform CRM.-->
@@ -35,6 +36,10 @@ The [OM.Net](http://inspiredlabs.co.uk/3-si.com/#clients) platform has been deve
 As the Customer Champion, I went beyond jargon-busting the flagship product. I encouraged a wave&nbsp;of organisational&nbsp;changes, starting with the elimination of unnecessary&nbsp;complexity to lay the foundation of a customer-first Service&nbsp;Design initiative – one, that&nbsp;everyone could get&nbsp;behind.
 
 This challenge led to an awareness of realigning with user&nbsp;needs, embracing critique by over coming resistence to&nbsp;change.
+
+### Visit
+
+Responsive Web Design [Prototype](http://inspiredlabs.co.uk/3-si.com/)
 
 * * *
 
@@ -98,13 +103,23 @@ Eye&nbsp;tracking is fantastically capable for modern authours. Before delving i
 
 The&nbsp;earliest formal tools for composition and layout were crude. _The Villard de Honnecourt Diagram_ (or _Villard's Canon_), however, still has a modern application in illuminating the blank&nbsp;page.
 
-Villard's&nbsp;Canon can remove ambiguity by establishing a typographical box. This works by horizontally and vertically subdividing the&nbsp;space. Naturally, margins emerge&hellip; two ninths for the inner margin and one for the outer margin, and one ninth for the top margin with two ninths for the bottom&nbsp;margin.
+Villard's&nbsp;Canon can remove ambiguity by establishing a typographical box.
+
+{{< feature 0 >}}
+
+This works by horizontally and vertically subdividing the&nbsp;space. Naturally, margins emerge&hellip; two ninths for the inner margin and one for the outer margin, and one ninth for the top margin with two ninths for the bottom&nbsp;margin.
 
 Magically,&nbsp;this reveals the text-area and paper size are of equal proportions. Also know as [Rosarivo’s&nbsp;Canon](https://en.wikipedia.org/wiki/Canons_of_page_construction#Interpretation_of_Rosarivo).
 
-What's&nbsp;magic about that? Whatever the page format, it always brings geometrical rhythm which in-turn, informs the proportions of the&nbsp;typeface.
+What's&nbsp;magic about that? See for [yourself](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf): whatever the page format, it always brings geometrical rhythm which in-turn, informs the proportions of the&nbsp;typeface.
+
+Modern technology meets a traditional graphic design background.
 
 Harmony &amp;&nbsp;rhythm.
+
+
+
+
 
 ### Eye&nbsp;tracking
 
@@ -122,7 +137,13 @@ Research into the [F-Shaped Pattern](https://www.nngroup.com/articles/f-shaped-p
 
 The marketing&nbsp;material has an emphasis on clarity. Although the visual language of [OM.Net](http://inspiredlabs.co.uk/3-si.com/index.html#modules) required a nod to what was already in&nbsp;circulation.
 
-The design evolved to be optimised for mobile (low-bandwith), and cohesive across print and screen – all done after the initial IA&nbsp;phase.
+Following&nbsp;the the initial IA&nbsp;phase, the design continued to take&nbsp;shape as a cohesive&nbsp;package across print and&nbsp;screen. A&nbsp;Responsive Web&nbsp;Design prototype was then optimised for&nbsp;mobile. Epirically tested on small, low-bandwith&nbsp;devices.
+
+{{< feature 2 >}}
+
+### Visit
+
+Responsive Web Design [Prototype](http://inspiredlabs.co.uk/3-si.com/)
 
 ### Brand Accessibility
 
@@ -136,7 +157,7 @@ The icons and layout became harmonious across print and screen intentionally mak
 
 ### Template design
 
-Each template was designed to reduce production time, unnecessary decision&nbsp;making and error&nbsp;rate. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) material contain the same refreshing&nbsp;content.
+Each template was designed to reduce production time, unnecessary decision&nbsp;making and error&nbsp;rate. Both the [prototype](http://inspiredlabs.co.uk/3-si.com/index.html) landing page and the [print&nbsp;material](http://inspiredlabs.co.uk/3-si.com/print/3si-infosheets-draft.pdf) contain the same refreshing&nbsp;content.
 
 * * *
 

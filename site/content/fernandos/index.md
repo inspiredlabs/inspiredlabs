@@ -11,9 +11,11 @@ skills:
   - Branding
   - Typography
   - Graphic Communication
-open: false
+open: true
 ---
+
 {{< feature 0 >}}
+
 ### Carfax Cafe, Oxford
 
 In 2012 entrepreneur, **Fernando Kindermann** opened _Smiley&nbsp;Cafe_. Friendly hospitality and Brazilian and Italian dishes are served from the shadowy site – although, that formula wasn't enough. The venue struggled to attract passing trade and consistent regulars. To help the Carfax Tower  stand-out, we used design to attract people and boost&nbsp;sales…
@@ -44,7 +46,11 @@ The name is sticky. The purpose of the site needs to be simple to grasp <!--for 
 
 ### Thorough design, diligent typography
 
-The remaining 12th-century **St Martin's Church Tower**, known as **Carfax Tower** deserves a visual language in recognition to the site history. In the middle of this epoch, seventeenth-century Bishop of Oxford and Dean of Christ Church: **John Fell** (1625 – 1686) (documented by [Igino Marini](https://iginomarini.com/fell/history/)), began an important historical undertaking in typography development. Today, inspired by his endeavour, revival faces mimic [The Fell Types (by H&FJ)](https://www.typography.com/fonts/historical-allsorts/inside/fell-types/), giving us a glimpse of the idiosyncratic, hand-fabricated glyphs.
+The remaining 12th-century **St Martin's Church Tower**, known as **Carfax Tower** deserves a visual language in recognition to the site history. In the middle of this epoch, seventeenth-century Bishop of Oxford and Dean of Christ Church: **John Fell** (1625 – 1686), began an important historical undertaking in typography development (as documented by [Igino Marini](https://iginomarini.com/fell/history/)).
+
+{{< feature 1 >}}
+
+Today, inspired by his endeavour, revival faces mimic [The Fell Types (by H&FJ)](https://www.typography.com/fonts/historical-allsorts/inside/fell-types/), giving us a glimpse of the idiosyncratic, hand-fabricated glyphs.
 
 The aim of this graphic design goes beyond utility – adding cultural relevance, important both in terms of typography, and historical&nbsp;Oxford.
 
@@ -52,7 +58,9 @@ The aim of this graphic design goes beyond utility – adding cultural relevance
 
 The design, at first glance is simple – however, it's a complex interplay of revivalism, paired with a modern classic: [Cooper&nbsp;Black Swash](https://fontsinuse.com/typefaces/7357/cooper-black).
 
-Bringing a hearty, abundant tone to the letterforms, finished on tastefully coloured cream board: a traditional storytelling foundation. Now the site is established, fostering five-star&nbsp;reviews.
+{{< feature 2 >}}
+
+Bringing a hearty, abundant tone to the letterforms, finished on tastefully coloured board makes for a traditional storytelling foundation. Now the site is established, fostering five-star&nbsp;reviews.
 
 ### Point of interest
 

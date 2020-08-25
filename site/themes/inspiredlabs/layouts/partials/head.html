@@ -102,7 +102,8 @@
 
   <base href="{{ .Site.BaseURL }}" />
   <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/sourcesans.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/tachyonshower.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/tachyonshower.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/flickity.css"><!-- flickity.min.css -->
 
   {{/* if .IsHome }}
   <!-- <link rel="stylesheet" href="{{ .Site.BaseURL | absURL }}css/flickity.css"> --><!-- flickity.min.css -->
@@ -112,7 +113,7 @@
 
   <!-- regex101.com PCRE & backticks not quotes: https://discourse.gohugo.io/t/replacere-gives-syntax-error/22624/2 -->
   <!-- `nil` resource handling: https://discourse.gohugo.io/t/custom-css-throws-type-nil-not-supported-in-resource-transformations/19942/2 -->
-  {{/* $style := resources.Get "css/tachyonshower.css" | minify */}}
+  {{/* $style := resources.Get "css/tachyonshower.min.css" | minify */}}
   <style>{{/* $style.Content | replaceRE `\/\*(.*)\*\/` `$style` | safeCSS */}}</style>
 
   {{/* $style := resources.Get "css/sourcesans.css" | minify */}}
@@ -384,6 +385,7 @@
 
     [data-svg] .portfolio-cell {
       /* background-position: center 66%!important;       */
+      background-position: center 50%; 
     }
 
     [data-hide] .flickity-viewport, [data-hide] .portfolio {
@@ -397,17 +399,25 @@
 
   
 </head>
+<!--
+  {{if eq .Kind .Type}}
+    {{ $type := "single" }}
+    {{ partial "header" (dict "Kind" .Kind "Template" "single" ) . }}
+    <p>{{ $type }}</p>
+  {{end}}
 
+  {{if ne .Kind .Type}}
+    {{ $type := "list" }}
+    {{ partial "header" (dict "Kind" .Kind "Template" "list" ) . }}
+    <p>{{ $type }}</p>
+  {{end}}
+-->
 <body class="w-100 source_sans_proregular black-70 highlight bg-near-white lh-copy " id="top"><!-- debug -->
   <!-- <b class="w-10 fixed z-max mt0 pa1 top-0 moon-gray o-30" id="debugInfo">0</b> -->
   {{- partial "svg.html" . | safeHTML -}}
 
   {{/* partial "debugprint" . */}}
-
   {{/* partial "sticky" . */}}
 
-  {{/* if and ( ne .IsPage .IsHome ) */}}
-  <!-- <span class="red">{{ .IsHome }}</span> -->
-  {{/* else */}}
-  <!-- <span class="blue">{{ .IsPage }}</span> -->
-  {{/* end */}}
+
+

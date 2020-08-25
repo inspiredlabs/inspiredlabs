@@ -14,15 +14,16 @@ skills:
   - Git
   - Branding
   - Graphic Communication
-open: true
+open: false
 ---
-{{< feature 0 >}}
-<!--
 
+{{< feature 0 >}}
+
+
+<!--
 resources:
   - src: images/localitysite.svg
   - name: red
-
 https://scripter.co/hugo-leaf-and-branch-bundles/#examples
 	- index.md = Leaf Bundle
 	- _index.md = Branch Bundle

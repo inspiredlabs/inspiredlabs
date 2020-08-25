@@ -15,7 +15,7 @@ skills:
   - Networking
   - OpenCV
   - Linear Algebra
-open: true
+open: false
 ---
 {{< feature 0 >}}
 

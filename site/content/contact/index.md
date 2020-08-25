@@ -11,15 +11,15 @@ open: true
 
 {{< feature 0 >}}
 
-A pioneer of transformative business models, I have a proven ability to initiate long-lasting, profitable, organisational&nbsp;change. This is generally achieved by systematising niche-insight, fused with new technology. The result is long-term, reproducable&nbsp;value. But, I can not do this work&nbsp;alone. My work relies on being in an environment, determined to uncover problems, question the norm and forge a new&nbsp;direction.
+A pioneer of transformative business models, I have a proven ability to initiate long-lasting, profitable, organisational&nbsp;change. This is generally achieved with thorough design, systematising niche-insight, fused with new technology.
+
+The result is long-term, reproducable&nbsp;value. But, I can not do this work&nbsp;alone. My work relies on being in an environment, determined to uncover dissatisfaction, question the norm and forge new&nbsp;directions.
 
 Previous&nbsp;sucesses include deployment of systems mitigating preventable&nbsp;losses<!-- M3Pub, Vaultarch, custom GA analytics, etc -->, first-to-market with 64bit&nbsp;technology <!-- Advanced Animation & Autodesk, etc --> and streamlining applications by interpreting user&nbsp;behaviour.<!-- National Geographic, PeR, 3-si.com, InstantWebapp, Aris -->
 
-Comfortable formulating research, user-journeys, delivering graphic design, prototying&nbsp;or writing robust&nbsp;frontend code – I act as a power-multiplier on behalf of disparate&nbsp;teams. I&nbsp;produce work for startups with a few million in funding and have been a consultant to a client with a market capitalisation of&nbsp;£30bn.
+Comfortable performing user&nbsp;research, delivering graphic design, formulating prototypes&nbsp;or writing robust&nbsp;frontend code – I act as a power-multiplier on behalf of disparate&nbsp;teams. I&nbsp;produce work for award-winning startups <!--with a few million in funding--> and have been a consultant to a client with a market capitalisation of&nbsp;£30bn.
 
-
-Don't worry if you're not there yet – if there's potential for entrepreneurial, design-thinking, I am keen to make my&nbsp;contribution.
-
+Don't worry if you're not there yet, if there is potential for entrepreneurial insight – I could make a valuable&nbsp;contribution.
 
 <!--
 I design and deliver projects for organisations such as [National Geographic](https://inspiredlabs.co.uk/j/), [Siemens](https://vimeo.com/124142652), [Bowers & Wilkins](https://vimeo.com/124144694), and ambitious&nbsp;startups.

@@ -1,7 +1,13 @@
-<form data-hide id="email" accept-charset=utf-8 method=POST enctype="application/x-www-form-urlencoded" class="mt5 f5 f4-ns" name="contact"
+<!--form accept-charset=utf-8 method=POST enctype="application/x-www-form-urlencoded" action="{{ .Site.BaseURL }}done/" netlify-honeypot="gotcha" netlify>
+<input name=gotcha class=dn /-->
+<!-- https://docs.netlify.com/forms/setup/ -->
+
+
+<form data-hide id="email" action="https://formspree.io/&#97;&#108;&#97;&#110;&#46;&#115;&#99;&#111;&#116;&#116;&#46;&#112;&#104;&#105;&#108;&#108;&#105;&#112;&#115;&#64;&#112;&#109;&#46;&#109;&#101;" accept-charset=utf-8 method=POST enctype="application/x-www-form-urlencoded" class="mt5 f5 f4-ns" name="contact"
   action="{{ .Site.BaseURL }}done/" netlify-honeypot="gotcha" netlify><!-- action="/thank-you" -->
   <input name=subject type=hidden value="Design opportunity">
   <input name=gotcha class=dn />
+  <input name=_next type=hidden value="{{ .Site.BaseURL }}done/">
   <div class=mb4>
     <label for=email class="f6 f5-ns ttu tracked-mega pl3">Address</label>
     <input type=email name=email id=email class="input-reset br0 bn pa3 w-100 bg-white-90" placeholder="your@email.com"

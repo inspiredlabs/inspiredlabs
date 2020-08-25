@@ -1,23 +1,44 @@
 {{ $index := int ( .Get 0 ) }}
-
 {{ range .Site.RegularPages }}
+
 {{ if eq $.Page.Title .Title }}
 
 
+
+
+
+<!-- https://discourse.gohugo.io/t/see-which-template-is-used-by-hugo/9983 -->
 <!-- Feature image: https://discourse.gohugo.io/t/get-first-image-in-a-bundle/11258 -->
 {{ $bg := .Params.bg }}
 {{ with (index (.Resources.ByType "image") $index) }}
+{{ $cell := sha1 .Title }}
+
+
+
+<!-- href="javascript:setTimeout(function(){ alert('#cell-' + '{{ $cell }}');location.href = '/#cell-' + '{{ $cell }}';}, 1000);" -->
+<!-- location.href = '/#cell-' + '{{ $cell }}'; -->
+<!-- setTimeout(function(){ alert('#cell-' + '{{ $cell }}'); }, 1000); -->
+<!-- href="#cell-{{ $cell }}" -->
+
+
+{{/* .Site.BaseURL */}}
+{{- $imageURL := ( .Permalink ) .Title -}}
+<!-- <p>{{ $imageURL }}</p> -->
+
+
+<!-- <p>#cell-{{ $cell }}</p> -->
 <a 
 {{ if eq $bg false }} data-hide {{ else }} data-svg {{ end }}
-data-a11y-dialog-show="my-accessible-dialog"
 title="{{ .RelPermalink | absURL }}"
-href="#cell-{{ sha1 .Title }}"
+data-a11y-dialog-show="my-accessible-dialog"
+onclick="flickity.selectCell( '.cell-{{ $cell }}');"
 class="w-100 transition"><!-- w-50 fixed z-2 mt0 pa1 top-0 z-2 -->
-  <div class='portfolio cell-{{ sha1 .Title }} aspect-ratio aspect-ratio--3x1'
+  <div class='portfolio aspect-ratio aspect-ratio--3x1'
     data-flickity='{"bgLazyLoad": true, "bgLazyLoad": 1, "pageDots": false, "prevNextButtons": false, "draggable": false }' 
     style="overflow: hidden">
-      <!-- cell-{{/* sha1 .Title */}}{{/* .RelPermalink | absURL */}} {{/* with .Page.Resources.GetMatch "images" */}} -->
+      <!-- cell-{{/* $cell */}}{{/* .RelPermalink | absURL */}} {{/* with .Page.Resources.GetMatch "images" */}} ```class=cell-{{ $cell }}``` -->
     <img
+    style="background-position: center 50%;"
     class='aspect-ratio--object cover'
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
     data-flickity-bg-lazyload='{{ .RelPermalink | absURL }}' alt='Portfolio Image' />
@@ -27,3 +48,14 @@ class="w-100 transition"><!-- w-50 fixed z-2 mt0 pa1 top-0 z-2 -->
 
 {{ end }}
 {{ end }}
+
+<!--script>
+  var element = document.querySelectorAll('.cell-');
+  //not `list`:
+  if (!document.getElementById("list")) {
+    // do... alert('single!')
+    // cell.forEach( alert(cell) );
+    // take the [object nodeList]
+    // if `href="#cell-` then //.removeAttribute("href"); 
+  };
+</script-->

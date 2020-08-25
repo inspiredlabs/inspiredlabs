@@ -6,7 +6,7 @@ date:
 title: Design Generalist CV
 description: Scott Phillips
 assignment: Conscientious champion of user needs
-open: true
+open: false
 ---
 
 Thank you for your consideration, I hope this information finds you well.

@@ -7,7 +7,7 @@ title: CRM platform
 description: 'Jargon-busting champion for the end-user '
 assignment: UX Designer, Frontend Developer, Graphic Designer & Technical Copywriter
 location: 3Si, Newcastle-Under-Lyme
-open: true
+open: false
 ---
 {{< feature 1 >}}
 

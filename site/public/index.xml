@@ -2,80 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Inspired Labs</title>
-    <link>https://hungry-wozniak-e915f8.netlify.com/</link>
+    <link>https://inspiredlabs.co.uk/</link>
     <description>Recent content on Inspired Labs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 13 Dec 2019 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2019 09:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://hungry-wozniak-e915f8.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://inspiredlabs.co.uk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scott Phillips</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/contact/</link>
+      <link>https://inspiredlabs.co.uk/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/contact/</guid>
-      <description>I design and deliver projects for organisations such as National Geographic, Siemens, Bowers &amp;amp; Wilkins, and ambitious startups.
-My work applies thorough, user-friendly design that moves projects forward. These can be greenfield projects like attention engineering for Aris Technologies. Or a communication strategy for Vaultarch, an award‑winning deep‑tech company.
-Currently, my focus is content design for the mobile web. This includes graphic design, rapid prototyping and writing templates. I&amp;rsquo;m enthusiastic about combining performant code, aesthetics and accessibility.</description>
-    </item>
-    
-    <item>
-      <title>Ice Coach</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/alessandroronca/</link>
-      <pubDate>Fri, 13 Dec 2019 09:00:00 +0000</pubDate>
-      
-      <guid>https://hungry-wozniak-e915f8.netlify.com/alessandroronca/</guid>
-      <description>Multilingual booking Written in HUGO and deployed to NetlifyCMS for speed and simplicity this site helps people understand the health benefits of cold exposure.
-Securing bookings as an Ice Coach and educator Alessandro Ronca vividly explains the benefits of The Wim Hof Method in Italian and English.
-Challenge Accepted! Forseen technical challenges included:
- NetlifyCMS does not officially support multilingual sites. high-quality templates for Schema.org poorly documented.  Both solutions were possible by writing complex templates with nested data.</description>
+      <guid>https://inspiredlabs.co.uk/contact/</guid>
+      <description>#cell-a6eff4d85669844957efb241db253656d8f6be92   A pioneer of transformative business models, I have a proven ability to initiate long-lasting, profitable, organisational change. This is generally achieved with thorough design, systematising niche-insight, fused with new technology.
+The result is long-term, reproducable value. But, I can not do this work alone. My work relies on being in an environment, determined to uncover dissatisfaction, question the norm and forge new directions.
+Previous sucesses include deployment of systems mitigating preventable losses, first-to-market with 64bit technology and streamlining applications by interpreting user behaviour.</description>
     </item>
     
     <item>
       <title>RVO.LT</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/rvolt/</link>
+      <link>https://inspiredlabs.co.uk/rvolt/</link>
       <pubDate>Sat, 01 Jun 2019 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/rvolt/</guid>
-      <description>Beyond Sustainability The platform shares 20 years of learning about domestic and community sustainability.
+      <guid>https://inspiredlabs.co.uk/rvolt/</guid>
+      <description> #cell-a1684a17724a6079de8bb16c32e3d5f632ff8a21   Beyond Sustainability The platform shares 20 years of learning about domestic and community sustainability.
 The aim is to connect other design sucesses with people across disciplines.
-Areas of focus Designed with Generalists in mind, the project brings attention to key areas of change: Health, Education, Food, Transport and Shelter.
-This isn&amp;rsquo;t focused on countries finding ways to justify the costs of managing the Climate Crisis – but how design should raise life quality for billions.</description>
+Areas of focus The project aims to bring attention to key areas of change: Health, Education, Food, Transport and Shelter, for billions.
+Visit RVO.LT </description>
     </item>
     
     <item>
       <title>Marzò</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/marzoli/</link>
+      <link>https://inspiredlabs.co.uk/marzoli/</link>
       <pubDate>Thu, 13 Dec 2018 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/marzoli/</guid>
-      <description>Communicating family values A warm, welcoming website clear for local people looking for fresh, organic produce. Yet appealing to food connoisseurs, even overseas.
-Powerful tools for nimble pages This mobile first eCommerce site runs via NetlifyCMS, a web interface for writers. A static site generator called HUGO produces flat files without a database. This combination scores highly with Google PageSpeedInsights.
-Manageable styling Tachyons adapts to design needs. By patching existing classes fixes limitations in the library.</description>
+      <guid>https://inspiredlabs.co.uk/marzoli/</guid>
+      <description>Communicating family values A warm, welcoming brand – clear for local people looking for fresh, organic produce. Yet appealing to food connoisseurs, even overseas.
+Traditional Graphic Design Devoured by hype: fresh, organic produce is mis-sold. Marzo, on the other-hand tell the real story, embracing a lo-fidelity, informal aesthetic.
+#cell-88ac24f1af2ad5e5096ca010ddde47dbbb247db5   Powerful, nimble pages The website is mobile-first, developed on NetlifyCMS, an interface for zero-compromise authours integrating with GitHub. A static site generator called HUGO produces flat files without a database.</description>
     </item>
     
     <item>
       <title>Locality</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/localitysite/</link>
+      <link>https://inspiredlabs.co.uk/localitysite/</link>
       <pubDate>Tue, 01 May 2018 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/localitysite/</guid>
-      <description>Co-habitation Property Services This webapp helps people in the luxury rental market organise and filter rooms to taste.
-JSON sanitisation in NetlifyCMS The filter takes JSON data and renders it client-side keeping the information up-to-date without having any other build process.
-Terse code output from HUGO templates, catches data entry errors. This investment makes maintaining nuances in the properties as simple as possible.
-Visit Locality.site </description>
+      <guid>https://inspiredlabs.co.uk/localitysite/</guid>
+      <description>#cell-ab377a2224e2164c291ce0a2eae21af00508d19e   Co-habitation Property Services This webapp helps people in the luxury rental market organise and filter rooms to taste.
+JSON sanitisation in NetlifyCMS The filter takes JSON data and renders it client-side keeping the information up-to-date without having complicated processes likely to fail.
+Terse output from data templates, will catch data-entry mistakes. This investment makes maintaining the properties as simple as possible – even when tiny nuances in content are required.</description>
     </item>
     
     <item>
       <title>Sebastian Smith Photography</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/sebastian-smith/</link>
+      <link>https://inspiredlabs.co.uk/sebastian-smith/</link>
       <pubDate>Tue, 01 May 2018 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/sebastian-smith/</guid>
-      <description>An eye for detail Busy with photography clients such as Naomi Campbell, Kim Kardashian and Martina Navratilova, Sebastian Smith occasionally needs to retouch shoots.
+      <guid>https://inspiredlabs.co.uk/sebastian-smith/</guid>
+      <description> #cell-7ba57112d4c767063929e514764f168cc2050424   An eye for detail Busy with photography clients such as Naomi Campbell, Kim Kardashian and Martina Navratilova, Sebastian Smith occasionally needs to retouch shoots.
 …and with clients like these Seb requires a keen eye for detail.
 Working together on these images involves repairing blemishes, performing complex repairs and preparing hairstyles for large-format advertising.
   </description>
@@ -83,109 +70,97 @@ Working together on these images involves repairing blemishes, performing comple
     
     <item>
       <title>Vaultarch</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/vaultarch/</link>
+      <link>https://inspiredlabs.co.uk/vaultarch/</link>
       <pubDate>Wed, 13 Dec 2017 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/vaultarch/</guid>
-      <description>Award winning Ltech startup Cambridge University&amp;rsquo;s Andrew Buchanan, set out to make counterfeit, theft and fraud a thing of the past: Vaultarch is a multi award winning Ltech (Legal tech) startup protecting valuable collectables.
+      <guid>https://inspiredlabs.co.uk/vaultarch/</guid>
+      <description>#cell-138224f7580c15250886f9f1a2ed972bf7cde4e3   Award winning Ltech startup Cambridge University&amp;rsquo;s Andrew Buchanan, set out to make counterfeit, theft and fraud a thing of the past: Vaultarch is a multi award winning Ltech (Legal tech) startup protecting valuable collectables.
  Scott displayed energy &amp;amp; resourcefulness… He has good networking skills &amp;amp; an eye for the commercial factor – Andrew Buchanan, Vaultarch  Visit  Vaultarch.com Startup Weekend Startup Next Facebook Twitter Cyberport2, Hong Kong   Project in detail Why is Vaultarch important?</description>
     </item>
     
     <item>
       <title>PeR, Il Parco dell Energia Rinnovabile</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/per/</link>
+      <link>https://inspiredlabs.co.uk/per/</link>
       <pubDate>Fri, 13 May 2016 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/per/</guid>
-      <description>The largest independent, sustainability research center in Italy Deep in an area of outstanding natural beauty With limited resources, such as no water, lead by engineer and entrepreneur Alessandro Ranco a small team has built on an ancient site. Adding power, irrigation, and a teaching block on top of where they live PeR has become the largest facility of it&amp;rsquo;s kind in Italy.
- …the tools exist to design better communities.</description>
+      <guid>https://inspiredlabs.co.uk/per/</guid>
+      <description>#cell-b7ff3a01e60583bb23829490105c4abd34b01ff5   The largest independent, sustainability research center in Italy Deep in an area of outstanding natural beauty With limited resources, such as no water, lead by engineer and entrepreneur Alessandro Ranco a small team has built on an ancient site. Adding power, irrigation, and a teaching block on top of where they live PeR has become the largest facility of it&amp;rsquo;s kind in Italy.
+Project Legacy Improved Service Delivery Service improvements have increase profit from overseas, agrotourism visitors.</description>
     </item>
     
     <item>
       <title>CRM platform</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/3si/</link>
+      <link>https://inspiredlabs.co.uk/3si/</link>
       <pubDate>Fri, 01 May 2015 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/3si/</guid>
-      <description>3Si: 20 years of CRM development Who are 3Si, and what they do? Derived from their surname Chris Sinclair, Pete Sinclair, and their Father – a silent partner, 3Si sell their CRM application to handle volumes of membership and subscription data. Their flagship product is called OM.Net.
-Client work The OM.Net platform is for Nonprofit Organisations such as Mensa, The National Farmer&amp;rsquo;s Union and Trading Standards. I was also concerned with the web platform for The Pathological Society.</description>
+      <guid>https://inspiredlabs.co.uk/3si/</guid>
+      <description>#cell-37466e8d0da7e02653b532f8ee210f73cb3532b0   Organising the organisers Who are 3Si, and what do they do? Derived from their surname Chris Sinclair, Pete Sinclair, and their Father – a silent partner, 3Si handle membership and subscription data. With 20 years of integrity their in-house CRM has evolved to become: OM.Net.
+Clients The OM.Net platform has been developed for Nonprofit Organisations such as Mensa, The National Farmer&amp;rsquo;s Union and Trading Standards. The web platform operates for clientele such as The Pathological Society.</description>
     </item>
     
     <item>
       <title>Carfax Gardens at Carfax Tower</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/fernandos/</link>
+      <link>https://inspiredlabs.co.uk/fernandos/</link>
       <pubDate>Sun, 01 Jan 2012 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/fernandos/</guid>
-      <description>Carfax Cafe, Oxford In 2012 entrepreneur, Fernando Kindermann opened Smiley Cafe. Friendly hospitality and Brazilian and Italian dishes are served from the shadowy site – although, that formula wasn&amp;rsquo;t enough. The venue struggled to attract passing trade and consistent regulars. To help the Carfax Tower stand-out, we used design to attract people and boost sales…
+      <guid>https://inspiredlabs.co.uk/fernandos/</guid>
+      <description>#cell-d74c420e67b483c7ca78435cef6822a304b7852d   Carfax Cafe, Oxford In 2012 entrepreneur, Fernando Kindermann opened Smiley Cafe. Friendly hospitality and Brazilian and Italian dishes are served from the shadowy site – although, that formula wasn&amp;rsquo;t enough. The venue struggled to attract passing trade and consistent regulars. To help the Carfax Tower stand-out, we used design to attract people and boost sales…
  The Project in detail Meet here for Breakfast, Lunch &amp;amp; Tea The business needed a rebrand.</description>
     </item>
     
     <item>
       <title>M&#43;H Awards Winner</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/museums-heritage-awards-winner/</link>
+      <link>https://inspiredlabs.co.uk/museums-heritage-awards-winner/</link>
       <pubDate>Tue, 13 Dec 2011 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/museums-heritage-awards-winner/</guid>
+      <guid>https://inspiredlabs.co.uk/museums-heritage-awards-winner/</guid>
       <description>A huge achievement, against all odds The Children’s Centre for Civilisation &amp;amp; Creativity, Heliopolis, Egypt endured the usual construction challenges. In 2011, the timing of the Arab-spring and Egyptian revolution further complicated things for Mallinson&amp;rsquo;s Architects &amp;amp; Engineers&amp;rsquo; team.
 Mallinson&amp;rsquo;s winning the Museum + Heritage award in 2012 because of well organised design. Together, collaborators solved problems outside Egypt so the holistic design became a reality.
-Beyond content creation Project background Appointed to create mixed digital media, including games, touch interfaces and animating a double-sided, 30 metre LED wall.</description>
+#cell-8078138e405e2ae26d5a47e3167206c3ec2ac605   Beyond content creation Project background Appointed to create mixed digital media, including games, touch interfaces and an animated centre-piece consisting of a double-sided, 30m LED wall.</description>
     </item>
     
     <item>
       <title>Bowers &amp; Wilkins</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/bowers-and-wilkins/</link>
+      <link>https://inspiredlabs.co.uk/bowers-and-wilkins/</link>
       <pubDate>Fri, 01 Jan 2010 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/bowers-and-wilkins/</guid>
-      <description>Conference opener Bowers &amp;amp; Wilkins make the worlds most advanced hi-fi products. Partnering with Apple, Jaguar and Lucasfilm, I was brought onboard by Thomas Manss, to celebrate their “true sound” in-car audio products for the Vintage at Goodwood conference.
-Legacy Turning 2D illustrations into versatile storytelling elements, we created a memorable musical short overcoming many hurdles. This introduced delegates to the annual conference – to rapturous applause.
- Project in detail Thomas Manss creates something remarkable The outline of the brief was to tell the evolutionary story of Bowers &amp;amp; Wilkins, under strict oversight of the talented art-director: Thomas Manss.</description>
+      <guid>https://inspiredlabs.co.uk/bowers-and-wilkins/</guid>
+      <description>Thomas Manss Creating something remarkable Bowers &amp;amp; Wilkins make the worlds most advanced hi-fi products. Partnering with Apple, Jaguar and Lucasfilm, I was brought onboard by Thomas Manss, to celebrate their “true sound” in-car audio products for the Vintage at Goodwood conference.
+#cell-f42b10653a54a8b5f3476c7da543c0c23b377ec5   Conference opener The outline of the brief was to tell the evolutionary story of Bowers &amp;amp; Wilkins, under strict oversight of the talented art-director: Thomas Manss.</description>
     </item>
     
     <item>
       <title>InstantWebapp</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/instantwebapp/</link>
+      <link>https://inspiredlabs.co.uk/instantwebapp/</link>
       <pubDate>Fri, 01 Jan 2010 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/instantwebapp/</guid>
-      <description>Philosophy Reduce investment risk Intended for entrepreneurs to control their costs, and guarantee content delivery to their customer&amp;rsquo;s devices.
-Responsible design Meeting business goals, controlling costs and avoiding gotchas does not mean generic, undesirable websites. Delighting the user is easier when the same constraints apply across organisations. Design templates lay the groundwork.
-Advancing marketing campaigns, content and aesthetics on top of a sound foundation is better than spending on reinvention.</description>
+      <guid>https://inspiredlabs.co.uk/instantwebapp/</guid>
+      <description>Background Reduce investment risk Intended for entrepreneurs to control their costs and guarantee content delivery to their customer&amp;rsquo;s devices.
+Component Based Design Meeting business goals, controlling costs and avoiding gotchas does not mean generic, undesirable designs.
+In fact, it is easier to delight the user when there are constraints are inplace that help lay the groundwork.
+#cell-2bfedf4d08957e4c68b25cc04c19c2e2b9e85b50   Process Discovery &amp;amp; Definition The goal at this stage is to create a credible wireframes to reflect the client&amp;rsquo;s demands.</description>
     </item>
     
     <item>
       <title>Aris Technologies</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/aris/</link>
+      <link>https://inspiredlabs.co.uk/aris/</link>
       <pubDate>Tue, 01 May 2007 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/aris/</guid>
-      <description>Secure, sophisticated software Aris Technologies develop their own online gaming platform for a niche market. The company is organised to follow the sun, writing code during GMT, tested in China and constantly deployed to the US market.
-Project Legacy Templates designed remain in use for this “development A-Team”, providing a decent return on investment tp meets Aris&amp;rsquo; business demands.
- The project in detail Template driven user interface design As the lead user interface designer, realised the templates for a broad range of games – from roulette, to video slots within Flash and within a 3D environment using OpenGL.</description>
+      <guid>https://inspiredlabs.co.uk/aris/</guid>
+      <description>#cell-1d314354a7daa9701b57b4c4a7452ed6d0952514   Software that follows the sun Aris Technologies develop online gaming platforms in niche markets. Established to follow the sun, Aris produces secure code during GMT, testing in China and constantly deployed within the USA.
+Project Legacy I delivered high performance assets that remain in use: earning millions of impressions, across thousands of games, delivering a solid return on investment for Aris&amp;rsquo; most demanding private operators.
+The sophisticated user interface – copied by competitors, continues to underpin the every product the Development A-Team create.</description>
     </item>
     
     <item>
       <title>Advanced Animations</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/advanced/</link>
+      <link>https://inspiredlabs.co.uk/advanced/</link>
       <pubDate>Wed, 01 Jun 2005 09:00:00 +0000</pubDate>
       
-      <guid>https://hungry-wozniak-e915f8.netlify.com/advanced/</guid>
-      <description>An impressive heritage About Advanced Advanced Animations is a traditional technical drawing office offering services Rolls Royce and innovators such as:Siemens, Cummins and other household names.
-Although, their heritage hasn&amp;rsquo;t made them immune to technological progress.
-Legacy Brought on board specifically to modernise business practices, we formed the foundation of a new business model – providing them a robust ROI years into the future.
- About the project Updating workflow and business model Simply put areas of the business were reduced to templates.</description>
-    </item>
-    
-    <item>
-      <title>Design Generalist CV</title>
-      <link>https://hungry-wozniak-e915f8.netlify.com/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hungry-wozniak-e915f8.netlify.com/cv/</guid>
-      <description>Thank you for your consideration, I hope this information finds you well.
-My content development work focuses on performant code. Rarely relying on complex dependencies or configurations, I aim to work at the correct abstraction layer, keeping things accessible.
-Responsive Web Design  I have a strong preference for static site generation with HUGO. Deploy to GitHub, served from Netlify. Using Service Workers for offline capabilities. Custom, modular layouts based on Tachyons.</description>
+      <guid>https://inspiredlabs.co.uk/advanced/</guid>
+      <description>#cell-05903ef56721b1598922d3f491e0634a5714cb1b   An impressive heritage About Advanced Advanced Illustrations was a traditional technical drawing office, servicing Rolls Royce, Siemens, Cummins and other household names.
+Although their heritage did not made them immune to progress.
+Legacy Brought on board specifically to modernise business practices, our work together formed the foundation of a new business model – providing them a robust ROI years into the future. With a new name to reflect their offering: Advanced Animations.</description>
     </item>
     
   </channel>

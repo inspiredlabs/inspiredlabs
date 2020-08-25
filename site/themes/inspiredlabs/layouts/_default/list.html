@@ -1,21 +1,25 @@
+{{ if eq .Site.Title  .Title }}
+	{{ $type := "list" }}
+	{{- partial "type" (dict "context" . "type" $type ) -}}
+{{ end }}
+
 {{ partial "head" . }}
 {{ partial "nav.html" . }}
 <main id="content" >
 	<ul class="list pl0"><!-- bg-debug -->
 
     {{ range .Data.Pages.ByDate.Reverse.ByWeight }}
-    {{ if ne .Title "Contact" }}
-    {{ .Render "li" }}
-    {{ end }}
+	    {{ if ne .Title "Contact" }}
+		    {{ .Render "li" }}
+	    {{ end }}
     {{ end }}
 
 
     {{ range .Data.Pages.ByDate.Reverse.ByWeight }}
-    {{ if eq .Title "Contact" }}
-    {{ .Render "li" }}
+	    {{ if eq .Title "Contact" }}
+		    {{ .Render "li" }}
+	    {{ end }}
     {{ end }}
-    {{ end }}
-
 
 	</ul>
 </main>

@@ -1,5 +1,5 @@
-#baseurl = "https://inspiredlabs.co.uk/"
-baseurl = "https://hungry-wozniak-e915f8.netlify.com/"
+baseurl = "https://inspiredlabs.co.uk/"
+#baseurl = "https://hungry-wozniak-e915f8.netlify.com/"
 #local only "./" #{{ .Site.BaseURL }} "/" && netlify
 #relativeURLs = "true"
 

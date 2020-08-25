@@ -1,0 +1,285 @@
+<style>
+
+  /* .portfolio img { background-color: yellow; } */
+  
+  /* fade in image when loaded */
+  .portfolio-cell {
+    /*margin-right: 10px */;
+    /* background: var(--charcoal); */
+    /* counter-increment: portfolio-cell; */
+    transition: opacity 0.4s;
+    opacity:0;
+  }
+  
+  .portfolio-cell.flickity-bg-lazyloaded,
+  .portfolio-cell.flickity-lazyerror {
+    opacity: 1;
+  }
+  
+  button[aria-expanded="true"] {
+    /* https://codepen.io/inspiredlabs/pen/ydadxB
+    box-shadow: inset 5px 5px #999;
+    background: #ddd;
+    color: white;
+    */
+  }
+  
+  #menu {
+    background: transparent;
+    /* font-size: 2em; */
+    /* padding: 1em; */
+    /* border: 1px solid #999; */
+    /* margin-top: 0.5em; */
+    /* max-width: 20em; */
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; /* */
+  }
+  
+  @keyframes fadeInOut {
+     0% {opacity: 0;}
+     100% {opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeInOut {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  .fadeInOut {
+    -webkit-animation-name: fadeInOut;
+    animation-name: fadeInOut;
+  } /* https://www.tutorialspoint.com/css/css_animation_fade_in.htm */
+  
+  .portfolio-nav .portfolio-cell, .portfolio img {
+    opacity: 0.6;
+  }
+  
+  .portfolio-nav .portfolio-cell.is-nav-selected {
+    opacity: 1;
+  }
+  .portfolio-nav .portfolio-cell:hover,
+  .portfolio img {
+    opacity: 1;
+  }
+  
+  </style>
+  <style>
+    .portfolio-cell {
+      opacity: 0;
+    }
+  
+    .portfolio img {
+      /* padding-left: 0rem;
+      padding-right: 0rem; */
+  
+      position: absolute;
+      /* min-height: 100%; */
+      /* height: 100vh !important; */
+  
+      background-repeat: no-repeat;
+      /* background-attachment: scroll; */
+      background-position: center;
+  
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      overflow: hidden;
+    }
+  
+    .translateY-custom {
+      /* Alt: https://stackoverflow.com/questions/36794634/how-to-create-a-css-translatey-on-hover-effect */
+      -webkit-transform: translateY(60%);
+      transform: translateY(60%);
+      /* Analogue timing roblaplaca.com/examples/bezierBuilder */
+      -webkit-transition: all .8s cubic-bezier(.3, 0, .02, 1);
+         -moz-transition: all .8s cubic-bezier(.3, 0, .02, 1);
+           -o-transition: all .8s cubic-bezier(.3, 0, .02, 1);
+              transition: all .8s cubic-bezier(.3, 0, .02, 1);
+    }
+    .translateY-custom:hover {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  </style>
+  <style>
+    /* -------------------------------------------------------------------------- *\
+   * Necessary styling for the dialog to work
+   * -------------------------------------------------------------------------- */
+  
+  /**
+   * When `<dialog>` is properly supported, the overlay is implied and can be
+   * styled with `::backdrop`, which means the DOM one should be removed.
+   */
+  [data-a11y-dialog-native] .dialog-overlay {
+    display: none;
+  }
+  
+  /**
+   * When `<dialog>` is not supported, its default display is `inline` which can
+   * cause layout issues.
+   */
+  dialog[open] {
+    display: block;
+  }
+  
+  .dialog[aria-hidden="true"] {
+    display: none;
+  }
+  
+  /* -------------------------------------------------------------------------- *\
+   * Styling to make the dialog look like a dialog
+   * -------------------------------------------------------------------------- */
+  
+  .dialog-overlay {
+    /* z-index: 2; */
+    background-color: rgba(0, 0, 0, 0.66);
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.66);
+  }
+  
+  .dialog-content {
+    background-color: rgb(255, 255, 255);
+    /* z-index: 3; */
+    /* position: fixed; */
+    /* top: 50%;
+    left: 50%; */
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    margin: 0;
+  
+  }
+  
+  /* -------------------------------------------------------------------------- *\
+   * Extra dialog styling to make it shiny
+   * -------------------------------------------------------------------------- */
+  
+  @keyframes fade-in {
+    /* IT WORKS! */
+    /* from { opacity: 0;  }
+    to { opacity: 1;  } */
+  }
+  
+  @keyframes appear {
+    /* IT WORKS! */
+    /* from { transform: translate(-50%, -40%); opacity: 0; }
+    to { transform: translate(-50%, -50%); opacity: 1; } */
+  }
+  
+  .dialog:not([aria-hidden='true']) > .dialog-overlay {
+    /* IT WORKS! */
+    /* animation: fade-in 200ms 1 both; */
+  }
+  
+  .dialog:not([aria-hidden='true']) > .dialog-content {
+    /* IT WORKS! */
+    /* animation: appear 400ms 150ms 1 both; */
+  }
+  
+  .dialog-content {
+    /* width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%; */
+  }
+  
+  .dialog-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .dialog-close {
+    cursor: pointer;
+    transition: 0.15s;
+  }
+  
+  {{- range .Site.RegularPages.ByDate.Reverse -}}
+  {{- $bg := .Params.bg -}}
+  {{- with .Resources.ByType "image" -}}
+  {{- range . -}}
+  
+  {{/* https://discourse.gohugo.io/t/stray-isset-error-since-0-57-1/20256/5 */}}
+  {{/* if or (isset .Site.Params "bg") (isset .Params "bg") */}}
+  {{/* THIS if (isset .Params.bg 0) */}}
+  {{/* if (isset .Params.bg "nil") | (not (isset .Params "bg")) */}}
+  {{/* how to handle empty frontmatter params? */}}
+  
+  .cell-{{ sha1 .Title }} {
+    background:{{ if eq .Params.bg 0 }}{{ else }}#{{ $bg | safeCSS }}{{ end }};
+  }
+  
+  {{- end -}}
+  {{- end -}}
+  {{- end -}}
+  </style>
+  
+  <aside class="dialog relative z-9999 " id="my-accessible-dialog"><!-- fixed fadeInOut -->
+    <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+    <dialog class=" w-100 vw-100 top-0 left-0" aria-labelledby="dialogTitle" aria-describedby="dialogDescription" open>
+      <button data-a11y-dialog-hide aria-label="Close this dialog window"
+      class="dialog-close
+      bn bg-transparent button-reset charcoal dim fr w-10 right-0 top-0 fixed z-max f1 f2-ns f1-m f-headline-l pointer"
+      >&times;</button><!-- near-white ts1-dark-gray https://codepen.io/inspiredlabs/pen/ydadxB -->
+  
+      {{/****************************************/}}
+        <div class="w-100 vw-100 top-0 left-0 z-9999 fixed">
+  
+          <div class="bottom-0 h5 o-0 hover-o-100 w-100 left-0 z-3 fixed pt6 translateY-custom">
+            <!-- debug bg-red  -->
+            <nav class="portfolio portfolio-nav bg-transparent bn ma0 pa0 h4 bottom-0 ">
+              <!-- data-flickity='{ "asNavFor": ".portfolio-main", "contain": true, "pageDots": false, "prevNextButtons": false }' h3 h3-ns h3-m h3-l -->
+              <!-- https://tachyons.io/components/layout/aspect-ratio-1x1/index.html -->
+        
+        
+              {{ range .Site.RegularPages.ByDate.Reverse }}{{/* .ByWeight */}}
+              {{ $bg := .Params.bg }}
+              {{ with .Resources.ByType "image" }}
+              {{ range . }}
+        
+              
+        
+              <img {{ if eq $bg false }} data-hide {{ if gt $bg 0 }} data-hide {{ else }} data-svg {{ end }}{{ end }} class="cell-{{ sha1 .Title }}
+                    cover portfolio-cell pointer h3 w3 h4-l w4-l"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+                data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}"><!-- ba bw1 b--transparent transition -->
+              {{ end }}
+              {{ end }}
+              {{ end }}
+            </nav>
+          </div>
+        
+          <!-- Flickity HTML -->
+          <div
+          class="portfolio portfolio-main bg-charcoal top-0 left-0 fixed w-100 vw-100 h-100 vh-100 z-1 ">
+        
+            {{ range .Site.RegularPages.ByDate.Reverse }}{{/* .ByWeight */}}
+            {{ $bg := .Params.bg }}
+            {{ with .Resources.ByType "image" }}
+            {{ range . }}
+        
+        
+            {{/* NOTE: sha1 .Title https://discourse.gohugo.io/t/looking-for-a-futureproof-uniqueid/18936/4 */}}
+            <img {{ if eq $bg false }} data-hide {{ if gt $bg 0 }} data-hide {{ else }} data-svg {{ end }}{{ end }} id="cell-{{ sha1 .Title }}" class='cell-{{ sha1 .Title }}
+              portfolio-cell no-select  w-100 vw-100 h-100 vh-100'
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
+              data-flickity-bg-lazyload="{{ .RelPermalink | absURL }}">
+            {{ end }}
+            {{ end }}
+            {{ end }}
+        
+          </div><!-- /portfolio -->
+        </div>
+        {{/****************************************/}}
+
+  
+    </dialog>
+  </aside>  

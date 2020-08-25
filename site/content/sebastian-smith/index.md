@@ -9,7 +9,7 @@ assignment: Retouch & Repair
 location: New York, New York
 skills:
   - Photoshop
-open: true
+open: false
 ---
 {{< feature 0 >}}
 <!--{{/* <flickity src="3si/images/3si-sales.jpg" title="3Si marketing content" selectCell="flkty.selectCell( value, isWrapped, isInstant )" > */}}

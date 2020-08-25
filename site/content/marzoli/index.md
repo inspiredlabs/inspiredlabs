@@ -7,7 +7,7 @@ title: Marzò
 description: Traditional farming, The Marzoli way
 assignment: Graphic Designer & Developer
 location: Italy
-open: true
+open: false
 ---
 
 
@@ -24,7 +24,7 @@ A warm, welcoming brand – clear for local people looking for fresh, organic pr
 
 #### Traditional Graphic Design
 
-Devoured by&nbsp;hype: _fresh, organic produce_ is mis-sold. Marzo, on the other-hand tell the real&nbsp;story, embracing lo-fidelity materials to create an informal, intimidation-free aesthetic (but can you spot the intentional&nbps;mistake?).
+Devoured by&nbsp;hype: _fresh, organic produce_ is mis-sold. Marzo, on the other-hand tell the real&nbsp;story, embracing a lo-fidelity, informal aesthetic<!--intimidation-free: (but can you spot the intentional&nbsp;mistake?)-->.
 
 {{< feature 0 >}}
 

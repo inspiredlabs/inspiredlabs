@@ -4,84 +4,58 @@ date: 2010-01-01T09:00:00Z
 weight:
 bg: false
 title: InstantWebapp
-description: Web design for a world of apps
-assignment: Frontend Developer
-location: SME Boutiques
-open: true
+description: Frontend Component Library for UX Design
+assignment: Interaction Designer, Graphic Designer & UX Researcher
+location: Mixed Boutiques, UK, EU & USA
+open: false
 ---
-{{< feature 0 >}}
-<!--From Summer&nbsp;2011-->
 
-<!--{{<flkty src="instantwebapp/images/iwa-pablowoodward-01.jpg" title="PabloWoodward.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}-->
-
-## Philosophy
+## Background
 
 ### Reduce investment risk
 
-Intended for entrepreneurs to control their costs, and guarantee content delivery to their customer's devices.
+Intended&nbsp;for entrepreneurs to control their costs and guarantee content delivery to their customer's&nbsp;devices.
 
-#### Responsible design
+### Component Based Design
 
-Meeting business goals, controlling costs and avoiding gotchas does not mean generic, undesirable websites. Delighting the user is easier when the same constraints apply across organisations. Design templates lay the groundwork.
+Meeting business goals, controlling costs and avoiding gotchas does not mean generic, undesirable&nbsp;designs.
 
-Advancing marketing campaigns, content and aesthetics on top of a sound foundation is better than spending on reinvention.
+In&nbsp;fact, it is easier to delight the user when there are constraints are inplace that help lay the&nbsp;groundwork.
+
+{{< feature 2 >}}
+
+### Process
+
+#### Discovery & Definition
+
+The&nbsp;goal at this stage is to create a credible **wireframes** to reflect the client's&nbsp;demands.
+
+#### Component&nbsp;Libraries
+
+I use component&nbsp;libraries that are based on a custom template design to enhance productivity.
+
+This means, I can obsess over the implementation details for every project. Each generation of development feeds-back into the offering, advancing the&nbsp;standard – pushing what's possible,&nbsp;faster.
+
+{{< feature 0 >}}
+
+#### Testing
+
+Completing tasks on an app deserves good user interface design. The interface is tested to work on customer's devices.
+
+Clear, readable text, decent hit areas and thoughtful calls-to-action need testing and improvement to really meet business goals.
+
+Each design iteration is based on empirical testing with close attention paid to the client-led focus group's&nbsp;suggestions.
 
 
 
-### Characteristics
+<!--
+Marketing&nbsp;campaigns, aesthetics and task-based goals can all happen from a sound foundation. I beleive this is much better than energy spent on&nbsp;reinvention.
+-->
 
-#### Looks like an app
+### Performant
 
-Completing tasks on an app deserves good user interface design. The interface looks like it belongs on a customer's device. Clear, readable text, decent hit areas and thoughtful calls-to-action meet business goals.
+The design has undergone many iterations to achieve a [GTMetrix UX score: 100%](https://inspiredlabs.co.uk/gtmetrix.com/reports/pablowoodward.com.pdf).
 
-#### Launches like an app
-
-The template can load from the homescreen of phones and tablets. On desktops, it works like a normal page with a 1st class user experience, even offline when there is no signal.
-
-#### Feels like an app
-
-This template works well with any content, including video – even when a device has no signal. To prevent ruining the reading experience the template automatically hides media when offline.
-
-Visitors won't get ugly "no internet connection" messages when they are on the Tube or Golf Course.
-
-#### Responsive design, like the web
-
-Designed to flow around different screen types, the layout adapts to client devices. The user interface is uncluttered with a clear call-to-action.
-
-#### Streamlined
-
-Designed to be flexible, the template can handle poor network connections. Without extraneous widgets content delivery is as fast as possible over cellular networks.
-
-<!--{{<flkty src="instantwebapp/images/iwa-tdb-01.jpg" title="TheDiscoBunny.com" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}-->
-
-### My small business? – There's an app for that!
-
-#### Customer admiration
-
-The goal is to create a credible user experience across devices, reflecting customers demands.
-
-#### Bespoke
-
-Tailored for each client, assets work to compliment existing marketing material and extend the brand story. The design feels like a premium product for businesses that value their customers.
-
-#### Business goals without compromise
-
-The bottom line is – services must save time and deliver income.
-
-Business owners looking for systems they don't have to learn need to find a capable provider. CMS software increases project complexity and understanding the inner workings of these approaches can be costly. Therefor, a developer can be superior to the abilities bestowed upon a CMS through plugins.
-
-#### Fixed price or Monthly Retainer
-
-Business owners that choose a system they don't need to learn require transparent pricing. They also stay in control of costs by making changes as their requirements grow.
-
-#### Background
-
-Optimisations have made the user experience better with each version.
-
-By combining content and graphics into fewer server requests we improve time to first meaningful interaction. Modern browsers make things snappy whilst working everywhere. There is no need for libraries like jQuery, which used to be the only option for compatibility.
-
-#### Performant
-
-The design has undergone many iterations to achieve a GTMetrix UX score: 100%.
+{{< feature 1 >}}
 
 <!--{{<flkty src="instantwebapp/images/iwa-multitool-01.jpg" title="An early jQuery implementation" color="blue" selectCell="flkty.selectCell( value, isWrapped, isInstant )" >}}-->

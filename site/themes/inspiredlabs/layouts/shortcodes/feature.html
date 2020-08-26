@@ -31,15 +31,16 @@
 {{ if eq $bg false }} data-hide {{ else }} data-svg {{ end }}
 title="{{ .RelPermalink | absURL }}"
 data-a11y-dialog-show="my-accessible-dialog"
-onclick="flickity.selectCell( '.cell-{{ $cell }}');"
+onclick="setTimeout(function () { flickity.selectCell( '.cell-{{ $cell }}'); }, 300);"
 class="w-100 transition"><!-- w-50 fixed z-2 mt0 pa1 top-0 z-2 -->
-  <div class='portfolio aspect-ratio aspect-ratio--3x1'
+  <div class='portfolio'
     data-flickity='{"bgLazyLoad": true, "bgLazyLoad": 1, "pageDots": false, "prevNextButtons": false, "draggable": false }' 
     style="overflow: hidden">
+      <!-- portfolio aspect-ratio aspect-ratio--3x1 -->
       <!-- cell-{{/* $cell */}}{{/* .RelPermalink | absURL */}} {{/* with .Page.Resources.GetMatch "images" */}} ```class=cell-{{ $cell }}``` -->
     <img
     style="background-position: center 50%;"
-    class='aspect-ratio--object cover'
+    class='aspect-ratio--object cover cell-{{ $cell }}'
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4="
     data-flickity-bg-lazyload='{{ .RelPermalink | absURL }}' alt='Portfolio Image' />
   </div><!-- cover portfolio-cell w-100 aspect-ratio--3x1 `SVG, background-position: 0 88%;`-->

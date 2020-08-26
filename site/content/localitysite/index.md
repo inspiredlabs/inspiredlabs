@@ -39,11 +39,17 @@ Nonsense examples:
 
 This webapp helps people in the luxury rental market organise and filter rooms to taste.
 
-### JSON sanitisation in NetlifyCMS
+### Data sanitisation
 
-The filter takes JSON data and renders it client-side keeping the information up-to-date without having complicated processes likely to fail.
+Keeping pages fresh means that subtle errors creep into customer-facing pages, often without&nbsp;notice. The&nbsp;UX requirement to check and catch these data-entry mistakes was first-and-foremost&nbsp;priority.
 
-Terse output from data templates, will catch data-entry mistakes. This investment makes maintaining the properties as simple as possible – even when tiny nuances in content are&nbsp;required.
+NetlifyCMS,&nbsp;in the browser is utilised for data-entry which produces a terse data&nbsp;template. This is stored as&nbsp;JSON and renders client-side, keeping the information up-to-date without having a complicated&nbsp;processes.
+
+This investment makes maintaining housing properties as simple as possible – even when tiny nuances in content are&nbsp;required.
+
+### Data Minimalism
+
+The same JSON is filtered on the client's browser. There is no need to serve multiple, unchanging files, use a complicated test procedure or even rebuild pages after data&nbsp;entry.
 
 <!--
 ## Preview Image

@@ -1,0 +1,13 @@
+{{/* é */}}
+{{- $delimit := ", " -}}
+{{- $site := .Site.BaseURL | replaceRE ".co.uk/" ".co.uk" -}}
+{{- range .Data.Pages.ByDate.Reverse -}}
+{{- with .Resources.ByType "image" -}}
+{{- range . -}}
+{{- $asset := .RelPermalink | safeJS -}}
+{{- $combined := printf "%s%s" $site $asset -}}
+{{- $thing  := printf "%s" $combined | replaceRE ".jpg," ".jpg',"  -}}
+{{- $thing | jsonify -}}{{- $delimit -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}

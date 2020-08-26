@@ -3,10 +3,10 @@ draft: true
 weight:
 bg: false
 date: 2010-08-20T09:00:00Z
-open: false
 title: Inspired Labs
 description: About this site
 assignment: Design Entrepreneur
+open: false
 
 ---
 

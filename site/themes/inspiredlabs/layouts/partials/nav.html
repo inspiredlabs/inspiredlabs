@@ -57,7 +57,7 @@
   </li>
   <!-- Understand scope: https://www.youtube.com/watch?v=juSnHsCX9RU -->
 	{{ $thisTitle := .Title }}
-	{{ range .Site.Pages.ByWeight }}
+	{{ range .Site.RegularPages.ByWeight }}
 		<li class=""><!-- fl 100 -->
 			<a href="{{ .URL }}"
 				class="no-underline bg-animate
